@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Rtech\EventManagementController;
 use App\Http\Controllers\Rtech\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,4 +25,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('/')->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('rtech.index');
+    Route::get('/event_management', [EventManagementController::class, 'index'])->name('event_management.index');
 });
