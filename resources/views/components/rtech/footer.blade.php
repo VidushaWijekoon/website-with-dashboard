@@ -49,15 +49,15 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About us</a></li>
                         <li><a href="#">Services</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
                     </ul>
                 </div><!-- End footer links column-->
 
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Our Services</h4>
                     <ul>
-                        <li><a href="#">Science & Technology</a></li>
-                        <li><a href="#">Technical Services</a></li>
+                        <li><a href="{{ route('science_technology.index') }}">Science & Technology</a></li>
+                        <li><a href="{{ route('technical_services.index') }}">Technical Services</a></li>
                         <li><a href="{{ route('event_management.index') }}">Event Management</a></li>
                     </ul>
                 </div><!-- End footer links column-->
@@ -73,11 +73,18 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Information Technology</h4>
                     <ul>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Software Development</a></li>
-                        <li><a href="#">Graphic Design</a></li>
-                        <li><a href="#">Digital Marketing</a></li>
-                        <li><a href="#">Software Testing and QA</a></li>
+                        <li>
+                            <a href="{{ route('web_development.index') }}">Web Development</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('software_development.index') }}">Software Development</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('graphic_design.index') }}">Graphic Design</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('digital_marketing.index') }}">Digital Marketing</a>
+                        </li>
                     </ul>
                 </div><!-- End footer links column-->
 

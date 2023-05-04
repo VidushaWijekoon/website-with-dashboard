@@ -67,21 +67,45 @@
                         <i class="bi bi-chevron-down"></i>
                     </a>
                     <ul>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Software Application Development</a></li>
-                        <li><a href="#">Graphic Design</a></li>
-                        <li><a href="#">Digital Marketing</a></li>
+                        <li>
+                            <a href=" {{ route('web_development.index') }}"
+                                class="nav-link {{ 'web_development' == request()->path() ? 'active' : '' }}">
+                                Web Development</a>
+                        </li>
+                        <li>
+                            <a href=" {{ route('software_development.index') }}"
+                                class="nav-link {{ 'software_development' == request()->path() ? 'active' : '' }}">Software
+                                Development</a>
+                        </li>
+                        <li>
+                            <a href=" {{ route('graphic_design.index') }}"
+                                class="nav-link {{ 'graphic_design' == request()->path() ? 'active' : '' }}">Graphic
+                                Design</a>
+                        </li>
+                        <li>
+                            <a href=" {{ route('digital_marketing.index') }}"
+                                class="nav-link {{ 'digital_marketing' == request()->path() ? 'active' : '' }}">Digital
+                                Marketing</a>
+                        </li>
                     </ul>
                 </li>
-                <li><a href="#">Science & Technology</a></li>
-                <li><a href="#">Technical Services</a></li>
+                <li>
+                    <a href=" {{ route('science_technology.index') }}"
+                        class="nav-link {{ 'science_technology' == request()->path() ? 'active' : '' }}">Science &
+                        Technology</a>
+                </li>
+                <li>
+                    <a href="{{ route('technical_services.index') }}"
+                        class="nav-link {{ 'technical_services' == request()->path() ? 'active' : '' }}">Technical
+                        Services</a>
+                </li>
                 <li>
                     <a href="{{ route('event_management.index') }}"
                         class="nav-link {{ 'event_management' == request()->path() ? 'active' : '' }}">Event
                         Management
                     </a>
                 </li>
-                <li><a href="#">Blog</a></li>
+                {{-- <li><a href="#">Blog</a></li> --}}
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
