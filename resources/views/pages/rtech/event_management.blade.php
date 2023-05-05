@@ -5,7 +5,9 @@
 <section id="event_management_hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
         <div class="row">
-            <div class="col-sm-10">
+            <div class="col-sm-10 col-md-5">
+            </div>
+            <div class="col-sm-10 col-md-7">
                 <h1 style="color: #fff">Welcome to <span>R-Tech Event Management</span></h1>
                 <p class="mt-2">
                     Our Mission is to provide memorable experience to our customer.
