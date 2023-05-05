@@ -9,7 +9,7 @@
             </i>
             <i class="fa-solid fa-phone-volume d-flex align-items-center ms-4">
                 <span>
-                    <a href="tel:+4733378901">+971 52 984 3844</a>
+                    <a href="tel:+971529843844">+971 52 984 3844</a>
                 </span>
             </i>
 

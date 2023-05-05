@@ -570,7 +570,7 @@
 
     .counts {
         padding: 70px 0 60px;
-        background-image: url("../rtech/images/services/counter_bg.webp");
+        background-image: url("../rtech/images/counter_bg.webp");
         background-size: cover;
         background-attachment: scroll;
         background-repeat: no-repeat;
