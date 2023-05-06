@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->tinyInteger('role_as')->default('0')->comment('0=client, 1=admin');
-            $table->string('destination')->nullable();
         });
     }
 
@@ -24,7 +23,6 @@ return new class extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->dropColumn('role_as');
-            $table->dropColumn('destination');
         });
     }
 };
