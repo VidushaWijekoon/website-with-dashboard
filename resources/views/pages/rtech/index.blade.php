@@ -292,7 +292,7 @@
             </div>
 
             <div class="col-lg-6">
-                <form method="POST" id="contact" class="php-email-form" action="">
+                <form action="{{ route('rtech.index') }}" method="POST" id="contact">
 
                     <div class="row gy-4">
 

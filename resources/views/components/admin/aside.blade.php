@@ -55,9 +55,14 @@
         <li class="nav-heading">Pages</li>
 
         <li class="nav-item">
+            <a class="nav-link collapsed" href="{{ route('rtech.index') }}"><i class="fa-solid fa-home"></i>{{
+                __('Home Page') }}</a>
+        </li>
+
+        <li class="nav-item">
             <a class="nav-link collapsed" href="{{ route('register') }}"><i class="fa-solid fa-newspaper"></i>{{
                 __('Register') }}</a>
-        </li><!-- End Register Page Nav -->
+        </li>
 
         <li class="nav-item">
             <a class="nav-link collapsed" href="{{ route('logout') }}"
