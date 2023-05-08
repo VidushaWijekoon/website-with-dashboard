@@ -68,11 +68,16 @@
                 </div>
             </div>
 
-            <div class="row mb-0">
-                <div class="d-flex mx-auto justify-content-center">
+            <div class="d-flex justify-content-center">
+                <div class="">
                     <button type="submit" class="btn btn-primary">
                         {{ __('Register') }}
                     </button>
+                </div>
+                <div class="mx-2">
+                    <a href="{{ route('dashboard.index') }}" class="btn btn-warning">
+                        Cancel
+                    </a>
                 </div>
             </div>
         </form>

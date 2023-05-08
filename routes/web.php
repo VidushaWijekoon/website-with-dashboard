@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\ContactUsController;
 use App\Http\Controllers\Admin\DashboardHomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -42,6 +43,11 @@ Route::prefix('it/')->group(function () {
 
 Route::prefix('admin/')->middleware('auth', 'isAdmin')->group(function () {
     Route::get('dashboard', [DashboardHomeController::class, 'index'])->name('dashboard.index');
+
+    // Client Contact US Messages
+    Route::controller(ContactUsController::class)->group(function () {
+        Route::get('contact_us_messages', 'index')->name('contact_us_messages');
+    });
 });
 
 Auth::routes();

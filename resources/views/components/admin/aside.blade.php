@@ -31,7 +31,7 @@
         </li>
 
         <li class="nav-item">
-            <a href="" class="nav-link collapsed">
+            <a href="{{ route('contact_us_messages') }}" class="nav-link collapsed">
                 <i class="fa-solid fa-message"></i>
                 <span>Client Messages</span>
             </a>
