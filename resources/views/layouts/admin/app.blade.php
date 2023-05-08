@@ -18,10 +18,11 @@
         href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
         rel="stylesheet">
 
-
     <!-- Template Main CSS File -->
     <link href="css/style.css" rel="stylesheet">
     @include('libraries.admin.styles')
+    @livewireStyles
+    @stack('css')
 </head>
 
 <body>
@@ -36,6 +37,8 @@
 
 
     @include('libraries.admin.scripts')
+    @livewireScripts
+    @stack('script')
 </body>
 
 </html>

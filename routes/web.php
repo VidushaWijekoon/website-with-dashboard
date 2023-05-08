@@ -24,7 +24,10 @@ use App\Http\Controllers\Rtech\IT\SoftwareDevelopmentController;
 */
 
 Route::prefix('/')->group(function () {
-    Route::get('/', [RtechHomeController::class, 'index'])->name('rtech.index');
+    Route::controller(RtechHomeController::class)->group(function () {
+        Route::get('/', 'index')->name('rtech.index');
+        Route::post('/', 'store')->name('rtech.store');
+    });
     Route::get('technical_services', [TechnicalServicesController::class, 'index'])->name('technical_services.index');
     Route::get('science_technology', [ScienceTechnologyController::class, 'index'])->name('science_technology.index');
     Route::get('event_management', [EventManagementController::class, 'index'])->name('event_management.index');

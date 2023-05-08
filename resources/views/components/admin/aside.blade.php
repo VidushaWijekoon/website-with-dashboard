@@ -18,12 +18,24 @@
             </a>
             <ul id="posts" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="icons-bootstrap.html">
+                    <a href="#">
+                        <i class="fa-regular fa-circle"></i><span>Create Posts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
                         <i class="fa-regular fa-circle"></i><span>View Posts</span>
                     </a>
                 </li>
             </ul>
         </li>
+
+        <li class="nav-item">
+            <a href="" class="nav-link collapsed">
+                <i class="fa-solid fa-message"></i>
+                <span>Client Messages</span>
+            </a>
+        </li><!-- End Profile Page Nav -->
 
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#clients" data-bs-toggle="collapse" href="#">

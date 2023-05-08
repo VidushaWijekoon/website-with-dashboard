@@ -1,7 +1,9 @@
 @extends('layouts.rtech.app')
 
 @section('content')
-
+@if (session('message'))
+<h6 class="alert alert-success mb-2">{{ session('message') }}</h6>
+@endif
 <!-- ======= Hero Section ======= -->
 <section id="hero">
     <div class="hero-container">
@@ -293,33 +295,31 @@
 
             <div class="col-lg-6">
                 <form action="{{ route('rtech.index') }}" method="POST" id="contact">
-
+                    @csrf
                     <div class="row gy-4">
 
                         <div class="col-md-6">
-                            <input type="text" name="cutomer_name" class="form-control" placeholder="Your Name"
-                                required>
+                            <input type="text" name="contact_us_messanger_fullname" class="form-control"
+                                placeholder="Your Name" required>
                         </div>
 
                         <div class="col-md-6 ">
-                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                            <input type="email" class="form-control" name="contact_us_title" placeholder="Your Email"
+                                required>
                         </div>
 
                         <div class="col-md-12">
-                            <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                            <input type="text" class="form-control" name="contact_us_subject" placeholder="Subject"
+                                required>
                         </div>
 
                         <div class="col-md-12">
-                            <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                            <textarea class="form-control" name="contact_us_message" rows="6" placeholder="Message"
                                 required></textarea>
                         </div>
 
                         <div class="col-md-12 text-center">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                            <button type="submit">Send Message</button>
+                            <button type="submit" class="btn btn-sm btn-success">Send Message</button>
                         </div>
 
                     </div>
