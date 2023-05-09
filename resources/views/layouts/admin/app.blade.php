@@ -12,7 +12,7 @@
     <!-- Favicons -->
     <link href="{{ asset('rtech/images/favicon.png') }}" rel="icon">
     <link href="{{ asset('rtech/images/favicon.png') }}" rel="apple-touch-icon">
-
+    <link rel="stylesheet" href="{{ asset('admin/css/style.css') }}">
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"

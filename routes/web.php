@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ContactUsController;
 use App\Http\Controllers\Admin\DashboardHomeController;
+use App\Http\Controllers\Admin\PostsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Rtech\RtechHomeController;
@@ -47,6 +49,22 @@ Route::prefix('admin/')->middleware('auth', 'isAdmin')->group(function () {
     // Client Contact US Messages
     Route::controller(ContactUsController::class)->group(function () {
         Route::get('contact_us_messages', 'index')->name('contact_us_messages');
+    });
+
+    // Posts
+    Route::controller(PostsController::class)->group(function () {
+        Route::get('/posts', 'index')->name('posts.index');
+        Route::get('/posts/create', 'create')->name('posts.create');
+        Route::get('/posts/{post_id}/edit', 'edit')->name('posts.edit');
+    });
+
+    Route::controller(CategoryController::class)->group(function () {
+        Route::get('/category', 'index')->name('category.index');
+        Route::get('/category/create', 'create')->name('category.create');
+        Route::post('/category', 'store')->name('category.store');
+        Route::get('/category/{category}/edit', 'edit')->name('category.edit');
+        Route::put('/category/{category}/', 'update')->name('category.update');
+        Route::get('/category/{category}/delete', 'delete')->name('category.delete');
     });
 });
 

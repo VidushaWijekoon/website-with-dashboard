@@ -31,7 +31,7 @@ class RtechHomeController extends Controller
         $contact_us->contact_us_subject = $validatedData['contact_us_subject'];
         $contact_us->contact_us_message = $validatedData['contact_us_message'];
 
-        $contact_us->save();
+        $contact_us->create();
         return redirect()->back()->with('message', 'Message Successfully Send to Rtech Internationa IT Team');
     }
 }

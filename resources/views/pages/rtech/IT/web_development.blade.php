@@ -27,7 +27,7 @@
 
         <div class="row g-0">
             <div class="col-lg-4 position-relative d-flex align-items-center ">
-                <img src="{{ asset('rtech/images/information_technology/design-bg.png') }}" alt="">
+                <img src="{{ asset('rtech/images/information_technology/design-bg.png') }}" alt="" width="100%">
             </div>
             <div class="col-lg-8">
                 <div class="content d-flex flex-column justify-content-center h-100">

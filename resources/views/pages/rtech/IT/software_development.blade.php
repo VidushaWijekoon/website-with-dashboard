@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="col-lg-4 position-relative d-flex align-items-center ">
-                <img src="{{ asset('rtech/images/information_technology/web_development.png') }}" alt="">
+                <img src="{{ asset('rtech/images/information_technology/web_development.png') }}" alt="" width="100%">
             </div>
         </div>
     </div>
@@ -73,7 +73,7 @@
         <div class="row gy-4 mb-5">
             <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
                 <img src="{{ asset('rtech/images/information_technology/website-developer-31-1.png') }}"
-                    class="img-fluid" alt="">
+                    class="img-fluid" alt="" width="100%">
             </div>
             <div class="col-lg-6 content order-last order-lg-first">
                 <div class="d-flex justify-content-center align-items-center h-100">
@@ -101,7 +101,7 @@
         <div class="row gy-4 mb-5">
             <div class="col-lg-6 position-relative align-self-start ">
                 <img src="{{ asset('rtech/images/information_technology/website-developer-29-1.png') }}"
-                    class="img-fluid" alt="">
+                    class="img-fluid" alt="" width="100%">
             </div>
             <div class="col-lg-6 content">
                 <div class="d-flex justify-content-center align-items-center h-100">
@@ -136,14 +136,14 @@
             </div>
             <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
                 <img src="{{ asset('rtech/images/information_technology/website-developer-25-2.png') }}"
-                    class="img-fluid" alt="">
+                    class="img-fluid" alt="" width="100%">
             </div>
         </div>
 
         <div class="row gy-4 mb-5">
             <div class="col-lg-6 position-relative align-self-start ">
                 <img src="{{ asset('rtech/images/information_technology/website-developer-34-1.png') }}"
-                    class="img-fluid" alt="">
+                    class="img-fluid" alt="" width="100%">
             </div>
             <div class="col-lg-6 content">
                 <div class="d-flex justify-content-center align-items-center h-100">
@@ -345,41 +345,41 @@
         </header>
 
         <div class="row align-self-center gy-4">
-            <div class="col-md-2" data-aos="zoom-out" data-aos-delay="200">
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
                 <div class="feature-box d-flex align-items-center mb-5">
                     <img src="{{ asset('rtech/images/information_technology/logos/html_css.png') }}" alt="html_css"
                         class="w-100">
                 </div>
             </div>
 
-            <div class="col-md-2" data-aos="zoom-out" data-aos-delay="300">
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
                 <div class="feature-box d-flex align-items-center mb-5">
                     <img src="{{ asset('rtech/images/information_technology/logos/bootstrap.png') }}"
                         alt="site-loading-icon" class="w-100">
                 </div>
             </div>
 
-            <div class="col-md-2" data-aos="zoom-out" data-aos-delay="400">
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="400">
                 <div class="feature-box d-flex align-items-center mb-5">
                     <img src="{{ asset('rtech/images/information_technology/logos/javascript.png') }}" alt="javascript"
                         class="w-100">
                 </div>
             </div>
-            <div class="col-md-2" data-aos="zoom-out" data-aos-delay="200">
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
                 <div class="feature-box d-flex align-items-center mb-5">
                     <img src="{{ asset('rtech/images/information_technology/logos/jquery.png') }}" alt="jquery"
                         class="w-100">
                 </div>
             </div>
 
-            <div class="col-md-2" data-aos="zoom-out" data-aos-delay="300">
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
                 <div class="feature-box d-flex align-items-center mb-5">
                     <img src="{{ asset('rtech/images/information_technology/logos/tailwind.png') }}" alt="tailwind"
                         class="w-100">
                 </div>
             </div>
 
-            <div class="col-md-2" data-aos="zoom-out" data-aos-delay="400">
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="400">
                 <div class="feature-box d-flex align-items-center mb-5">
                     <img src="{{ asset('rtech/images/information_technology/logos/reactjs.png') }}" alt="reactjs"
                         class="w-100">
@@ -388,33 +388,33 @@
         </div>
 
         <div class="row align-self-center gy-4 d-flex justify-content-center">
-            <div class="col-md-2" data-aos="zoom-out" data-aos-delay="200">
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
                 <div class="feature-box d-flex align-items-center mb-5">
                     <img src="{{ asset('rtech/images/information_technology/logos/php.png') }}" alt="php" class="w-100">
                 </div>
             </div>
 
-            <div class="col-md-2" data-aos="zoom-out" data-aos-delay="300">
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
                 <div class="feature-box d-flex align-items-center mb-5">
                     <img src="{{ asset('rtech/images/information_technology/logos/laravel.png') }}" alt="laravel"
                         class="w-100">
                 </div>
             </div>
 
-            <div class="col-md-2" data-aos="zoom-out" data-aos-delay="400">
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="400">
                 <div class="feature-box d-flex align-items-center mb-5">
                     <img src="{{ asset('rtech/images/information_technology/logos/nodejs.png') }}" alt="nodejs"
                         class="w-100">
                 </div>
             </div>
-            <div class="col-md-2" data-aos="zoom-out" data-aos-delay="200">
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
                 <div class="feature-box d-flex align-items-center mb-5">
                     <img src="{{ asset('rtech/images/information_technology/logos/mysql.png') }}" alt="mysql"
                         class="w-100">
                 </div>
             </div>
 
-            <div class="col-md-2" data-aos="zoom-out" data-aos-delay="300">
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
                 <div class="feature-box d-flex align-items-center mb-5">
                     <img src="{{ asset('rtech/images/information_technology/logos/mongo_db.png') }}" alt="mongo_db"
                         class="w-100">

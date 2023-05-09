@@ -6,14 +6,14 @@
     <div class="container-fluid p-5" data-aos="zoom-out" data-aos-delay="100">
         <div class="row">
             <div class="col-md-7 col-sm-6">
-                <img src="{{ asset('rtech/images/information_technology/web-design-4.png') }}" alt="rtech_web_dev"
-                    class="web_dev_hero_img">
+                <div class="">
+                    <h1 class="text-black">Welcome to <span>Rtech Web Design & Web Development</span></h1>
+                    <span class="text-black">Let the whole world know about your brand with a unique and
+                        performance-driven website.</span>
+                </div>
             </div>
             <div class="col-md-5 col-sm-6 d-flex justify-content-center align-items-center">
-                <div class="">
-                    <h1>Welcome to <span>Rtech Web Design & Web Development</span></h1>
-                    <span>Let the whole world know about your brand with a unique and performance-driven website.</span>
-                </div>
+
             </div>
         </div>
     </div>
@@ -34,8 +34,8 @@
 
     .hero-animated {
         width: 100%;
-        min-height: 50vh;
-        background: url('../rtech/images/information_technology/background_3.jpg');
+        min-height: 60vh;
+        background: url('../rtech/images/information_technology/graphic_design/background_1.jpg');
         background-size: cover;
         position: relative;
         padding: 120px 0 60px;

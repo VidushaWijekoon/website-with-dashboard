@@ -4,7 +4,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
         <li class="nav-item">
-            <a class="nav-link " href="index.html">
+            <a class="nav-link " href="{{ route('dashboard.index') }}">
                 <i class="fa-solid fa-grip"></i>
                 <span>Dashboard</span>
             </a>
@@ -18,12 +18,12 @@
             </a>
             <ul id="posts" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="#">
+                    <a href="{{ route('posts.create') }}">
                         <i class="fa-regular fa-circle"></i><span>Create Posts</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="{{ route('posts.index') }}">
                         <i class="fa-regular fa-circle"></i><span>View Posts</span>
                     </a>
                 </li>
@@ -31,11 +31,18 @@
         </li>
 
         <li class="nav-item">
+            <a href="{{ route('category.index') }}" class="nav-link collapsed">
+                <i class="fa-solid fa-table-list"></i>
+                <span>Categories</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
             <a href="{{ route('contact_us_messages') }}" class="nav-link collapsed">
                 <i class="fa-solid fa-message"></i>
                 <span>Client Messages</span>
             </a>
-        </li><!-- End Profile Page Nav -->
+        </li>
 
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#clients" data-bs-toggle="collapse" href="#">
@@ -45,6 +52,42 @@
                 <li>
                     <a href="icons-bootstrap.html">
                         <i class="fa-regular fa-circle"></i><span>View Clients</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#sales" data-bs-toggle="collapse" href="#">
+                <i class="fa-solid fa-receipt"></i><span>Sales</span><i class="fa-solid fa-chevron-down ms-auto"></i>
+            </a>
+            <ul id="sales" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="icons-bootstrap.html">
+                        <i class="fa-regular fa-circle"></i><span>Create Quatation</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="icons-bootstrap.html">
+                        <i class="fa-regular fa-circle"></i><span>View Quatations</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#accounts" data-bs-toggle="collapse" href="#">
+                <i class="fa-solid fa-coins"></i><span>Accounts</span><i class="fa-solid fa-chevron-down ms-auto"></i>
+            </a>
+            <ul id="accounts" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="icons-bootstrap.html">
+                        <i class="fa-regular fa-circle"></i><span>Create Invoice</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="icons-bootstrap.html">
+                        <i class="fa-regular fa-circle"></i><span>View Invoices</span>
                     </a>
                 </li>
             </ul>
