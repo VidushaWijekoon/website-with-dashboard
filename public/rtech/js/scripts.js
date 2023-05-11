@@ -232,10 +232,10 @@
     });
 
     /**
-     * Clients Slider
+     * Testimonials slider
      */
-    new Swiper('.clients-slider', {
-        speed: 400,
+    new Swiper('.testimonials-slider', {
+        speed: 600,
         loop: true,
         autoplay: {
             delay: 5000,
@@ -249,22 +249,15 @@
         },
         breakpoints: {
             320: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 40
             },
-            480: {
+
+            1200: {
                 slidesPerView: 3,
-                spaceBetween: 60
-            },
-            640: {
-                slidesPerView: 4,
-                spaceBetween: 80
-            },
-            992: {
-                slidesPerView: 6,
-                spaceBetween: 120
             }
         }
     });
+
 
 })()

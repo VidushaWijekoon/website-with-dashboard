@@ -31,8 +31,10 @@ Route::prefix('/')->group(function () {
         Route::get('/', 'index')->name('rtech.index');
         Route::post('/', 'store')->name('rtech.store');
     });
+
     Route::get('technical_services', [TechnicalServicesController::class, 'index'])->name('technical_services.index');
     Route::get('science_technology', [ScienceTechnologyController::class, 'index'])->name('science_technology.index');
+    Route::get('single_post', [ScienceTechnologyController::class, 'single_post'])->name('science_technology.single_post');
     Route::get('event_management', [EventManagementController::class, 'index'])->name('event_management.index');
 });
 
@@ -55,7 +57,7 @@ Route::prefix('admin/')->middleware('auth', 'isAdmin')->group(function () {
     Route::controller(PostsController::class)->group(function () {
         Route::get('/posts', 'index')->name('posts.index');
         Route::get('/posts/create', 'create')->name('posts.create');
-        Route::get('/posts/{post_id}/edit', 'edit')->name('posts.edit');
+        Route::post('/posts', 'store')->name('posts.store');
     });
 
     Route::controller(CategoryController::class)->group(function () {

@@ -12,4 +12,9 @@ class ScienceTechnologyController extends Controller
     {
         return view('pages.rtech.science_technology');
     }
+
+    public function single_post()
+    {
+        return view('pages.rtech.posts.index');
+    }
 }

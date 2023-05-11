@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('category');
+            $table->bigInteger('category_id')->unsigned()->nullable();
             $table->string('title');
             $table->longText('post_description');
             $table->string('file');
@@ -21,6 +21,8 @@ return new class extends Migration
             $table->string('meta_title');
             $table->longText('meta_description');
             $table->tinyInteger('status')->default('0');
+
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -35,10 +35,10 @@
                             <td>{{ $category->code }}</td>
                             <td>
                                 @if ($category->status == '1')
-                                <span class="badge badge-primary bg-success">Hide</span>
+                                <span class="badge badge-primary bg-danger">Hide</span>
                                 @endif
                                 @if ($category->status == '0')
-                                <span class="badge badge-primary bg-danger">Show</span>
+                                <span class="badge badge-primary bg-primary">Show</span>
                                 @endif
                             </td>
                             <td>
