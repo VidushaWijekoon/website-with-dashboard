@@ -282,47 +282,99 @@
 </section>
 <!-- End Portfolio Section -->
 
-<!-- ======= Clients Section ======= -->
-<section id="clients" class="clients">
-
+<!-- ======= Features Section ======= -->
+<section id="features" class="features">
     <div class="container" data-aos="fade-up">
-
         <header class="section-header p-5">
-            <h2 class="d-flex justify-content-center" style="color: #112D4E; font-weight: bold">THE CUTTING EDGE
-                TECHNOLOGIES</h2>
-            <span class="d-flex justify-content-center" style="color: #112D4E;">Empowering you with the best
-                technology</span>
+            <h2 class="d-flex justify-content-center" style="color: #112D4E; font-weight: bold">FUELED BY
+                POWERFUL TECHNOLOGY!</h2>
+            <p class="text-center text-black">At Weblankan, we use the most modern and innovative pieces of technology
+                to help serve you better!</p>
         </header>
 
-        <div class="clients-slider swiper">
-            <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide"><img src="../rtech/images/information_technology/logos/html_css.png"
-                        class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="../rtech/images/information_technology/logos/bootstrap.png"
-                        class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="../rtech/images/information_technology/logos/tailwind.png"
-                        class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="../rtech/images/information_technology/logos/javascript.png"
-                        class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="../rtech/images/information_technology/logos/jquery.png"
-                        class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="../rtech/images/information_technology/logos/reactjs.png"
-                        class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="../rtech/images/information_technology/logos/php.png"
-                        class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="../rtech/images/information_technology/logos/laravel.png"
-                        class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="../rtech/images/information_technology/logos/nodejs.png"
-                        class="img-fluid" alt=""></div>
-                <div class="swiper-slide"><img src="../rtech/images/information_technology/logos/wordpress.png"
-                        class="img-fluid" alt=""></div>
+        <div class="row align-self-center gy-4">
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center mb-5">
+                    <img src="{{ asset('rtech/images/information_technology/logos/html_css.png') }}" alt="html_css"
+                        class="w-100">
+                </div>
             </div>
-            <div class="swiper-pagination"></div>
+
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center mb-5">
+                    <img src="{{ asset('rtech/images/information_technology/logos/bootstrap.png') }}"
+                        alt="site-loading-icon" class="w-100">
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="400">
+                <div class="feature-box d-flex align-items-center mb-5">
+                    <img src="{{ asset('rtech/images/information_technology/logos/javascript.png') }}" alt="javascript"
+                        class="w-100">
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center mb-5">
+                    <img src="{{ asset('rtech/images/information_technology/logos/jquery.png') }}" alt="jquery"
+                        class="w-100">
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center mb-5">
+                    <img src="{{ asset('rtech/images/information_technology/logos/tailwind.png') }}" alt="tailwind"
+                        class="w-100">
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="400">
+                <div class="feature-box d-flex align-items-center mb-5">
+                    <img src="{{ asset('rtech/images/information_technology/logos/reactjs.png') }}" alt="reactjs"
+                        class="w-100">
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-self-center gy-4 d-flex justify-content-center">
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center mb-5">
+                    <img src="{{ asset('rtech/images/information_technology/logos/php.png') }}" alt="php" class="w-100">
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center mb-5">
+                    <img src="{{ asset('rtech/images/information_technology/logos/laravel.png') }}" alt="laravel"
+                        class="w-100">
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="400">
+                <div class="feature-box d-flex align-items-center mb-5">
+                    <img src="{{ asset('rtech/images/information_technology/logos/nodejs.png') }}" alt="nodejs"
+                        class="w-100">
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center mb-5">
+                    <img src="{{ asset('rtech/images/information_technology/logos/mysql.png') }}" alt="mysql"
+                        class="w-100">
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center mb-5">
+                    <img src="{{ asset('rtech/images/information_technology/logos/mongo_db.png') }}" alt="mongo_db"
+                        class="w-100">
+                </div>
+            </div>
         </div>
     </div>
+    <!-- / row -->
 
+    </div>
 </section>
-<!-- End Clients Section -->
+<!-- End Features Section -->
 
 <!-- ======= On Focus Section ======= -->
 <section id="dev" class="dev mt-4">
