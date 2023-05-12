@@ -106,7 +106,7 @@
 </footer>
 <!-- End Footer -->
 
-<a href="https://wa.me/+94768871747" class="whatsapp d-flex align-items-center justify-content-center" target="_blank">
+<a href="https://wa.me/+971529843844" class="whatsapp d-flex align-items-center justify-content-center" target="_blank">
     <i class="fa-brands fa-whatsapp"></i>
 </a>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center">

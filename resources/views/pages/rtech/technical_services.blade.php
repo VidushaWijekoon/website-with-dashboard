@@ -8,9 +8,8 @@
             <div class="col-md-5 col-sm-6 d-flex justify-content-center align-items-center">
                 <div class="">
                     <h1>Welcome to
-                        <span>Rtech Custom Software Development</span>
+                        <span>Rtech Technical Services</span>
                     </h1>
-                    <span>We create purposeful software solutions that deliver real value to your brand.</span>
                 </div>
             </div>
             <div class="col-md-7 col-sm-6">
@@ -485,15 +484,6 @@
 @endsection
 
 <style>
-    .bg-img {
-        width: 100%;
-        min-height: 50vh;
-        background: url('../rtech/images/information_technology/background_5.jpg');
-        background-size: cover;
-        position: relative;
-        padding: 70px 0 60px;
-    }
-
     /*--------------------------------------------------------------
     # Animated Hero Section
     --------------------------------------------------------------*/
@@ -507,8 +497,8 @@
 
     .hero-animated {
         width: 100%;
-        min-height: 50vh;
-        background: url('../rtech/images/information_technology/background_5.jpg');
+        min-height: 80vh;
+        background: url('../rtech/images/background_8.jpg');
         background-size: cover;
         position: relative;
         padding: 70px 0 60px;
