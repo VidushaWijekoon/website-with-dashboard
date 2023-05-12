@@ -365,8 +365,6 @@
     </div>
 </section>
 
-
-
 @endsection
 
 <style>

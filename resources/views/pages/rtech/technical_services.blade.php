@@ -237,183 +237,237 @@
 </section>
 <!-- End Features Section -->
 
-<!-- ======= Featured Services Section ======= -->
-<section id="featured-services" class="featured-services p-5">
+<!-- ======= Services Section 1 ======= -->
+<section id="service" class="services pt-0 mb-5">
     <div class="container" data-aos="fade-up">
+
         <header class="section-header p-5">
-            <h2 class="d-flex justify-content-center" style="color: #112D4E; font-weight: bold">OTHER SERVICES</h2>
-
+            <h2 class="d-flex justify-content-center text-uppercase" style="color: #112D4E; font-weight: bold">Rtech
+                International
+                Technical Service Offers</h2>
         </header>
-        <div class="row justify-content-center p-4">
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('rtech/images/science_technology/sample/blog-1.jpg') }}" class="card-img-top"
-                        alt="...">
-                </div>
-            </div>
 
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('rtech/images/science_technology/sample/blog-1.jpg') }}" class="card-img-top"
-                        alt="...">
-                </div>
-            </div>
+        <div class="row gy-4">
 
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('rtech/images/science_technology/sample/blog-1.jpg') }}" class="card-img-top"
-                        alt="...">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ asset('rtech/images/science_technology/services/Domal-Aluminium-Partitions.jpg') }}"
+                            alt="service_1" class="img-fluid">
+                    </div>
+                    <h3>ALUMINIUM WORK</h3>
                 </div>
-            </div>
+            </div><!-- End Card Item -->
 
-        </div>
-
-        <div class="row justify-content-center p-4">
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('rtech/images/science_technology/sample/blog-1.jpg') }}" class="card-img-top"
-                        alt="...">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ asset('rtech/images/science_technology/services/structural-steel-fabrication.jpg') }}"
+                            alt="service_1" class="img-fluid">
+                    </div>
+                    <h3>STEEL FABRICATION WORK</h3>
                 </div>
-            </div>
+            </div><!-- End Card Item -->
 
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('rtech/images/science_technology/sample/blog-1.jpg') }}" class="card-img-top"
-                        alt="...">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ asset('rtech/images/science_technology/services/office-cabin-partition6.webp') }}"
+                            alt="service_1" class="img-fluid">
+                    </div>
+                    <h3>GYPSUM PARTION WORK</h3>
                 </div>
-            </div>
+            </div><!-- End Card Item -->
 
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('rtech/images/science_technology/sample/blog-1.jpg') }}" class="card-img-top"
-                        alt="...">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ asset('rtech/images/science_technology/services/blue-paint.webp') }}"
+                            alt="service_1" class="img-fluid">
+                    </div>
+                    <h3>PAINTING WORK</h3>
                 </div>
-            </div>
+            </div><!-- End Card Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ asset('rtech/images/science_technology/services/carpentry-cn-5089.jpg') }}"
+                            alt="service_1" class="img-fluid">
+                    </div>
+                    <h3>CARPENTRY WORK</h3>
+                </div>
+            </div><!-- End Card Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ asset('rtech/images/science_technology/services/Wall-and-floor-tiler.jpg') }}"
+                            alt="service_1" class="img-fluid">
+                    </div>
+                    <h3>FLOOR AND WALL TAILING</h3>
+                </div>
+            </div><!-- End Card Item -->
 
         </div>
 
     </div>
 </section>
-<!-- End Featured Services Section -->
+<!-- End Services Section -->
 
-<!-- ======= Featured Services Section ======= -->
-<section id="featured-services" class="featured-services p-5">
+<!-- ======= Services Section 2 ======= -->
+<section id="service" class="services pt-0 mb-5">
     <div class="container" data-aos="fade-up">
+
         <header class="section-header p-5">
-            <h2 class="d-flex justify-content-center" style="color: #112D4E; font-weight: bold">PLASTERING</h2>
-
+            <h2 class="d-flex justify-content-center text-uppercase" style="color: #112D4E; font-weight: bold">Rtech
+                International Technical PLASTERING</h2>
         </header>
-        <div class="row justify-content-center p-4">
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('rtech/images/science_technology/sample/blog-1.jpg') }}" class="card-img-top"
-                        alt="...">
-                </div>
-            </div>
 
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('rtech/images/science_technology/sample/blog-1.jpg') }}" class="card-img-top"
-                        alt="...">
-                </div>
-            </div>
+        <div class="row gy-4">
 
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('rtech/images/science_technology/sample/blog-1.jpg') }}" class="card-img-top"
-                        alt="...">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ asset('rtech/images/science_technology/services/CLAY-PLASTERING.webp') }}"
+                            alt="service_1" class="img-fluid">
+                    </div>
+                    <h3>CLAY PLASTERING</h3>
                 </div>
-            </div>
+            </div><!-- End Card Item -->
 
-        </div>
-
-        <div class="row justify-content-center p-4">
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('rtech/images/science_technology/sample/blog-1.jpg') }}" class="card-img-top"
-                        alt="...">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ asset('rtech/images/science_technology/services/GYPSUM-PLASTERING.jpg') }}"
+                            alt="service_1" class="img-fluid">
+                    </div>
+                    <h3>GYPSUM PLASTERING</h3>
                 </div>
-            </div>
+            </div><!-- End Card Item -->
 
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('rtech/images/science_technology/sample/blog-1.jpg') }}" class="card-img-top"
-                        alt="...">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ asset('rtech/images/science_technology/services/lime-plaster-being-applied.jpg') }}"
+                            alt="service_1" class="img-fluid">
+                    </div>
+                    <h3>LIME PLASTERING</h3>
                 </div>
-            </div>
+            </div><!-- End Card Item -->
 
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('rtech/images/science_technology/sample/blog-1.jpg') }}" class="card-img-top"
-                        alt="...">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ asset('rtech/images/science_technology/services/CEMENT-PLASTERING.jpg') }}"
+                            alt="service_1" class="img-fluid">
+                    </div>
+                    <h3>CEMENT PLASTERING</h3>
                 </div>
-            </div>
+            </div><!-- End Card Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ asset('rtech/images/science_technology/services/homeguide-red-brick-wall-privacy-fence.jpg') }}"
+                            alt="service_1" class="img-fluid">
+                    </div>
+                    <h3>BRICKING WORK</h3>
+                </div>
+            </div><!-- End Card Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ asset('rtech/images/science_technology/services/circular-column.jpg') }}"
+                            alt="service_1" class="img-fluid">
+                    </div>
+                    <h3>COLUMNS</h3>
+                </div>
+            </div><!-- End Card Item -->
 
         </div>
 
     </div>
 </section>
-<!-- End Featured Services Section -->
+<!-- End Services Section -->
 
-<!-- ======= Featured Services Section ======= -->
-<section id="featured-services" class="featured-services p-5">
+<!-- ======= Services Section 3 ======= -->
+<section id="service" class="services pt-0 mb-5">
     <div class="container" data-aos="fade-up">
+
         <header class="section-header p-5">
-            <h2 class="d-flex justify-content-center" style="color: #112D4E; font-weight: bold">INTERIOR DECORATION
-                WORKS</h2>
-
+            <h2 class="d-flex justify-content-center text-uppercase" style="color: #112D4E; font-weight: bold">Rtech
+                International Technical interior decoration work</h2>
         </header>
-        <div class="row justify-content-center p-4">
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('rtech/images/science_technology/sample/blog-1.jpg') }}" class="card-img-top"
-                        alt="...">
-                </div>
-            </div>
 
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('rtech/images/science_technology/sample/blog-1.jpg') }}" class="card-img-top"
-                        alt="...">
-                </div>
-            </div>
+        <div class="row gy-4">
 
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('rtech/images/science_technology/sample/blog-1.jpg') }}" class="card-img-top"
-                        alt="...">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ asset('rtech/images/science_technology/services/pillars.jpg') }}" alt="service_1"
+                            class="img-fluid">
+                    </div>
+                    <h3>PILLAR WORK</h3>
                 </div>
-            </div>
+            </div><!-- End Card Item -->
 
-        </div>
-
-        <div class="row justify-content-center p-4">
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('rtech/images/science_technology/sample/blog-1.jpg') }}" class="card-img-top"
-                        alt="...">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ asset('rtech/images/science_technology/services/Paver-Block.jpg') }}"
+                            alt="service_1" class="img-fluid">
+                    </div>
+                    <h3>PAVING BLOCKS - ROAD WORKS</h3>
                 </div>
-            </div>
+            </div><!-- End Card Item -->
 
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('rtech/images/science_technology/sample/blog-1.jpg') }}" class="card-img-top"
-                        alt="...">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ asset('rtech/images/science_technology/services/Landscaping-Work-Dubai.jpg') }}"
+                            alt="service_1" class="img-fluid">
+                    </div>
+                    <h3>LANDSCAPING WORKS</h3>
                 </div>
-            </div>
+            </div><!-- End Card Item -->
 
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('rtech/images/science_technology/sample/blog-1.jpg') }}" class="card-img-top"
-                        alt="...">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ asset('rtech/images/science_technology/services/garden-color-palette.jpg') }}"
+                            alt="service_1" class="img-fluid">
+                    </div>
+                    <h3>GARDENING ARRAGEMENTS</h3>
                 </div>
-            </div>
+            </div><!-- End Card Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ asset('rtech/images/science_technology/services/False-ceiling.jpg') }}"
+                            alt="service_1" class="img-fluid">
+                    </div>
+                    <h3>FALSE CEILING</h3>
+                </div>
+            </div><!-- End Card Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{{ asset('rtech/images/science_technology/services/Wall-Cladding_0000_Wall-Cladding.jpg') }}"
+                            alt="service_1" class="img-fluid">
+                    </div>
+                    <h3>WALL CLADDING WORKS</h3>
+                </div>
+            </div><!-- End Card Item -->
 
         </div>
 
     </div>
 </section>
-<!-- End Featured Services Section -->
+<!-- End Services Section -->
 
 <!-- ======= Featured Services Section ======= -->
 <section id="featured-services" class="featured-services" style="background:#333">
@@ -654,8 +708,8 @@
     }
 
     /*--------------------------------------------------------------
-# Featured Services
---------------------------------------------------------------*/
+    # Featured Services
+    --------------------------------------------------------------*/
     .featured-services .icon-box {
         padding: 30px;
         position: relative;
@@ -765,5 +819,60 @@
 
     .features .features-item p:last-child {
         margin-bottom: 0;
+    }
+
+    /*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+
+    .services .card {
+        border: 1px solid rgba(14, 29, 52, 0.15);
+        background: #fff;
+        position: relative;
+        border-radius: 0;
+        height: 100%;
+    }
+
+    .services .card .card-img {
+        overflow: hidden;
+        margin-bottom: 15px;
+        border-radius: 0;
+    }
+
+    .services .card .card-img img {
+        transition: 0.3s ease-in-out;
+    }
+
+    .services .card h3 {
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 5px;
+        padding: 10px 30px;
+        text-transform: uppercase;
+        color: #112D4E;
+    }
+
+    .services .card h3:hover {
+        color: #02a4d6;
+    }
+
+    .services .card a {
+        color: #112D4E;
+        transition: 0.3;
+    }
+
+    .services .card a:hover {
+        color: var(--color-primary);
+    }
+
+    .services .card p {
+        padding: 0 30px;
+        margin-bottom: 30px;
+        font-size: 15px;
+        color: #112D4E;
+    }
+
+    .services .card:hover .card-img img {
+        transform: scale(1.1);
     }
 </style>

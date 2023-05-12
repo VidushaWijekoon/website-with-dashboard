@@ -163,9 +163,3 @@
     </div>
 </header>
 <!-- End Header -->
-
-<style>
-    .navbar .dropdown ul a {
-        border-bottom: 1px solid #3F72AF;
-    }
-</style>
