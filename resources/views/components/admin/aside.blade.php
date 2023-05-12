@@ -50,7 +50,7 @@
             </a>
             <ul id="clients" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="icons-bootstrap.html">
+                    <a href="#">
                         <i class="fa-regular fa-circle"></i><span>View Clients</span>
                     </a>
                 </li>
@@ -63,12 +63,12 @@
             </a>
             <ul id="sales" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="icons-bootstrap.html">
+                    <a href="#">
                         <i class="fa-regular fa-circle"></i><span>Create Quatation</span>
                     </a>
                 </li>
                 <li>
-                    <a href="icons-bootstrap.html">
+                    <a href="#">
                         <i class="fa-regular fa-circle"></i><span>View Quatations</span>
                     </a>
                 </li>
@@ -81,13 +81,31 @@
             </a>
             <ul id="accounts" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="icons-bootstrap.html">
+                    <a href="#">
                         <i class="fa-regular fa-circle"></i><span>Create Invoice</span>
                     </a>
                 </li>
                 <li>
-                    <a href="icons-bootstrap.html">
+                    <a href="#">
                         <i class="fa-regular fa-circle"></i><span>View Invoices</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#employee" data-bs-toggle="collapse" href="#">
+                <i class="fa-solid fa-users-line"></i><span>HR</span><i class="fa-solid fa-chevron-down ms-auto"></i>
+            </a>
+            <ul id="employee" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-circle"></i><span>Employees</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-circle"></i><span>Attendance</span>
                     </a>
                 </li>
             </ul>
@@ -99,7 +117,7 @@
             </a>
             <ul id="users" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="icons-bootstrap.html">
+                    <a href="#">
                         <i class="fa-regular fa-circle"></i><span>View Users</span>
                     </a>
                 </li>

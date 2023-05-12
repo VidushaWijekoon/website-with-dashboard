@@ -1,5 +1,5 @@
 @extends('layouts.rtech.app')
-
+@section('title', 'Rtech | Science & Technology')
 @section('content')
 
 <!-- ======= Hero Section ======= -->
@@ -61,7 +61,6 @@
 
 <!-- ======= Recent Blog Posts Section ======= -->
 <section id="recent-blog-posts" class="recent-blog-posts">
-
     <div class="container" data-aos="fade-up">
 
         <header class="section-header p-5 d-flex justify-content-center text-center">
@@ -73,9 +72,7 @@
             </div>
         </header>
 
-
         <div class=" row">
-
             <div class="col-lg-4">
                 <div class="post-box">
                     <div class="post-img"><img src="{{ asset('rtech/images/science_technology/sample/blog-1.jpg') }}"

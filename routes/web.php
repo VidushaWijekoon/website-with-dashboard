@@ -1,9 +1,12 @@
 <?php
 
+use App\Http\Controllers\Admin\AccountsController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ContactUsController;
 use App\Http\Controllers\Admin\DashboardHomeController;
+use App\Http\Controllers\Admin\EmployeeController;
 use App\Http\Controllers\Admin\PostsController;
+use App\Http\Controllers\Admin\SalesController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Rtech\RtechHomeController;
@@ -67,6 +70,21 @@ Route::prefix('admin/')->middleware('auth', 'isAdmin')->group(function () {
         Route::get('/category/{category}/edit', 'edit')->name('category.edit');
         Route::put('/category/{category}/', 'update')->name('category.update');
         Route::get('/category/{category}/delete', 'delete')->name('category.delete');
+    });
+
+    Route::controller(SalesController::class)->group(function () {
+        Route::get('/sales', 'index')->name('sales.index');
+        Route::get('/sales/create', 'create')->name('sales.create');
+    });
+
+    Route::controller(AccountsController::class)->group(function () {
+        Route::get('/accounts', 'index')->name('accounts.index');
+        Route::get('/accounts/create', 'create')->name('accounts.create');
+    });
+
+    Route::controller(EmployeeController::class)->group(function () {
+        Route::get('/employee', 'index')->name('employee.index');
+        Route::get('/employee/create', 'create')->name('employee.create');
     });
 });
 

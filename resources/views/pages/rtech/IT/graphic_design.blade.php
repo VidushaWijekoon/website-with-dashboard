@@ -1,5 +1,5 @@
 @extends('layouts.rtech.app')
-
+@section('title', 'Rtech | Graphic Design')
 @section('content')
 <!-- ======= Hero Section ======= -->
 <section id="hero hero-animated" class=" hero-animated d-flex align-items-center">

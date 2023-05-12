@@ -1,5 +1,5 @@
 @extends('layouts.rtech.app')
-
+@section('title', 'Rtech | Home')
 @section('content')
 @if (session('message'))
 <h6 class="alert alert-success mb-2">{{ session('message') }}</h6>
