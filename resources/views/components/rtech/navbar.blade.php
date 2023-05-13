@@ -140,7 +140,11 @@
                         </li>
                         <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a></li>
 
-                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-envelope"></i> My Posts</a></li>
+                        <li>
+                            <a class="dropdown-item" href="{{ route('posts.index') }}">
+                                <i class="fa-solid fa-envelope"></i> My Posts
+                            </a>
+                        </li>
 
                 </li>
                 <li>

@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ContactUsController;
 use App\Http\Controllers\Admin\DashboardHomeController;
 use App\Http\Controllers\Admin\EmployeeController;
+use App\Http\Controllers\Admin\EmployeesController;
 use App\Http\Controllers\Admin\PostsController;
 use App\Http\Controllers\Admin\SalesController;
 use Illuminate\Support\Facades\Auth;
@@ -37,7 +38,7 @@ Route::prefix('/')->group(function () {
 
     Route::get('technical_services', [TechnicalServicesController::class, 'index'])->name('technical_services.index');
     Route::get('science_technology', [ScienceTechnologyController::class, 'index'])->name('science_technology.index');
-    Route::get('single_post', [ScienceTechnologyController::class, 'single_post'])->name('science_technology.single_post');
+    Route::get('science_technology/single_post', [ScienceTechnologyController::class, 'single_post'])->name('science_technology.single_post');
     Route::get('event_management', [EventManagementController::class, 'index'])->name('event_management.index');
 });
 
@@ -82,12 +83,10 @@ Route::prefix('admin/')->middleware('auth', 'isAdmin')->group(function () {
         Route::get('/accounts/create', 'create')->name('accounts.create');
     });
 
-    Route::controller(EmployeeController::class)->group(function () {
-        Route::get('/employee', 'index')->name('employee.index');
+    Route::controller(EmployeesController::class)->group(function () {
+        Route::get('/employee', 'index')->name('employees.index');
         Route::get('/employee/create', 'create')->name('employee.create');
     });
 });
 
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

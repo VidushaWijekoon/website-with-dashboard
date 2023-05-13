@@ -91,10 +91,8 @@ h6 {
 @media screen and (max-width: 600px) {
     #topbar {
         visibility: hidden;
-        /* clear: both;
-        display: none; */
         padding: 0;
-        margin: 0;
+        margin: -7px;
     }
 }
 

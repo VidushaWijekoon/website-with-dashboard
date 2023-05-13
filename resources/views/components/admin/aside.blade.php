@@ -63,6 +63,11 @@
             </a>
             <ul id="sales" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
+                    <a href="{{ route('sales.index') }}">
+                        <i class="fa-regular fa-circle"></i><span>Sales</span>
+                    </a>
+                </li>
+                <li>
                     <a href="#">
                         <i class="fa-regular fa-circle"></i><span>Create Quatation</span>
                     </a>
@@ -80,6 +85,11 @@
                 <i class="fa-solid fa-coins"></i><span>Accounts</span><i class="fa-solid fa-chevron-down ms-auto"></i>
             </a>
             <ul id="accounts" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="{{ route('accounts.index') }}">
+                        <i class="fa-regular fa-circle"></i><span>Accounts</span>
+                    </a>
+                </li>
                 <li>
                     <a href="#">
                         <i class="fa-regular fa-circle"></i><span>Create Invoice</span>
@@ -99,7 +109,7 @@
             </a>
             <ul id="employee" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="#">
+                    <a href="{{ route('employees.index') }}">
                         <i class="fa-regular fa-circle"></i><span>Employees</span>
                     </a>
                 </li>
