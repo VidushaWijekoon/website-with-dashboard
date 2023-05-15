@@ -127,7 +127,7 @@
             </a>
             <ul id="users" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="#">
+                    <a href="{{ route('users.index') }}">
                         <i class="fa-regular fa-circle"></i><span>View Users</span>
                     </a>
                 </li>

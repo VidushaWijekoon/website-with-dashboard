@@ -22,23 +22,10 @@ class ContactUsFormRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'contact_us_messanger_fullname' => [
-                'required',
-                'string'
-            ],
-            'contact_us_title' => [
-                'required',
-                'string'
-            ],
-            'contact_us_subject' => [
-                'required',
-                'string'
-            ],
-            'contact_us_message' => [
-                'required',
-                'string',
-                'max:500'
-            ]
+            'contact_us_messanger_fullname' => ['required', 'string'],
+            'contact_us_title' => ['required', 'string'],
+            'contact_us_subject' => ['required', 'string'],
+            'contact_us_message' => ['required', 'string', 'max:500']
         ];
     }
 }

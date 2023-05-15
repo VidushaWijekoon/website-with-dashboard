@@ -11,6 +11,7 @@
     <!-- /.card-header -->
     <div class="card-body">
         <form action="{{ route('posts.index') }}" method="POST" enctype="multipart/form-data">
+            @csrf
             <div class="row">
                 <div class="col-sm-6">
                     <div class="form-group mb-3">
@@ -44,7 +45,7 @@
             <div class="row">
                 <div class="col-sm-12 mb-3">
                     <label class="mb-1">File <span class="text-danger">*</span></label>
-                    <input type="file" name="file" class="form-control form-control-sm rounded-0"
+                    <input type="file" name="post_file" class="form-control form-control-sm rounded-0"
                         placeholder="Post Title">
                     @error('file') <small class="text-danger">{{ $message }}</small> @enderror
                 </div>

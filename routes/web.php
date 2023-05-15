@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\EmployeeController;
 use App\Http\Controllers\Admin\EmployeesController;
 use App\Http\Controllers\Admin\PostsController;
 use App\Http\Controllers\Admin\SalesController;
+use App\Http\Controllers\Admin\UsersController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Rtech\RtechHomeController;
@@ -36,17 +37,17 @@ Route::prefix('/')->group(function () {
         Route::post('/', 'store')->name('rtech.store');
     });
 
-    Route::get('technical_services', [TechnicalServicesController::class, 'index'])->name('technical_services.index');
-    Route::get('science_technology', [ScienceTechnologyController::class, 'index'])->name('science_technology.index');
-    Route::get('science_technology/single_post', [ScienceTechnologyController::class, 'single_post'])->name('science_technology.single_post');
-    Route::get('event_management', [EventManagementController::class, 'index'])->name('event_management.index');
+    Route::get('technical-services', [TechnicalServicesController::class, 'index'])->name('technical_services.index');
+    Route::get('science-technology', [ScienceTechnologyController::class, 'index'])->name('science_technology.index');
+    Route::get('science-technology/single_post', [ScienceTechnologyController::class, 'single_post'])->name('science_technology.single_post');
+    Route::get('event-management', [EventManagementController::class, 'index'])->name('event_management.index');
 });
 
 Route::prefix('it/')->group(function () {
-    Route::get('web_development', [WebDevelopmentController::class, 'index'])->name('web_development.index');
-    Route::get('software_development', [SoftwareDevelopmentController::class, 'index'])->name('software_development.index');
-    Route::get('graphic_design', [GraphicDesignController::class, 'index'])->name('graphic_design.index');
-    Route::get('digital_marketing', [DigitialMarketingController::class, 'index'])->name('digital_marketing.index');
+    Route::get('web-development', [WebDevelopmentController::class, 'index'])->name('web_development.index');
+    Route::get('software-development', [SoftwareDevelopmentController::class, 'index'])->name('software_development.index');
+    Route::get('graphic-design', [GraphicDesignController::class, 'index'])->name('graphic_design.index');
+    Route::get('digital-marketing', [DigitialMarketingController::class, 'index'])->name('digital_marketing.index');
 });
 
 Route::prefix('admin/')->middleware('auth', 'isAdmin')->group(function () {
@@ -54,7 +55,7 @@ Route::prefix('admin/')->middleware('auth', 'isAdmin')->group(function () {
 
     // Client Contact US Messages
     Route::controller(ContactUsController::class)->group(function () {
-        Route::get('contact_us_messages', 'index')->name('contact_us_messages');
+        Route::get('contact-us-messages', 'index')->name('contact_us_messages');
     });
 
     // Posts
@@ -86,6 +87,12 @@ Route::prefix('admin/')->middleware('auth', 'isAdmin')->group(function () {
     Route::controller(EmployeesController::class)->group(function () {
         Route::get('/employee', 'index')->name('employees.index');
         Route::get('/employee/create', 'create')->name('employee.create');
+    });
+
+    Route::controller(UsersController::class)->group(function () {
+        Route::get('/users', 'index')->name('users.index');
+        Route::get('/users/{user_id}/delete', 'destory_user')->name('users.delete');
+        Route::get('/users/{user_id}/', 'edit_user')->name('edit.user');
     });
 });
 

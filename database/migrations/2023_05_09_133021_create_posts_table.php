@@ -13,17 +13,17 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('category_id')->unsigned()->nullable();
-            $table->string('title');
+            $table->bigInteger('post_category_id')->unsigned()->nullable();
+            $table->string('post_title');
             $table->longText('post_description');
-            $table->string('file');
-            $table->string('meta_category');
-            $table->string('meta_title');
-            $table->longText('meta_description');
+            $table->string('post_file');
+            $table->string('meta_category_id');
+            $table->string('post_meta_title');
+            $table->longText('post_meta_description');
             $table->tinyInteger('status')->default('0');
-
-            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->timestamps();
+
+            // $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
         });
     }
 
