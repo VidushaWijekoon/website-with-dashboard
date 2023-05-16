@@ -19,6 +19,7 @@
         rel="stylesheet">
 
     @include('libraries.rtech.styles')
+    @stack('style')
 </head>
 
 <body>
@@ -33,6 +34,7 @@
     </main>
     @include('components.rtech.footer')
     @include('libraries.rtech.scripts')
+    @stack('scripts')
 </body>
 
 </html>

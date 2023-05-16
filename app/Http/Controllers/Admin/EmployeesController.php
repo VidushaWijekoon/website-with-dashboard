@@ -11,4 +11,9 @@ class EmployeesController extends Controller
     {
         return view('pages.admin.employees.index');
     }
+
+    public function create()
+    {
+        return view('pages.admin.employees.create');
+    }
 }

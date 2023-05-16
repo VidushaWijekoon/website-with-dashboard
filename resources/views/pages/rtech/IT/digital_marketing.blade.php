@@ -367,313 +367,315 @@
 
 @endsection
 
-<style>
-    .bg-img {
-        width: 100%;
-        min-height: 50vh;
-        background: url('../rtech/images/information_technology/background_5.jpg');
-        background-size: cover;
-        position: relative;
-        padding: 70px 0 60px;
-    }
-
-    /*--------------------------------------------------------------
-    # Animated Hero Section
-    --------------------------------------------------------------*/
-    .web_dev_hero_img {
-        background-attachment: scroll;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-    }
-
-    .hero-animated {
-        width: 100%;
-        min-height: 50vh;
-        background: url('../rtech/images/information_technology/background_5.jpg');
-        background-size: cover;
-        position: relative;
-        padding: 70px 0 60px;
-    }
-
-    .hero-animated h2 {
-        margin: 0 0 10px 0;
-        font-size: 48px;
-        font-weight: 300;
-        color: #112D4E;
-        font-family: "Poppins", sans-serif;
-    }
-
-    .hero-animated h2 span {
-        color: #fff;
-    }
-
-    .hero-animated p {
-        color: rgba(var(--color-secondary-rgb), 0.8);
-        margin: 0 0 30px 0;
-        font-size: 20px;
-        font-weight: 400;
-    }
-
-    .hero-animated .animated {
-        margin-bottom: 60px;
-        animation: up-down 2s ease-in-out infinite alternate-reverse both;
-    }
-
-    @media (min-width: 992px) {
-        .hero-animated .animated {
-            max-width: 45%;
+@push('style')
+    <style>
+        .bg-img {
+            width: 100%;
+            min-height: 50vh;
+            background: url('../rtech/images/information_technology/background_5.jpg');
+            background-size: cover;
+            position: relative;
+            padding: 70px 0 60px;
         }
-    }
-
-    @media (max-width: 991px) {
-        .hero-animated .animated {
-            max-width: 60%;
+    
+        /*--------------------------------------------------------------
+        # Animated Hero Section
+        --------------------------------------------------------------*/
+        .web_dev_hero_img {
+            background-attachment: scroll;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
         }
-    }
-
-    @media (max-width: 575px) {
-        .hero-animated .animated {
-            max-width: 80%;
+    
+        .hero-animated {
+            width: 100%;
+            min-height: 50vh;
+            background: url('../rtech/images/information_technology/background_5.jpg');
+            background-size: cover;
+            position: relative;
+            padding: 70px 0 60px;
         }
-    }
-
-    .hero-animated .btn-get-started {
-        font-size: 16px;
-        font-weight: 400;
-        display: inline-block;
-        padding: 10px 28px;
-        border-radius: 4px;
-        transition: 0.5s;
-        color: #fff;
-        background: #112D4E;
-        font-family: "Poppins", sans-serif;
-    }
-
-    .hero-animated .btn-get-started:hover {
-        background: rgba(var(--color-primary-rgb), 0.8);
-    }
-
-    .hero-animated .btn-watch-video {
-        font-size: 16px;
-        transition: 0.5s;
-        margin-left: 25px;
-        font-family: "Poppins", sans-serif;
-        color: #112D4E;
-        font-weight: 600;
-    }
-
-    .hero-animated .btn-watch-video i {
-        color: #fff;
-        font-size: 32px;
-        transition: 0.3s;
-        line-height: 0;
-        margin-right: 8px;
-    }
-
-    @media (max-width: 640px) {
+    
         .hero-animated h2 {
-            font-size: 32px;
+            margin: 0 0 10px 0;
+            font-size: 48px;
+            font-weight: 300;
+            color: #112D4E;
+            font-family: "Poppins", sans-serif;
         }
-
+    
+        .hero-animated h2 span {
+            color: #fff;
+        }
+    
         .hero-animated p {
-            font-size: 18px;
-            margin-bottom: 30px;
+            color: rgba(var(--color-secondary-rgb), 0.8);
+            margin: 0 0 30px 0;
+            font-size: 20px;
+            font-weight: 400;
         }
-
-        .hero-animated .btn-get-started,
+    
+        .hero-animated .animated {
+            margin-bottom: 60px;
+            animation: up-down 2s ease-in-out infinite alternate-reverse both;
+        }
+    
+        @media (min-width: 992px) {
+            .hero-animated .animated {
+                max-width: 45%;
+            }
+        }
+    
+        @media (max-width: 991px) {
+            .hero-animated .animated {
+                max-width: 60%;
+            }
+        }
+    
+        @media (max-width: 575px) {
+            .hero-animated .animated {
+                max-width: 80%;
+            }
+        }
+    
+        .hero-animated .btn-get-started {
+            font-size: 16px;
+            font-weight: 400;
+            display: inline-block;
+            padding: 10px 28px;
+            border-radius: 4px;
+            transition: 0.5s;
+            color: #fff;
+            background: #112D4E;
+            font-family: "Poppins", sans-serif;
+        }
+    
+        .hero-animated .btn-get-started:hover {
+            background: rgba(var(--color-primary-rgb), 0.8);
+        }
+    
         .hero-animated .btn-watch-video {
+            font-size: 16px;
+            transition: 0.5s;
+            margin-left: 25px;
+            font-family: "Poppins", sans-serif;
+            color: #112D4E;
+            font-weight: 600;
+        }
+    
+        .hero-animated .btn-watch-video i {
+            color: #fff;
+            font-size: 32px;
+            transition: 0.3s;
+            line-height: 0;
+            margin-right: 8px;
+        }
+    
+        @media (max-width: 640px) {
+            .hero-animated h2 {
+                font-size: 32px;
+            }
+    
+            .hero-animated p {
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+    
+            .hero-animated .btn-get-started,
+            .hero-animated .btn-watch-video {
+                font-size: 14px;
+            }
+        }
+    
+        @keyframes up-down {
+            0% {
+                transform: translateY(10px);
+            }
+    
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+    
+        /*--------------------------------------------------------------
+        # On Focus Section
+        --------------------------------------------------------------*/
+        .onfocus {
+            padding: 0;
+        }
+    
+        .onfocus .content {
+            background: url('../rtech/images/information_technology/background_6.jpg');
+            background-size: cover;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 40px;
+        }
+    
+        .onfocus .content h3 {
+            font-weight: 600;
+            font-size: 32px;
+            color: #fff;
+        }
+    
+        .onfocus .content ul {
+            list-style: none;
+            padding: 0;
+        }
+    
+        .onfocus .content ul li {
+            padding-bottom: 10px;
+        }
+    
+        .onfocus .content ul i {
+            font-size: 20px;
+            padding-right: 4px;
+            color: #fff;
+        }
+    
+        .onfocus .content p:last-child {
+            margin-bottom: 0;
+        }
+    
+        .onfocus .content .read-more {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 1px;
+            padding: 12px 24px;
+            border-radius: 5px;
+            transition: 0.3s;
+            display: -nline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background: #ac1e60;
+        }
+    
+        .onfocus .content .read-more i {
+            font-size: 18px;
+            margin-left: 5px;
+            line-height: 0;
+            transition: 0.3s;
+        }
+    
+        .onfocus .content .read-more:hover {
+            background: #3F72AF;
+            padding-right: 19px;
+        }
+    
+        .onfocus .content .read-more:hover i {
+            margin-left: 10px;
+        }
+    
+        @keyframes pulsate-btn {
+            0% {
+                transform: scale(0.6, 0.6);
+                opacity: 1;
+            }
+    
+            100% {
+                transform: scale(1, 1);
+                opacity: 0;
+            }
+        }
+    
+        .title {
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 32px;
+            color: #3F72AF;
+            transition: 0.3s;
+        }
+    
+        /*--------------------------------------------------------------
+        # Featured Services Section
+        --------------------------------------------------------------*/
+        .featured-services .service-item {
+            position: relative;
+            height: 100%;
+            margin-bottom: 20px;
+        }
+    
+        .featured-services .service-item .icon {
+            margin-right: 20px;
+        }
+    
+    
+        .featured-services .service-item .icon i {
+            color: #fff;
+            font-size: 48px;
+            transition: 0.3s;
+        }
+    
+    
+    
+        .featured-services .service-item .description {
+            font-size: 15px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+    
+        .featured-services .service-item .readmore {
+            display: flex;
+            align-items: center;
+            color: #112D4E;
+            transition: 0.3s;
+            font-weight: 700;
             font-size: 14px;
         }
-    }
-
-    @keyframes up-down {
-        0% {
-            transform: translateY(10px);
+    
+        .featured-services .service-item .readmore i {
+            margin-left: 8px;
         }
-
-        100% {
-            transform: translateY(-10px);
+    
+        /*--------------------------------------------------------------
+        # Features Section
+        --------------------------------------------------------------*/
+        .features {
+            padding-top: 80px;
         }
-    }
-
-    /*--------------------------------------------------------------
-    # On Focus Section
-    --------------------------------------------------------------*/
-    .onfocus {
-        padding: 0;
-    }
-
-    .onfocus .content {
-        background: url('../rtech/images/information_technology/background_6.jpg');
-        background-size: cover;
-        background-attachment: scroll;
-        background-repeat: no-repeat;
-        background-position: center;
-        padding: 40px;
-    }
-
-    .onfocus .content h3 {
-        font-weight: 600;
-        font-size: 32px;
-        color: #fff;
-    }
-
-    .onfocus .content ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    .onfocus .content ul li {
-        padding-bottom: 10px;
-    }
-
-    .onfocus .content ul i {
-        font-size: 20px;
-        padding-right: 4px;
-        color: #fff;
-    }
-
-    .onfocus .content p:last-child {
-        margin-bottom: 0;
-    }
-
-    .onfocus .content .read-more {
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        letter-spacing: 1px;
-        padding: 12px 24px;
-        border-radius: 5px;
-        transition: 0.3s;
-        display: -nline-flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        background: #ac1e60;
-    }
-
-    .onfocus .content .read-more i {
-        font-size: 18px;
-        margin-left: 5px;
-        line-height: 0;
-        transition: 0.3s;
-    }
-
-    .onfocus .content .read-more:hover {
-        background: #3F72AF;
-        padding-right: 19px;
-    }
-
-    .onfocus .content .read-more:hover i {
-        margin-left: 10px;
-    }
-
-    @keyframes pulsate-btn {
-        0% {
-            transform: scale(0.6, 0.6);
-            opacity: 1;
-        }
-
-        100% {
-            transform: scale(1, 1);
-            opacity: 0;
-        }
-    }
-
-    .title {
-        font-weight: 700;
-        margin-bottom: 10px;
-        font-size: 32px;
-        color: #3F72AF;
-        transition: 0.3s;
-    }
-
-    /*--------------------------------------------------------------
-    # Featured Services Section
-    --------------------------------------------------------------*/
-    .featured-services .service-item {
-        position: relative;
-        height: 100%;
-        margin-bottom: 20px;
-    }
-
-    .featured-services .service-item .icon {
-        margin-right: 20px;
-    }
-
-
-    .featured-services .service-item .icon i {
-        color: #fff;
-        font-size: 48px;
-        transition: 0.3s;
-    }
-
-
-
-    .featured-services .service-item .description {
-        font-size: 15px;
-        color: #fff;
-        margin-bottom: 10px;
-    }
-
-    .featured-services .service-item .readmore {
-        display: flex;
-        align-items: center;
-        color: #112D4E;
-        transition: 0.3s;
-        font-weight: 700;
-        font-size: 14px;
-    }
-
-    .featured-services .service-item .readmore i {
-        margin-left: 8px;
-    }
-
-    /*--------------------------------------------------------------
-    # Features Section
-    --------------------------------------------------------------*/
-    .features {
-        padding-top: 80px;
-    }
-
-    .features .features-item+.features-item {
-        margin-top: 100px;
-    }
-
-    @media (max-width: 640px) {
+    
         .features .features-item+.features-item {
-            margin-top: 40px;
+            margin-top: 100px;
         }
-    }
-
-    .features .features-item h3 {
-        font-weight: 600;
-        font-size: 26px;
-        color: #001973;
-    }
-
-    .features .features-item ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    .features .features-item ul li {
-        padding-bottom: 10px;
-    }
-
-    .features .features-item ul li:last-child {
-        padding-bottom: 0;
-    }
-
-    .features .features-item ul i {
-        font-size: 20px;
-        padding-right: 4px;
-        color: var(--color-primary);
-    }
-
-    .features .features-item p:last-child {
-        margin-bottom: 0;
-    }
-</style>
+    
+        @media (max-width: 640px) {
+            .features .features-item+.features-item {
+                margin-top: 40px;
+            }
+        }
+    
+        .features .features-item h3 {
+            font-weight: 600;
+            font-size: 26px;
+            color: #001973;
+        }
+    
+        .features .features-item ul {
+            list-style: none;
+            padding: 0;
+        }
+    
+        .features .features-item ul li {
+            padding-bottom: 10px;
+        }
+    
+        .features .features-item ul li:last-child {
+            padding-bottom: 0;
+        }
+    
+        .features .features-item ul i {
+            font-size: 20px;
+            padding-right: 4px;
+            color: var(--color-primary);
+        }
+    
+        .features .features-item p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+@endpush

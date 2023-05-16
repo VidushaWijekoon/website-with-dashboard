@@ -251,6 +251,7 @@
 </section><!-- End Features Section -->
 @endsection
 
+@push('style')
 <style>
     .event_management_about .content h3 {
         font-weight: 600;
@@ -383,3 +384,4 @@
         margin-bottom: 0;
     }
 </style>
+@endpush

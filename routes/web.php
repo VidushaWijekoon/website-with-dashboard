@@ -94,6 +94,7 @@ Route::prefix('admin/')->middleware('auth', 'isAdmin')->group(function () {
     // HR
     Route::controller(EmployeesController::class)->group(function () {
         Route::get('employees/', 'index')->name('employees.index');
+        Route::get('employees/create', 'create')->name('employees.create');
     });
 
     // Attendance
