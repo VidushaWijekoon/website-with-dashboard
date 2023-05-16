@@ -3,23 +3,9 @@
 @section('content')
 
 <!-- ======= Hero Section ======= -->
-<section id="hero hero-animated" class=" hero-animated d-flex align-items-center">
-    <div class="container-fluid p-5" data-aos="zoom-out" data-aos-delay="100">
-        <div class="row">
-            <div class="col-md-7 col-sm-6">
-                <img src="{{ asset('rtech/images/information_technology/rtect-software-development.png') }}"
-                    alt="rtech_web_dev" class="web_dev_hero_img">
-            </div>
-            <div class="col-md-5 col-sm-6 d-flex justify-content-center align-items-center">
-                <div class="">
-                    <h1>Welcome to
-                        <span>Rtech International Science and Technology</span>
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<video class="img-fluid" autoplay loop muted>
+    <source src="{{ asset('rtech/videos/create-world.mp4') }}" type="video/mp4" />
+</video>
 <!-- End Hero -->
 
 <!-- ======= On Focus Section ======= -->
@@ -65,8 +51,7 @@
 
         <header class="section-header p-5 d-flex justify-content-center text-center">
             <div class="">
-                <h2 class="d-flex justify-content-center" style="color: #112D4E; font-weight: bold">Pricing for Science
-                    &
+                <h2 class="d-flex justify-content-center" style="color: #112D4E; font-weight: bold">Posts in Science &
                     Technology</h2>
                 <p style="color: #112D4E;">Recent posts form our clients</p>
             </div>
@@ -116,60 +101,6 @@
 
 </section>
 <!-- End Recent Blog Posts Section -->
-
-<!-- ======= Pricing Section ======= -->
-<section id="pricing" class="pricing mb-5">
-    <div class="container">
-        <header class="section-header p-5">
-            <h2 class="d-flex justify-content-center" style="color: #112D4E; font-weight: bold">Pricing for Science &
-                Technology</h2>
-        </header>
-        <div class="row no-gutters">
-
-            <div class="col-lg-4 box">
-                <h3>Free</h3>
-                <h4>$0<span>per month</span></h4>
-                <ul>
-                    <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                    <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                    <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                    <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                    <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                </ul>
-                <a href="#" class="buy-btn">Buy Now</a>
-            </div>
-
-            <div class="col-lg-4 box featured">
-                <h3>Business</h3>
-                <h4>$29<span>per month</span></h4>
-                <ul>
-                    <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                    <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                    <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                    <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                    <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-                </ul>
-                <a href="#" class="buy-btn">Buy Now</a>
-            </div>
-
-            <div class="col-lg-4 box">
-                <h3>Developer</h3>
-                <h4>$49<span>per month</span></h4>
-                <ul>
-                    <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                    <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                    <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                    <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                    <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-                </ul>
-                <a href="#" class="buy-btn">Buy Now</a>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-<!-- End Pricing Section -->
 
 <!-- ======= Testimonials Section ======= -->
 <section id="testimonials" class="testimonials">
@@ -426,7 +357,7 @@
     .hero-animated {
         width: 100%;
         min-height: 50vh;
-        background: url('../rtech/images/information_technology/background_5.jpg');
+        background: url('https://www.youtube.com/watch?v=fAcWOnHx894');
         background-size: cover;
         position: relative;
         padding: 70px 0 60px;
@@ -663,121 +594,6 @@
         padding-left: 0;
     }
 
-    /*--------------------------------------------------------------
-    # Pricing
-    --------------------------------------------------------------*/
-    .pricing .row {
-        padding-top: 40px;
-    }
-
-    .pricing .box {
-        padding: 40px;
-        margin-bottom: 30px;
-        box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
-        background: #fff;
-        text-align: center;
-    }
-
-    .pricing h3 {
-        font-weight: 300;
-        margin-bottom: 15px;
-        font-size: 28px;
-    }
-
-    .pricing h4 {
-        font-size: 46px;
-        color: #02a4d6;
-        font-weight: 400;
-        font-family: "Open Sans", sans-serif;
-        margin-bottom: 25px;
-    }
-
-    .pricing h4 span {
-        color: #bababa;
-        font-size: 18px;
-        display: block;
-    }
-
-    .pricing ul {
-        padding: 0;
-        list-style: none;
-        color: #999;
-        text-align: left;
-        line-height: 20px;
-    }
-
-    .pricing ul li {
-        padding-bottom: 12px;
-    }
-
-    .pricing ul i {
-        color: #02a4d6;
-        font-size: 18px;
-        padding-right: 4px;
-    }
-
-    .pricing ul .na {
-        color: #ccc;
-    }
-
-    .pricing ul .na i {
-        color: #ccc;
-    }
-
-    .pricing ul .na span {
-        text-decoration: line-through;
-    }
-
-    .pricing .buy-btn {
-        background: #545454;
-        display: inline-block;
-        padding: 8px 30px;
-        border-radius: 20px;
-        color: #fff;
-        transition: none;
-        font-size: 14px;
-        font-weight: 400;
-        font-family: "Raleway", sans-serif;
-        transition: 0.3s;
-    }
-
-    .pricing .buy-btn:hover {
-        background: #02a4d6;
-    }
-
-    .pricing .featured {
-        z-index: 10;
-        margin: -30px -5px 0 -5px;
-    }
-
-    .pricing .featured .buy-btn {
-        background: #02a4d6;
-    }
-
-    .pricing .featured .buy-btn:hover {
-        background: #02a4d6;
-    }
-
-    @media (max-width: 992px) {
-        .pricing .box {
-            max-width: 60%;
-            margin: 0 auto 30px auto;
-        }
-    }
-
-    @media (max-width: 767px) {
-        .pricing .box {
-            max-width: 80%;
-            margin: 0 auto 30px auto;
-        }
-    }
-
-    @media (max-width: 420px) {
-        .pricing .box {
-            max-width: 100%;
-            margin: 0 auto 30px auto;
-        }
-    }
 
     /*--------------------------------------------------------------
     # F.A.Q
