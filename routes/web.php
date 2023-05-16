@@ -57,43 +57,6 @@ Route::prefix('admin/')->middleware('auth', 'isAdmin')->group(function () {
     Route::controller(ContactUsController::class)->group(function () {
         Route::get('contact-us-messages', 'index')->name('contact_us_messages');
     });
-
-    // Posts
-    Route::controller(PostsController::class)->group(function () {
-        Route::get('/posts', 'index')->name('posts.index');
-        Route::get('/posts/create', 'create')->name('posts.create');
-        Route::post('/posts', 'store')->name('posts.store');
-    });
-
-    Route::controller(CategoryController::class)->group(function () {
-        Route::get('/category', 'index')->name('category.index');
-        Route::get('/category/create', 'create')->name('category.create');
-        Route::post('/category', 'store')->name('category.store');
-        Route::get('/category/{category}/edit', 'edit')->name('category.edit');
-        Route::put('/category/{category}/', 'update')->name('category.update');
-        Route::get('/category/{category}/delete', 'delete')->name('category.delete');
-    });
-
-    Route::controller(SalesController::class)->group(function () {
-        Route::get('/sales', 'index')->name('sales.index');
-        Route::get('/sales/create', 'create')->name('sales.create');
-    });
-
-    Route::controller(AccountsController::class)->group(function () {
-        Route::get('/accounts', 'index')->name('accounts.index');
-        Route::get('/accounts/create', 'create')->name('accounts.create');
-    });
-
-    Route::controller(EmployeesController::class)->group(function () {
-        Route::get('/employee', 'index')->name('employees.index');
-        Route::get('/employee/create', 'create')->name('employee.create');
-    });
-
-    Route::controller(UsersController::class)->group(function () {
-        Route::get('/users', 'index')->name('users.index');
-        Route::get('/users/{user_id}/delete', 'destory_user')->name('users.delete');
-        Route::get('/users/{user_id}/', 'edit_user')->name('edit.user');
-    });
 });
 
 Auth::routes();
