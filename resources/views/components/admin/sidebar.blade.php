@@ -12,16 +12,18 @@
                 </li>
 
                 <li>
-                    <a href="#"><i class="fa fa-hospital-o"></i> <span>Departments</span></a>
+                    <a href="{{ route('department.index') }}">
+                        <i class="fa fa-hospital-o"></i>
+                        <span>Departments</span>
+                    </a>
                 </li>
 
                 <li class="submenu">
                     <a href="#"><i class="fa fa-user"></i> <span> Employees </span> <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
-                        <li><a href="#">Employees List</a></li>
-                        <li><a href="#">Leaves</a></li>
-                        <li><a href="#">Holidays</a></li>
-                        <li><a href="#">Attendance</a></li>
+                        <li><a href="{{ route('employee.dashboard') }}">Employees List</a></li>
+                        <li><a href="{{ route('employee.leave') }}">Leaves</a></li>
+                        <li><a href="{{ route('employee.holidays') }}">Holidays</a></li>
                     </ul>
                 </li>
                 <li class="submenu">

@@ -1,4 +1,4 @@
-@extends('layouts.rtech.app')
+@extends('layouts.frontend.app')
 @section('title', 'Rtech | Home')
 @section('content')
 @if (session('message'))
@@ -15,7 +15,7 @@
 
                 <!-- Slide 1 -->
                 <div class="carousel-item active"
-                    style="background-image: url({{ asset('rtech/images/2-digital-marketing.jpg') }});">
+                    style="background-image: url({{ asset('frontend/images/2-digital-marketing.jpg') }});">
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2 class="animate__animated animate__fadeInDown">Welcome to <span>R Tech
@@ -34,7 +34,7 @@
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="carousel-item" style="background-image: url({{ asset('rtech/images/software.jpg') }});">
+                <div class="carousel-item" style="background-image: url({{ asset('frontend/images/software.jpg') }});">
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2 class="animate__animated animate__fadeInDown">Digital Strategies and Consulting</h2>
@@ -49,7 +49,7 @@
                 </div>
 
                 <!-- Slide 3 -->
-                <div class="carousel-item" style="background-image: url({{ asset('rtech/images/slide-44.jpg') }});">
+                <div class="carousel-item" style="background-image: url({{ asset('frontend/images/slide-44.jpg') }});">
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2 class="animate__animated animate__fadeInDown">Your Exponential Digital Growth Starts
@@ -218,23 +218,23 @@
         <div class="row justify-content-center">
 
             <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('rtech/images/brands/512x512.webp') }}" class="img-fluid" alt="">
+                <img src="{{ asset('frontend/images/brands/512x512.webp') }}" class="img-fluid" alt="">
             </div>
 
             <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('rtech/images/brands/alnusralogonew.webp') }}" class="img-fluid" alt="">
+                <img src="{{ asset('frontend/images/brands/alnusralogonew.webp') }}" class="img-fluid" alt="">
             </div>
 
             <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('rtech/images/brands/MFK_TM_GreenWhite1.webp') }}" class="img-fluid" alt="">
+                <img src="{{ asset('frontend/images/brands/MFK_TM_GreenWhite1.webp') }}" class="img-fluid" alt="">
             </div>
 
             <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('rtech/images/brands/name_logo.webp') }}" class="img-fluid" alt="">
+                <img src="{{ asset('frontend/images/brands/name_logo.webp') }}" class="img-fluid" alt="">
             </div>
 
             <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                <img src="{{ asset('rtech/images/brands/resellerlogo.webp') }}" class="img-fluid" alt="">
+                <img src="{{ asset('frontend/images/brands/resellerlogo.webp') }}" class="img-fluid" alt="">
             </div>
 
         </div>
@@ -544,7 +544,7 @@
     }
 
     .about-us .image {
-        background: url("../rtech/images/banner-800.webp") center center no-repeat;
+        background: url("../frontend/images/banner-800.webp") center center no-repeat;
         background-size: cover;
         min-height: 400px;
     }
@@ -571,7 +571,7 @@
 
     .counts {
         padding: 70px 0 60px;
-        background-image: url("../rtech/images/counter_bg.webp");
+        background-image: url("../frontend/images/counter_bg.webp");
         background-size: cover;
         background-attachment: scroll;
         background-repeat: no-repeat;

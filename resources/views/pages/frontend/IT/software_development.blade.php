@@ -1,4 +1,4 @@
-@extends('layouts.rtech.app')
+@extends('layouts.frontend.app')
 @section('title', 'Rtech | Software Development')
 @section('content')
 <!-- ======= Hero Section ======= -->
@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="col-md-7 col-sm-6">
-                <img src="{{ asset('rtech/images/information_technology/rtect-software-development.png') }}"
+                <img src="{{ asset('frontend/images/information_technology/rtect-software-development.png') }}"
                     alt="rtech_web_dev" class="web_dev_hero_img">
             </div>
         </div>
@@ -57,7 +57,8 @@
                 </div>
             </div>
             <div class="col-lg-4 position-relative d-flex align-items-center ">
-                <img src="{{ asset('rtech/images/information_technology/web_development.png') }}" alt="" width="100%">
+                <img src="{{ asset('frontend/images/information_technology/web_development.png') }}" alt=""
+                    width="100%">
             </div>
         </div>
     </div>
@@ -72,7 +73,7 @@
         </header>
         <div class="row gy-4 mb-5">
             <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
-                <img src="{{ asset('rtech/images/information_technology/website-developer-31-1.png') }}"
+                <img src="{{ asset('frontend/images/information_technology/website-developer-31-1.png') }}"
                     class="img-fluid" alt="" width="100%">
             </div>
             <div class="col-lg-6 content order-last order-lg-first">
@@ -100,7 +101,7 @@
 
         <div class="row gy-4 mb-5">
             <div class="col-lg-6 position-relative align-self-start ">
-                <img src="{{ asset('rtech/images/information_technology/website-developer-29-1.png') }}"
+                <img src="{{ asset('frontend/images/information_technology/website-developer-29-1.png') }}"
                     class="img-fluid" alt="" width="100%">
             </div>
             <div class="col-lg-6 content">
@@ -135,14 +136,14 @@
                 </div>
             </div>
             <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
-                <img src="{{ asset('rtech/images/information_technology/website-developer-25-2.png') }}"
+                <img src="{{ asset('frontend/images/information_technology/website-developer-25-2.png') }}"
                     class="img-fluid" alt="" width="100%">
             </div>
         </div>
 
         <div class="row gy-4 mb-5">
             <div class="col-lg-6 position-relative align-self-start ">
-                <img src="{{ asset('rtech/images/information_technology/website-developer-34-1.png') }}"
+                <img src="{{ asset('frontend/images/information_technology/website-developer-34-1.png') }}"
                     class="img-fluid" alt="" width="100%">
             </div>
             <div class="col-lg-6 content">
@@ -172,7 +173,7 @@
 
             <div class="col-lg-3 col-md-6 service-item d-flex" data-aos="fade-up">
                 <div class="icon flex-shrink-0">
-                    <img src="{{ asset('rtech/images/information_technology/digital-marketing-companies.png') }}"
+                    <img src="{{ asset('frontend/images/information_technology/digital-marketing-companies.png') }}"
                         alt="Software Development">
                 </div>
                 <div>
@@ -189,7 +190,7 @@
 
             <div class="col-lg-3 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
                 <div class="icon flex-shrink-0">
-                    <img src="{{ asset('rtech/images/information_technology/rtech_qa.png') }}" alt="rtech_qa">
+                    <img src="{{ asset('frontend/images/information_technology/rtech_qa.png') }}" alt="rtech_qa">
                 </div>
                 <div>
                     <h4 class="title">QUALITY ASSURANCE</h4>
@@ -204,7 +205,7 @@
 
             <div class="col-lg-3 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon flex-shrink-0">
-                    <img src="{{ asset('rtech/images/information_technology/application_management.png') }}"
+                    <img src="{{ asset('frontend/images/information_technology/application_management.png') }}"
                         alt="retch application_management">
                 </div>
                 <div>
@@ -220,7 +221,7 @@
 
             <div class="col-lg-3 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon flex-shrink-0">
-                    <img src="{{ asset('rtech/images/information_technology/rtech247.png') }}" alt="Rtech_24/7">
+                    <img src="{{ asset('frontend/images/information_technology/rtech247.png') }}" alt="Rtech_24/7">
                 </div>
                 <div>
                     <h4 class="title">24/7 SUPPORT</h4>
@@ -257,22 +258,22 @@
                 <div class="container p-5">
                     <div class="row">
                         <div class="col-md-3 text-center">
-                            <img src="{{ asset('rtech/images/information_technology/related/stat_up_business_icon.png') }}"
+                            <img src="{{ asset('frontend/images/information_technology/related/stat_up_business_icon.png') }}"
                                 alt="START-UP BUSINESSES">
                             <p>START-UP BUSINESSES</p>
                         </div>
                         <div class="col-md-3 text-center"> <img
-                                src="{{ asset('rtech/images/information_technology/related/small_medium.png') }}"
+                                src="{{ asset('frontend/images/information_technology/related/small_medium.png') }}"
                                 alt="SMALL AND MEDIUM BUSINESSES">
                             <p class="mt-3">SMALL AND MEDIUM BUSINESSES</p>
                         </div>
                         <div class="col-md-3 text-center"> <img
-                                src="{{ asset('rtech/images/information_technology/related/enterprises.png') }}"
+                                src="{{ asset('frontend/images/information_technology/related/enterprises.png') }}"
                                 alt="ENTERPRISES">
                             <p class="mt-3">ENTERPRISES</p>
                         </div>
                         <div class="col-md-3 text-center"> <img
-                                src="{{ asset('rtech/images/information_technology/related/agencies.png') }}"
+                                src="{{ asset('frontend/images/information_technology/related/agencies.png') }}"
                                 alt="AGENCIES">
                             <p class="mt-3">AGENCIES</p>
                         </div>
@@ -299,7 +300,7 @@
                 <div class="container p-5">
                     <div class="row">
                         <div class="col-md-4 text-center">
-                            <img src="{{ asset('rtech/images/information_technology/web-design-company-rtech-14.png') }}"
+                            <img src="{{ asset('frontend/images/information_technology/web-design-company-rtech-14.png') }}"
                                 alt="START-UP BUSINESSES" class="mb-4">
                             <h5 class="text-black">Talk to our Experts</h5>
                             <p class="text-black">
@@ -308,7 +309,7 @@
                             </p>
                         </div>
                         <div class="col-md-4 text-center">
-                            <img src="{{ asset('rtech/images/information_technology/web-design-company-rtech-15.png') }}"
+                            <img src="{{ asset('frontend/images/information_technology/web-design-company-rtech-15.png') }}"
                                 alt="SMALL AND MEDIUM BUSINESSES" class="mb-4">
                             <h5 class="text-black">Get a Quote</h5>
                             <p class="text-black">
@@ -317,7 +318,7 @@
                             </p>
                         </div>
                         <div class="col-md-4 text-center">
-                            <img src="{{ asset('rtech/images/information_technology/web-design-company-rtech-16.png') }}"
+                            <img src="{{ asset('frontend/images/information_technology/web-design-company-rtech-16.png') }}"
                                 alt="ENTERPRISES" class="mb-4">
                             <h6 class="text-black">Minimum Viable Product</h6>
                             <p class="text-black">
@@ -347,41 +348,41 @@
         <div class="row align-self-center gy-4">
             <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
                 <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('rtech/images/information_technology/logos/html_css.png') }}" alt="html_css"
+                    <img src="{{ asset('frontend/images/information_technology/logos/html_css.png') }}" alt="html_css"
                         class="w-100">
                 </div>
             </div>
 
             <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
                 <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('rtech/images/information_technology/logos/bootstrap.png') }}"
+                    <img src="{{ asset('frontend/images/information_technology/logos/bootstrap.png') }}"
                         alt="site-loading-icon" class="w-100">
                 </div>
             </div>
 
             <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="400">
                 <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('rtech/images/information_technology/logos/javascript.png') }}" alt="javascript"
-                        class="w-100">
+                    <img src="{{ asset('frontend/images/information_technology/logos/javascript.png') }}"
+                        alt="javascript" class="w-100">
                 </div>
             </div>
             <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
                 <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('rtech/images/information_technology/logos/jquery.png') }}" alt="jquery"
+                    <img src="{{ asset('frontend/images/information_technology/logos/jquery.png') }}" alt="jquery"
                         class="w-100">
                 </div>
             </div>
 
             <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
                 <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('rtech/images/information_technology/logos/tailwind.png') }}" alt="tailwind"
+                    <img src="{{ asset('frontend/images/information_technology/logos/tailwind.png') }}" alt="tailwind"
                         class="w-100">
                 </div>
             </div>
 
             <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="400">
                 <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('rtech/images/information_technology/logos/reactjs.png') }}" alt="reactjs"
+                    <img src="{{ asset('frontend/images/information_technology/logos/reactjs.png') }}" alt="reactjs"
                         class="w-100">
                 </div>
             </div>
@@ -390,33 +391,34 @@
         <div class="row align-self-center gy-4 d-flex justify-content-center">
             <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
                 <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('rtech/images/information_technology/logos/php.png') }}" alt="php" class="w-100">
+                    <img src="{{ asset('frontend/images/information_technology/logos/php.png') }}" alt="php"
+                        class="w-100">
                 </div>
             </div>
 
             <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
                 <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('rtech/images/information_technology/logos/laravel.png') }}" alt="laravel"
+                    <img src="{{ asset('frontend/images/information_technology/logos/laravel.png') }}" alt="laravel"
                         class="w-100">
                 </div>
             </div>
 
             <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="400">
                 <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('rtech/images/information_technology/logos/nodejs.png') }}" alt="nodejs"
+                    <img src="{{ asset('frontend/images/information_technology/logos/nodejs.png') }}" alt="nodejs"
                         class="w-100">
                 </div>
             </div>
             <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
                 <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('rtech/images/information_technology/logos/mysql.png') }}" alt="mysql"
+                    <img src="{{ asset('frontend/images/information_technology/logos/mysql.png') }}" alt="mysql"
                         class="w-100">
                 </div>
             </div>
 
             <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
                 <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('rtech/images/information_technology/logos/mongo_db.png') }}" alt="mongo_db"
+                    <img src="{{ asset('frontend/images/information_technology/logos/mongo_db.png') }}" alt="mongo_db"
                         class="w-100">
                 </div>
             </div>
@@ -446,7 +448,7 @@
     .hero-animated {
         width: 100%;
         min-height: 50vh;
-        background: url('../rtech/images/information_technology/background_5.jpg');
+        background: url('../frontend/images/information_technology/background_5.jpg');
         background-size: cover;
         position: relative;
         padding: 70px 0 60px;
@@ -561,7 +563,7 @@
     }
 
     .onfocus .content {
-        background: url('../rtech/images/information_technology/background_2.jpg');
+        background: url('../frontend/images/information_technology/background_2.jpg');
         background-size: cover;
         background-attachment: scroll;
         background-repeat: no-repeat;

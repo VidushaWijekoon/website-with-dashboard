@@ -1,15 +1,18 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController;
-use App\Http\Controllers\DigitialMarketingController;
-use App\Http\Controllers\EventManagementController;
-use App\Http\Controllers\GraphicDesignController;
-use App\Http\Controllers\ScienceTechnologyController;
-use App\Http\Controllers\SoftwareDevelopmentController;
-use App\Http\Controllers\TechnicalServicesController;
-use App\Http\Controllers\WebDevelopmentController;
+use App\Http\Controllers\Admin\DepartmentController;
+use App\Http\Controllers\Admin\EmployeeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Frontend\DigitialMarketingController;
+use App\Http\Controllers\Frontend\EventManagementController;
+use App\Http\Controllers\Frontend\GraphicDesignController;
+use App\Http\Controllers\Frontend\RtechHomeController;
+use App\Http\Controllers\Frontend\ScienceTechnologyController;
+use App\Http\Controllers\Frontend\SoftwareDevelopmentController;
+use App\Http\Controllers\Frontend\TechnicalServicesController;
+use App\Http\Controllers\Frontend\WebDevelopmentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,4 +51,19 @@ Route::prefix('it/')->group(function () {
 
 Route::prefix('admin')->middleware('auth', 'isAdmin')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
+
+    Route::prefix('/employee')->group(function () {
+        Route::controller(EmployeeController::class)->group(function () {
+            Route::get('/', 'index')->name('employee.dashboard');
+            Route::get('/leave', 'leave')->name('employee.leave');
+            Route::get('/holidays', 'holidays')->name('employee.holidays');
+            Route::get('/attendance', 'attendance')->name('employee.attendance');
+        });
+    });
+
+    Route::prefix('/department')->group(function () {
+        Route::controller(DepartmentController::class)->group(function () {
+            Route::get('/', 'index')->name('department.index');
+        });
+    });
 });

@@ -1,4 +1,4 @@
-@extends('layouts.rtech.app')
+@extends('layouts.frontend.app')
 @section('title', 'Rtech | Graphic Design')
 @section('content')
 <!-- ======= Hero Section ======= -->
@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="col-md-7 col-sm-6">
-                <img src="{{ asset('rtech/images/information_technology/rtect-software-development.png') }}"
+                <img src="{{ asset('frontend/images/information_technology/rtect-software-development.png') }}"
                     alt="rtech_web_dev" class="web_dev_hero_img">
             </div>
         </div>
@@ -28,7 +28,7 @@
 
         <div class="row g-0">
             <div class="col-lg-4 position-relative d-flex align-items-center ">
-                <img src="{{ asset('rtech/images/information_technology/web-design-company-10.png') }}" alt=""
+                <img src="{{ asset('frontend/images/information_technology/web-design-company-10.png') }}" alt=""
                     width="100%">
             </div>
             <div class="col-lg-8">
@@ -91,7 +91,7 @@
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
 
             <div class="col-md-5">
-                <img src="{{ asset('rtech/images/information_technology/digital_marketing/web-design-company-1-2.png') }}"
+                <img src="{{ asset('frontend/images/information_technology/digital_marketing/web-design-company-1-2.png') }}"
                     class="img-fluid" alt="digital marketing">
             </div>
             <div class="col-md-7">
@@ -108,7 +108,7 @@
 
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div class="col-md-5 order-1 order-md-2">
-                <img src="{{ asset('rtech/images/information_technology/digital_marketing/web-design-company-2-2.png') }}"
+                <img src="{{ asset('frontend/images/information_technology/digital_marketing/web-design-company-2-2.png') }}"
                     class="img-fluid" alt="digital marketing">
             </div>
             <div class="col-md-7 order-2 order-md-1">
@@ -157,7 +157,7 @@
 
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div class="col-md-5">
-                <img src="{{ asset('rtech/images/information_technology/digital_marketing/web-design-company-3-2.png') }}"
+                <img src="{{ asset('frontend/images/information_technology/digital_marketing/web-design-company-3-2.png') }}"
                     class="img-fluid" alt="digital marketing">
             </div>
             <div class="col-md-7 order-2 order-md-1">
@@ -193,7 +193,7 @@
 
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div class="col-md-5 order-1 order-md-2">
-                <img src="{{ asset('rtech/images/information_technology/digital_marketing/web-design-company-4-2.png') }}"
+                <img src="{{ asset('frontend/images/information_technology/digital_marketing/web-design-company-4-2.png') }}"
                     class="img-fluid" alt="digital marketing">
             </div>
             <div class="col-md-7 order-2 order-md-1">
@@ -235,7 +235,7 @@
 
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div class="col-md-5">
-                <img src="{{ asset('rtech/images/information_technology/digital_marketing/web-design-company-5-2.png') }}"
+                <img src="{{ asset('frontend/images/information_technology/digital_marketing/web-design-company-5-2.png') }}"
                     class="img-fluid" alt="digital marketing">
             </div>
             <div class="col-md-7 order-2 order-md-1">
@@ -276,7 +276,7 @@
 
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div class="col-md-5 order-1 order-md-2">
-                <img src="{{ asset('rtech/images/information_technology/digital_marketing/web-design-company-6-2.png') }}"
+                <img src="{{ asset('frontend/images/information_technology/digital_marketing/web-design-company-6-2.png') }}"
                     class="img-fluid" alt="digital marketing">
             </div>
             <div class="col-md-7 order-2 order-md-1">
@@ -357,7 +357,7 @@
                 </div>
             </div>
             <div class="col-lg-4 position-relative d-flex align-items-center ">
-                <img src="{{ asset('rtech/images/information_technology/web-design-company-11.png') }}" alt=""
+                <img src="{{ asset('frontend/images/information_technology/web-design-company-11.png') }}" alt=""
                     width="100%">
             </div>
 
@@ -372,7 +372,7 @@
     .bg-img {
         width: 100%;
         min-height: 50vh;
-        background: url('../rtech/images/information_technology/background_5.jpg');
+        background: url('../frontend/images/information_technology/background_5.jpg');
         background-size: cover;
         position: relative;
         padding: 70px 0 60px;
@@ -392,7 +392,7 @@
     .hero-animated {
         width: 100%;
         min-height: 50vh;
-        background: url('../rtech/images/information_technology/background_5.jpg');
+        background: url('../frontend/images/information_technology/background_5.jpg');
         background-size: cover;
         position: relative;
         padding: 70px 0 60px;
@@ -507,7 +507,7 @@
     }
 
     .onfocus .content {
-        background: url('../rtech/images/information_technology/background_6.jpg');
+        background: url('../frontend/images/information_technology/background_6.jpg');
         background-size: cover;
         background-attachment: scroll;
         background-repeat: no-repeat;

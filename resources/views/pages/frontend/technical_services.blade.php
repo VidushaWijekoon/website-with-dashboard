@@ -1,4 +1,4 @@
-@extends('layouts.rtech.app')
+@extends('layouts.frontend.app')
 @section('title', 'Rtech | Technical Services')
 @section('content')
 <!-- ======= Hero Section ======= -->
@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="col-md-7 col-sm-6">
-                <img src="{{ asset('rtech/images/information_technology/rtect-software-development.png') }}"
+                <img src="{{ asset('frontend/images/information_technology/rtect-software-development.png') }}"
                     alt="rtech_web_dev" class="web_dev_hero_img">
             </div>
         </div>
@@ -27,7 +27,7 @@
 
         <div class="row g-0">
             <div class="col-lg-4 position-relative d-flex align-items-center ">
-                <img src="{{ asset('rtech/images/information_technology/web-design-company-10.png') }}" alt=""
+                <img src="{{ asset('frontend/images/information_technology/web-design-company-10.png') }}" alt=""
                     width="100%">
             </div>
             <div class="col-lg-8">
@@ -94,7 +94,7 @@
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
 
             <div class="col-md-5">
-                <img src="{{ asset('rtech/images/information_technology/digital_marketing/web-design-company-1-2.png') }}"
+                <img src="{{ asset('frontend/images/information_technology/digital_marketing/web-design-company-1-2.png') }}"
                     class="img-fluid" alt="digital marketing">
             </div>
             <div class="col-md-7">
@@ -111,7 +111,7 @@
 
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div class="col-md-5 order-1 order-md-2">
-                <img src="{{ asset('rtech/images/information_technology/digital_marketing/web-design-company-2-2.png') }}"
+                <img src="{{ asset('frontend/images/information_technology/digital_marketing/web-design-company-2-2.png') }}"
                     class="img-fluid" alt="digital marketing">
             </div>
             <div class="col-md-7 order-2 order-md-1">
@@ -152,7 +152,7 @@
 
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div class="col-md-5">
-                <img src="{{ asset('rtech/images/information_technology/digital_marketing/web-design-company-3-2.png') }}"
+                <img src="{{ asset('frontend/images/information_technology/digital_marketing/web-design-company-3-2.png') }}"
                     class="img-fluid" alt="digital marketing">
             </div>
             <div class="col-md-7 order-2 order-md-1">
@@ -178,7 +178,7 @@
 
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div class="col-md-5 order-1 order-md-2">
-                <img src="{{ asset('rtech/images/information_technology/digital_marketing/web-design-company-4-2.png') }}"
+                <img src="{{ asset('frontend/images/information_technology/digital_marketing/web-design-company-4-2.png') }}"
                     class="img-fluid" alt="digital marketing">
             </div>
             <div class="col-md-7 order-2 order-md-1">
@@ -216,7 +216,7 @@
 
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div class="col-md-5">
-                <img src="{{ asset('rtech/images/information_technology/digital_marketing/web-design-company-5-2.png') }}"
+                <img src="{{ asset('frontend/images/information_technology/digital_marketing/web-design-company-5-2.png') }}"
                     class="img-fluid" alt="digital marketing">
             </div>
             <div class="col-md-7 order-2 order-md-1">
@@ -251,7 +251,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset('rtech/images/science_technology/services/Domal-Aluminium-Partitions.jpg') }}"
+                        <img src="{{ asset('frontend/images/science_technology/services/Domal-Aluminium-Partitions.jpg') }}"
                             alt="service_1" class="img-fluid">
                     </div>
                     <h3>ALUMINIUM WORK</h3>
@@ -261,7 +261,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset('rtech/images/science_technology/services/structural-steel-fabrication.jpg') }}"
+                        <img src="{{ asset('frontend/images/science_technology/services/structural-steel-fabrication.jpg') }}"
                             alt="service_1" class="img-fluid">
                     </div>
                     <h3>STEEL FABRICATION WORK</h3>
@@ -271,7 +271,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset('rtech/images/science_technology/services/office-cabin-partition6.webp') }}"
+                        <img src="{{ asset('frontend/images/science_technology/services/office-cabin-partition6.webp') }}"
                             alt="service_1" class="img-fluid">
                     </div>
                     <h3>GYPSUM PARTION WORK</h3>
@@ -281,7 +281,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset('rtech/images/science_technology/services/blue-paint.webp') }}"
+                        <img src="{{ asset('frontend/images/science_technology/services/blue-paint.webp') }}"
                             alt="service_1" class="img-fluid">
                     </div>
                     <h3>PAINTING WORK</h3>
@@ -291,7 +291,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset('rtech/images/science_technology/services/carpentry-cn-5089.jpg') }}"
+                        <img src="{{ asset('frontend/images/science_technology/services/carpentry-cn-5089.jpg') }}"
                             alt="service_1" class="img-fluid">
                     </div>
                     <h3>CARPENTRY WORK</h3>
@@ -301,7 +301,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset('rtech/images/science_technology/services/Wall-and-floor-tiler.jpg') }}"
+                        <img src="{{ asset('frontend/images/science_technology/services/Wall-and-floor-tiler.jpg') }}"
                             alt="service_1" class="img-fluid">
                     </div>
                     <h3>FLOOR AND WALL TAILING</h3>
@@ -328,7 +328,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset('rtech/images/science_technology/services/CLAY-PLASTERING.webp') }}"
+                        <img src="{{ asset('frontend/images/science_technology/services/CLAY-PLASTERING.webp') }}"
                             alt="service_1" class="img-fluid">
                     </div>
                     <h3>CLAY PLASTERING</h3>
@@ -338,7 +338,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset('rtech/images/science_technology/services/GYPSUM-PLASTERING.jpg') }}"
+                        <img src="{{ asset('frontend/images/science_technology/services/GYPSUM-PLASTERING.jpg') }}"
                             alt="service_1" class="img-fluid">
                     </div>
                     <h3>GYPSUM PLASTERING</h3>
@@ -348,7 +348,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset('rtech/images/science_technology/services/lime-plaster-being-applied.jpg') }}"
+                        <img src="{{ asset('frontend/images/science_technology/services/lime-plaster-being-applied.jpg') }}"
                             alt="service_1" class="img-fluid">
                     </div>
                     <h3>LIME PLASTERING</h3>
@@ -358,7 +358,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset('rtech/images/science_technology/services/CEMENT-PLASTERING.jpg') }}"
+                        <img src="{{ asset('frontend/images/science_technology/services/CEMENT-PLASTERING.jpg') }}"
                             alt="service_1" class="img-fluid">
                     </div>
                     <h3>CEMENT PLASTERING</h3>
@@ -368,7 +368,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset('rtech/images/science_technology/services/homeguide-red-brick-wall-privacy-fence.jpg') }}"
+                        <img src="{{ asset('frontend/images/science_technology/services/homeguide-red-brick-wall-privacy-fence.jpg') }}"
                             alt="service_1" class="img-fluid">
                     </div>
                     <h3>BRICKING WORK</h3>
@@ -378,7 +378,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset('rtech/images/science_technology/services/circular-column.jpg') }}"
+                        <img src="{{ asset('frontend/images/science_technology/services/circular-column.jpg') }}"
                             alt="service_1" class="img-fluid">
                     </div>
                     <h3>COLUMNS</h3>
@@ -405,8 +405,8 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset('rtech/images/science_technology/services/pillars.jpg') }}" alt="service_1"
-                            class="img-fluid">
+                        <img src="{{ asset('frontend/images/science_technology/services/pillars.jpg') }}"
+                            alt="service_1" class="img-fluid">
                     </div>
                     <h3>PILLAR WORK</h3>
                 </div>
@@ -415,7 +415,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset('rtech/images/science_technology/services/Paver-Block.jpg') }}"
+                        <img src="{{ asset('frontend/images/science_technology/services/Paver-Block.jpg') }}"
                             alt="service_1" class="img-fluid">
                     </div>
                     <h3>PAVING BLOCKS - ROAD WORKS</h3>
@@ -425,7 +425,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset('rtech/images/science_technology/services/Landscaping-Work-Dubai.jpg') }}"
+                        <img src="{{ asset('frontend/images/science_technology/services/Landscaping-Work-Dubai.jpg') }}"
                             alt="service_1" class="img-fluid">
                     </div>
                     <h3>LANDSCAPING WORKS</h3>
@@ -435,7 +435,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset('rtech/images/science_technology/services/garden-color-palette.jpg') }}"
+                        <img src="{{ asset('frontend/images/science_technology/services/garden-color-palette.jpg') }}"
                             alt="service_1" class="img-fluid">
                     </div>
                     <h3>GARDENING ARRAGEMENTS</h3>
@@ -445,7 +445,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset('rtech/images/science_technology/services/False-ceiling.jpg') }}"
+                        <img src="{{ asset('frontend/images/science_technology/services/False-ceiling.jpg') }}"
                             alt="service_1" class="img-fluid">
                     </div>
                     <h3>FALSE CEILING</h3>
@@ -455,7 +455,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset('rtech/images/science_technology/services/Wall-Cladding_0000_Wall-Cladding.jpg') }}"
+                        <img src="{{ asset('frontend/images/science_technology/services/Wall-Cladding_0000_Wall-Cladding.jpg') }}"
                             alt="service_1" class="img-fluid">
                     </div>
                     <h3>WALL CLADDING WORKS</h3>
@@ -499,7 +499,7 @@
     .hero-animated {
         width: 100%;
         min-height: 80vh;
-        background: url('../rtech/images/background_8.jpg');
+        background: url('../frontend/images/background_8.jpg');
         background-size: cover;
         position: relative;
         padding: 70px 0 60px;
@@ -614,7 +614,7 @@
     }
 
     .onfocus .content {
-        background: url('../rtech/images/information_technology/background_6.jpg');
+        background: url('../frontend/images/information_technology/background_6.jpg');
         background-size: cover;
         background-attachment: scroll;
         background-repeat: no-repeat;

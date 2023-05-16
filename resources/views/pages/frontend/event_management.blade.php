@@ -1,4 +1,4 @@
-@extends('layouts.rtech.app')
+@extends('layouts.frontend.app')
 @section('title', 'Rtech | Event Management')
 @section('content')
 <!-- ======= Hero Section ======= -->
@@ -29,7 +29,7 @@
         <div class="row p-5">
             <div class="col-lg-6 d-flex justify-content-center align-items-center" data-aos="fade-right"
                 data-aos-delay="100">
-                <img src="{{ asset('rtech/images/events/event-1.jpg') }}" class="img-fluid" alt="event-1">
+                <img src="{{ asset('frontend/images/events/event-1.jpg') }}" class="img-fluid" alt="event-1">
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up"
                 data-aos-delay="100">
@@ -88,7 +88,7 @@
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
 
             <div class="col-md-5">
-                <img src="{{ asset('rtech/images/events/wedding.jpg') }}" class="img-fluid" alt="weddings">
+                <img src="{{ asset('frontend/images/events/wedding.jpg') }}" class="img-fluid" alt="weddings">
             </div>
             <div class="col-md-7">
                 <h3>Wedding Parties.</h3>
@@ -132,7 +132,7 @@
 
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div class="col-md-5 order-1 order-md-2">
-                <img src="{{ asset('rtech/images/events/coopate-events.jpg') }}" class="img-fluid"
+                <img src="{{ asset('frontend/images/events/coopate-events.jpg') }}" class="img-fluid"
                     alt="cooparate events">
             </div>
             <div class="col-md-7 order-2 order-md-1">
@@ -152,7 +152,7 @@
 
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div class="col-md-5">
-                <img src="{{ asset('rtech/images/events/music-event.jpg') }}" class="img-fluid" alt="Inauguration">
+                <img src="{{ asset('frontend/images/events/music-event.jpg') }}" class="img-fluid" alt="Inauguration">
             </div>
             <div class="col-md-7">
                 <h3>Inauguration</h3>
@@ -183,7 +183,7 @@
 
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div class="col-md-5 order-1 order-md-2">
-                <img src="{{ asset('rtech/images/events/Types-of-Promotional-events.jpg') }}" class="img-fluid"
+                <img src="{{ asset('frontend/images/events/Types-of-Promotional-events.jpg') }}" class="img-fluid"
                     alt="promotion">
             </div>
             <div class="col-md-7 order-2 order-md-1">
@@ -203,7 +203,7 @@
 
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div class="col-md-5">
-                <img src="{{ asset('rtech/images/events/decorations.jpg') }}" class="img-fluid" alt="decoration">
+                <img src="{{ asset('frontend/images/events/decorations.jpg') }}" class="img-fluid" alt="decoration">
             </div>
             <div class="col-md-7">
                 <h3>Decorations</h3>
@@ -302,7 +302,7 @@
     }
 
     #event_management_hero {
-        background: url("../rtech/images/events/event-background.jpg") center center no-repeat;
+        background: url("../frontend/images/events/event-background.jpg") center center no-repeat;
         background-size: cover;
         position: relative;
         min-height: 80vh;
