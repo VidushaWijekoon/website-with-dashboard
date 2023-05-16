@@ -4,7 +4,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
         <li class="nav-item">
-            <a class="nav-link " href="{{ route('dashboard.index') }}">
+            <a class="nav-link " href="#">
                 <i class="fa-solid fa-grip"></i>
                 <span>Dashboard</span>
             </a>
@@ -18,12 +18,12 @@
             </a>
             <ul id="posts" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="{{ route('posts.create') }}">
+                    <a href="#">
                         <i class="fa-regular fa-circle"></i><span>Create Posts</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('posts.index') }}">
+                    <a href="#">
                         <i class="fa-regular fa-circle"></i><span>View Posts</span>
                     </a>
                 </li>
@@ -31,14 +31,14 @@
         </li>
 
         <li class="nav-item">
-            <a href="{{ route('category.index') }}" class="nav-link collapsed">
+            <a href="#" class="nav-link collapsed">
                 <i class="fa-solid fa-table-list"></i>
                 <span>Categories</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a href="{{ route('contact_us_messages') }}" class="nav-link collapsed">
+            <a href="#" class="nav-link collapsed">
                 <i class="fa-solid fa-message"></i>
                 <span>Client Messages</span>
             </a>
@@ -63,7 +63,7 @@
             </a>
             <ul id="sales" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="{{ route('sales.index') }}">
+                    <a href="#">
                         <i class="fa-regular fa-circle"></i><span>Sales</span>
                     </a>
                 </li>
@@ -86,7 +86,7 @@
             </a>
             <ul id="accounts" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="{{ route('accounts.index') }}">
+                    <a href="#">
                         <i class="fa-regular fa-circle"></i><span>Accounts</span>
                     </a>
                 </li>
@@ -109,7 +109,7 @@
             </a>
             <ul id="employee" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="{{ route('employees.index') }}">
+                    <a href="#">
                         <i class="fa-regular fa-circle"></i><span>Employees</span>
                     </a>
                 </li>
@@ -127,7 +127,7 @@
             </a>
             <ul id="users" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="{{ route('users.index') }}">
+                    <a href="#">
                         <i class="fa-regular fa-circle"></i><span>View Users</span>
                     </a>
                 </li>
