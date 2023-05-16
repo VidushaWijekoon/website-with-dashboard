@@ -31,14 +31,14 @@
         </li>
 
         <li class="nav-item">
-            <a href="#" class="nav-link collapsed">
+            <a href="{{ route('categories.index') }}" class="nav-link collapsed">
                 <i class="fa-solid fa-table-list"></i>
                 <span>Categories</span>
             </a>
         </li>
 
         <li class="nav-item">
-            <a href="#" class="nav-link collapsed">
+            <a href="{{ route('client-messages.index') }}" class="nav-link collapsed">
                 <i class="fa-solid fa-message"></i>
                 <span>Client Messages</span>
             </a>
@@ -50,7 +50,7 @@
             </a>
             <ul id="clients" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="#">
+                    <a href="{{ route('clients.index') }}">
                         <i class="fa-regular fa-circle"></i><span>View Clients</span>
                     </a>
                 </li>
@@ -63,7 +63,7 @@
             </a>
             <ul id="sales" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="#">
+                    <a href="{{ route('sales.index') }}">
                         <i class="fa-regular fa-circle"></i><span>Sales</span>
                     </a>
                 </li>
@@ -86,7 +86,7 @@
             </a>
             <ul id="accounts" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="#">
+                    <a href="{{ route('accounts.index') }}">
                         <i class="fa-regular fa-circle"></i><span>Accounts</span>
                     </a>
                 </li>
@@ -109,12 +109,12 @@
             </a>
             <ul id="employee" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="#">
+                    <a href="{{ route('employees.index') }}">
                         <i class="fa-regular fa-circle"></i><span>Employees</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="{{ route('attendance.index') }}">
                         <i class="fa-regular fa-circle"></i><span>Attendance</span>
                     </a>
                 </li>

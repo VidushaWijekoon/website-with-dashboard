@@ -1,8 +1,14 @@
 <?php
 
 use App\Http\Controllers\Admin\AccountsController;
+use App\Http\Controllers\Admin\AttendanceController;
+use App\Http\Controllers\Admin\CategoriesController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\ClientController;
+use App\Http\Controllers\Admin\ClientMessagesController;
+use App\Http\Controllers\Admin\ClientsController;
 use App\Http\Controllers\Admin\ContactUsController;
+use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\DashboardHomeController;
 use App\Http\Controllers\Admin\EmployeeController;
 use App\Http\Controllers\Admin\EmployeesController;
@@ -51,12 +57,51 @@ Route::prefix('it/')->group(function () {
 });
 
 Route::prefix('admin/')->middleware('auth', 'isAdmin')->group(function () {
-    Route::get('dashboard', [DashboardHomeController::class, 'index'])->name('dashboard.index');
 
-    // Client Contact US Messages
-    Route::controller(ContactUsController::class)->group(function () {
-        Route::get('contact-us-messages', 'index')->name('contact_us_messages');
+    // Dashboard
+    Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
+
+    // Posts
+    Route::controller(PostsController::class)->group(function () {
+        Route::get('posts/', 'index')->name('posts.index');
     });
+
+    // Categories
+    Route::controller(CategoriesController::class)->group(function () {
+        Route::get('categories/', 'index')->name('categories.index');
+    });
+
+    // Client Messages
+    Route::controller(ClientMessagesController::class)->group(function () {
+        Route::get('client-messages/', 'index')->name('client-messages.index');
+    });
+
+    // Clients
+    Route::controller(ClientsController::class)->group(function () {
+        Route::get('clients/', 'index')->name('clients.index');
+    });
+
+    // Sales
+    Route::controller(SalesController::class)->group(function () {
+        Route::get('sales/', 'index')->name('sales.index');
+    });
+
+    // Accounts
+    Route::controller(AccountsController::class)->group(function () {
+        Route::get('accounts/', 'index')->name('accounts.index');
+    });
+
+    // HR
+    Route::controller(EmployeesController::class)->group(function () {
+        Route::get('employees/', 'index')->name('employees.index');
+    });
+
+    // Attendance
+    Route::controller(AttendanceController::class)->group(function () {
+        Route::get('attendance/', 'index')->name('attendance.index');
+    });
+
+    // Users
 });
 
 Auth::routes();

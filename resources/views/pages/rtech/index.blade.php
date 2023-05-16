@@ -294,7 +294,7 @@
             </div>
 
             <div class="col-lg-6">
-                <form action="{{ route('rtech.index') }}" method="POST" id="contact">
+                <form action="#" method="POST" id="contact">
                     @csrf
                     <div class="row gy-4">
 
