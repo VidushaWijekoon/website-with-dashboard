@@ -62,6 +62,10 @@ Route::prefix('admin')->middleware('auth', 'isAdmin')->group(function () {
             Route::get('/holidays', 'holidays')->name('employee.holidays');
             Route::get('/attendance', 'attendance')->name('employee.attendance');
             Route::get('/create-employee', 'create_employee')->name('employee.create-employee');
+            Route::post('/create-employee', 'store')->name('employee.store');
+            Route::get('/{employee}/edit', 'edit_employee')->name('employee.edit');
+            Route::put('/{employee}/', 'update')->name('employee.update');
+            Route::get('/{employee}/delete', 'delete')->name('employee.delete');
         });
     });
 
