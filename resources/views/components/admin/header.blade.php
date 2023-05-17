@@ -1,8 +1,8 @@
 <div class="header">
     <div class="header-left">
         <a href="index.html" class="logo">
-            <img src="{{ asset('frontend/images/logortbig.png') }}" width="75" height="35" alt=""> <span>Rtech
-                CRM</span>
+            <img src="{{ asset('frontend/images/logortbig.png') }}" width="75" height="35" alt=""> <span>
+            </span>
         </a>
     </div>
     <a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>

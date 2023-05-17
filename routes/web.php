@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\Admin\CategoriesController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\DepartmentController;
 use App\Http\Controllers\Admin\EmployeeController;
+use App\Http\Controllers\Admin\PostsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\DigitialMarketingController;
@@ -58,12 +60,32 @@ Route::prefix('admin')->middleware('auth', 'isAdmin')->group(function () {
             Route::get('/leave', 'leave')->name('employee.leave');
             Route::get('/holidays', 'holidays')->name('employee.holidays');
             Route::get('/attendance', 'attendance')->name('employee.attendance');
+            Route::get('/create-employee', 'create_employee')->name('employee.create-employee');
         });
     });
 
     Route::prefix('/department')->group(function () {
         Route::controller(DepartmentController::class)->group(function () {
             Route::get('/', 'index')->name('department.index');
+            Route::get('/create', 'create')->name('department.create');
+            Route::get('/edit', 'edit')->name('department.edit');
+        });
+    });
+
+    Route::prefix('/categories')->group(function () {
+        Route::controller(CategoriesController::class)->group(function () {
+            Route::get('/', 'index')->name('categories.index');
+            Route::get('/create', 'create')->name('categories.create');
+            Route::get('/edit', 'edit')->name('categories.edit');
+        });
+    });
+
+    Route::prefix('/posts')->group(function () {
+        Route::controller(PostsController::class)->group(function () {
+            Route::get('/', 'index')->name('posts.index');
+            Route::get('/create', 'create')->name('posts.create');
+            Route::get('/single-post', 'single_post')->name('posts.single-post');
+            Route::get('/edit', 'edit')->name('posts.edit');
         });
     });
 });

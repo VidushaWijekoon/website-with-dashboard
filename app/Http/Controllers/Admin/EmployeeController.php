@@ -25,4 +25,9 @@ class EmployeeController extends Controller
     {
         return view('pages.admin.employees.attendance');
     }
+
+    public function create_employee()
+    {
+        return view('pages.admin.employees.create_employee');
+    }
 }

@@ -44,39 +44,36 @@
                     </ul>
                 </li>
 
-
-                <li class="submenu">
-                    <a href="#"><i class="fa fa-envelope"></i> <span> Email</span> <span class="menu-arrow"></span></a>
-                    <ul style="display: none;">
-                        <li><a href="compose.html">Compose Mail</a></li>
-                        <li><a href="inbox.html">Inbox</a></li>
-                        <li><a href="mail-view.html">Mail View</a></li>
-                    </ul>
+                <li>
+                    <a href="{{ route('categories.index') }}">
+                        <i class="fa fa-flag-o"></i>
+                        <span>Categories</span>
+                    </a>
                 </li>
+
                 <li class="submenu">
                     <a href="#"><i class="fa-solid fa-envelopes-bulk"></i><span> Posts</span>
                         <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
-                        <li><a href="#">Posts</a></li>
-                        <li><a href="#">Posts View</a></li>
-                        <li><a href="#">Add Posts</a></li>
-                        <li><a href="#">Edit Posts</a></li>
+                        <li><a href="{{ route('posts.index') }}">Posts</a></li>
+                        <li><a href="{{ route('posts.single-post') }}">Posts View</a></li>
+                        <li><a href="{{ route('posts.create') }}">Add Posts</a></li>
+                        <li><a href="{{ route('posts.edit') }}">Edit Posts</a></li>
                     </ul>
                 </li>
 
-                <li class="submenu">
-                    <a href="#"><i class="fa fa-flag-o"></i> <span> Reports </span> <span class="menu-arrow"></span></a>
-                    <ul style="display: none;">
-                        <li><a href="#"> Expense Report </a></li>
-                        <li><a href="#"> Invoice Report </a></li>
-                    </ul>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>Clients Messages</span>
+                    </a>
                 </li>
 
 
                 <li class="menu-title">Extras</li>
 
                 <li>
-                    <a href="#"><i class="fa fa-home"></i> <span>Homepage</span></a>
+                    <a href="{{ route('rtech.index') }}"><i class="fa fa-home"></i> <span>Homepage</span></a>
                 </li>
 
                 <li>
