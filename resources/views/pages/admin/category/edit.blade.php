@@ -1,39 +1,28 @@
 @extends('layouts.admin.app')
-@section('title', 'Edit Department')
+@section('title', 'Edit Category')
 @section('content')
 <div class="page-wrapper">
     <div class="content">
         <div class="row">
             <div class="col-sm-12">
-                <h4 class="page-title">Edit Department</h4>
+                <h4 class="page-title">Edit Category</h4>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
                 <div class="card-box">
-                    <h4 class="card-title">Edit Department Form</h4>
-                    <form action="{{ url('admin/depertment'.$department->id) }}" method="POST">
-                        @csrf
-                        @method('PUT')
+                    <h4 class="card-title">Edit Category Form</h4>
+                    <form action="#">
                         <div class="form-group row">
-                            <label class="col-md-3 col-form-label">Department Name</label>
+                            <label class="col-md-3 col-form-label">Category Name</label>
                             <div class="col-md-9">
-                                <input type="text" class="form-control" name="department_name"
-                                    value="{{ $department->department_name }}">
-                                @error('department_name')
-                                <small class="text-danger">{{ $message }}</small>
-                                @enderror
+                                <input type="text" class="form-control" placeholder="Category Name">
                             </div>
                         </div>
-
                         <div class="form-group row">
-                            <label class="col-md-3 col-form-label">Department Slug</label>
+                            <label class="col-md-3 col-form-label">Category Slug</label>
                             <div class="col-md-9">
-                                <input type="text" class="form-control" name="department_slug"
-                                    value="{{ $department->department_slug }}">
-                                @error('department_slug')
-                                <small class="text-danger">{{ $message }}</small>
-                                @enderror
+                                <input type="text" class="form-control" placeholder="Category Slug">
                             </div>
                         </div>
 
@@ -56,7 +45,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-sm btn-primary">Edit Department</button>
+                        <button type="submit" class="btn btn-sm btn-primary">Edit Category</button>
                     </form>
                 </div>
             </div>

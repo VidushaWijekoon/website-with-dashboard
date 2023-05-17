@@ -3,7 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use App\Http\Requests\Admin\DepartmentRequestForm;
+use App\Models\Admin\Department;
 
 class DepartmentController extends Controller
 {
@@ -16,8 +17,32 @@ class DepartmentController extends Controller
     {
         return view('pages.admin.departments.create');
     }
-    public function edit()
+
+    public function store(DepartmentRequestForm $request)
     {
-        return view('pages.admin.departments.edit');
+        $validatedData = $request->validated();
+        $department = new Department();
+
+        $department->department_name = $validatedData['department_name'];
+        $department->department_slug = $validatedData['department_slug'];
+        $department->status = $request->status == true ? '1' : '0';
+
+        $department->save();
+        return redirect(route('department.index'))->with('message', 'Department Added Successfully');
+    }
+
+
+    public function department_edit(Department $department)
+    {
+        return view('pages.admin.departments.edit', compact('department'));
+    }
+
+    public function delete($department)
+    {
+        $department = Department::findOrFail($department);
+
+        $department->delete();
+        session()->flash('message', 'Department has been deleted');
+        return redirect()->back()->with('message', 'Department Been Deleted');
     }
 }

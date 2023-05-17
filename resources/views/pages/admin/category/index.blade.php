@@ -1,9 +1,9 @@
 @extends('layouts.admin.app')
-@section('title', 'Department')
+@section('title', 'Category')
 @section('content')
 
 <div class="">
-    <livewire:admin.department.index />
+    <livewire:admin.category.index />
 </div>
 
 @endsection

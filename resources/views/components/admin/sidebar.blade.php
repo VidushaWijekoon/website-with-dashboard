@@ -19,6 +19,15 @@
                 </li>
 
                 <li class="submenu">
+                    <a href="#"><i class="fa fa-money"></i> <span> Accounts </span> <span class="menu-arrow"></span></a>
+                    <ul style="display: none;">
+                        <li><a href="#">Quotations</a></li>
+                        <li><a href="#">Invoices</a></li>
+                        <li><a href="#">Payments</a></li>
+                    </ul>
+                </li>
+
+                <li class="submenu">
                     <a href="#"><i class="fa fa-user"></i> <span> Employees </span> <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
                         <li><a href="{{ route('employee.dashboard') }}">Employees List</a></li>
@@ -26,16 +35,7 @@
                         <li><a href="{{ route('employee.holidays') }}">Holidays</a></li>
                     </ul>
                 </li>
-                <li class="submenu">
-                    <a href="#"><i class="fa fa-money"></i> <span> Accounts </span> <span class="menu-arrow"></span></a>
-                    <ul style="display: none;">
-                        <li><a href="#">Invoices</a></li>
-                        <li><a href="#">Payments</a></li>
-                        <li><a href="#">Expenses</a></li>
-                        <li><a href="#">Taxes</a></li>
-                        <li><a href="#">Provident Fund</a></li>
-                    </ul>
-                </li>
+
                 <li class="submenu">
                     <a href="#"><i class="fa fa-book"></i> <span> Payroll </span> <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
@@ -45,7 +45,7 @@
                 </li>
 
                 <li>
-                    <a href="{{ route('categories.index') }}">
+                    <a href="{{ route('category.index') }}">
                         <i class="fa fa-flag-o"></i>
                         <span>Categories</span>
                     </a>
@@ -63,7 +63,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="{{ route('client-messages.index') }}">
                         <i class="fa-regular fa-envelope"></i>
                         <span>Clients Messages</span>
                     </a>

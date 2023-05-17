@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\CategoriesController;
+use App\Http\Controllers\Admin\ClientMessagesController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\DepartmentController;
 use App\Http\Controllers\Admin\EmployeeController;
@@ -68,15 +69,20 @@ Route::prefix('admin')->middleware('auth', 'isAdmin')->group(function () {
         Route::controller(DepartmentController::class)->group(function () {
             Route::get('/', 'index')->name('department.index');
             Route::get('/create', 'create')->name('department.create');
-            Route::get('/edit', 'edit')->name('department.edit');
+            Route::post('/', 'store')->name('department.store');
+            Route::get('/department/{department}/edit', 'department_edit')->name('department.edit');
+            Route::get('/department/{department}/delete', 'delete')->name('department.delete');
         });
     });
 
-    Route::prefix('/categories')->group(function () {
+    Route::prefix('/category')->group(function () {
         Route::controller(CategoriesController::class)->group(function () {
-            Route::get('/', 'index')->name('categories.index');
-            Route::get('/create', 'create')->name('categories.create');
-            Route::get('/edit', 'edit')->name('categories.edit');
+            Route::get('/', 'index')->name('category.index');
+            Route::get('/create', 'create')->name('category.create');
+            Route::post('/', 'store')->name('category.store');
+            Route::get('/category/{category}/edit', 'edit')->name('category.edit');
+            Route::put('/category/{category}/', 'update')->name('category.update');
+            Route::get('/category/{category}/delete', 'delete')->name('category.delete');
         });
     });
 
@@ -86,6 +92,12 @@ Route::prefix('admin')->middleware('auth', 'isAdmin')->group(function () {
             Route::get('/create', 'create')->name('posts.create');
             Route::get('/single-post', 'single_post')->name('posts.single-post');
             Route::get('/edit', 'edit')->name('posts.edit');
+        });
+    });
+
+    Route::prefix('/client-messages')->group(function () {
+        Route::controller(ClientMessagesController::class)->group(function () {
+            Route::get('/', 'index')->name('client-messages.index');
         });
     });
 });
