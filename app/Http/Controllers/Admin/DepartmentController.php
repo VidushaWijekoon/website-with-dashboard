@@ -25,7 +25,7 @@ class DepartmentController extends Controller
 
         $department->department_name = $validatedData['department_name'];
         $department->department_slug = $validatedData['department_slug'];
-        $department->status = $request->status == true ? '1' : '0';
+        $department->status = $request->status == true ? '1' : 0;
 
         $department->save();
         return redirect(route('department.index'))->with('message', 'Department Added Successfully');
@@ -35,6 +35,19 @@ class DepartmentController extends Controller
     public function department_edit(Department $department)
     {
         return view('pages.admin.departments.edit', compact('department'));
+    }
+
+    public function update(DepartmentRequestForm $request, $department)
+    {
+        $validated = $request->validated();
+        $department = Department::findOrFail($department);
+
+        $department->department_name = $validated['department_name'];
+        $department->department_slug = $validated['department_slug'];
+        $department->status = $request->status == true ? '1' : 0;
+
+        $department->update();
+        return redirect(route('department.index'))->with('message', 'Department Updated Successfully');
     }
 
     public function delete($department)

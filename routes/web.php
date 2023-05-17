@@ -70,8 +70,9 @@ Route::prefix('admin')->middleware('auth', 'isAdmin')->group(function () {
             Route::get('/', 'index')->name('department.index');
             Route::get('/create', 'create')->name('department.create');
             Route::post('/', 'store')->name('department.store');
-            Route::get('/department/{department}/edit', 'department_edit')->name('department.edit');
-            Route::get('/department/{department}/delete', 'delete')->name('department.delete');
+            Route::get('/{department}/edit', 'department_edit')->name('department.edit');
+            Route::put('/{department}/', 'update')->name('category.update');
+            Route::get('/{department}/delete', 'delete')->name('department.delete');
         });
     });
 
@@ -80,9 +81,9 @@ Route::prefix('admin')->middleware('auth', 'isAdmin')->group(function () {
             Route::get('/', 'index')->name('category.index');
             Route::get('/create', 'create')->name('category.create');
             Route::post('/', 'store')->name('category.store');
-            Route::get('/category/{category}/edit', 'edit')->name('category.edit');
-            Route::put('/category/{category}/', 'update')->name('category.update');
-            Route::get('/category/{category}/delete', 'delete')->name('category.delete');
+            Route::get('/{category}/edit', 'edit')->name('category.edit');
+            Route::put('/{category}/', 'update')->name('category.update');
+            Route::get('/{category}/delete', 'delete')->name('category.delete');
         });
     });
 

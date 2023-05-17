@@ -8,8 +8,8 @@
                 <h4 class="page-title">Categories</h4>
             </div>
             <div class="col-sm-7 col-7 text-right m-b-30">
-                <a href="{{ route('category.create') }}" class="btn btn-primary btn-sm float-end"><i
-                        class="fa fa-plus"></i> Add
+                <a href="{{ route('category.create') }}" class="btn btn-primary btn-sm float-end">
+                    <i class="fa fa-plus"></i> Add
                     Category</a>
             </div>
         </div>
@@ -46,10 +46,12 @@
                                             aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                         <div class="dropdown-menu dropdown-menu-right">
                                             <a class="dropdown-item"
-                                                href="{{ url('admin/category/'.$item->id.'/edit') }}"><i
-                                                    class="fa fa-pencil m-r-5"></i> Edit</a>
-                                            <a class="dropdown-item" href="#" data-toggle="modal"
-                                                data-target="#delete_department"><i class="fa fa-trash-o m-r-5"></i>
+                                                href="{{ url('admin/category/'.$item->id.'/edit') }}">
+                                                <i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                            <a class="dropdown-item"
+                                                href="{{ url('admin/category/'.$item->id.'/delete') }}"
+                                                onclick="return confirm('Make sure you want to remove category ?')">
+                                                <i class="fa fa-trash-o m-r-5"></i>
                                                 Delete</a>
                                         </div>
                                     </div>

@@ -12,39 +12,74 @@
             <div class="col-md-6">
                 <div class="card-box">
                     <h4 class="card-title">Edit Category Form</h4>
-                    <form action="#">
+                    <form action="{{ url('admin/category/'.$category->id) }}" method="POST">
+                        @csrf
+                        @method('PUT')
                         <div class="form-group row">
                             <label class="col-md-3 col-form-label">Category Name</label>
                             <div class="col-md-9">
-                                <input type="text" class="form-control" placeholder="Category Name">
+                                <input type="text" class="form-control" name="category_name"
+                                    value="{{ $category->category_name }}">
                             </div>
+                            @error('category_name')
+                            <small class="text-danger">{{ $message }}</small>
+                            @enderror
                         </div>
                         <div class="form-group row">
                             <label class="col-md-3 col-form-label">Category Slug</label>
                             <div class="col-md-9">
-                                <input type="text" class="form-control" placeholder="Category Slug">
+                                <input type="text" class="form-control" name="category_slug"
+                                    value="{{ $category->category_slug }}">
                             </div>
+                            @error('department_name')
+                            <small class="text-danger">{{ $message }}</small>
+                            @enderror
                         </div>
 
+                        @if ($category->status == 1)
                         <div class="form-group row">
                             <label class="col-md-3 col-form-label">Status</label>
                             <div class="col-md-9">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="status" id="blog_active"
-                                        value="option1" checked>
+                                        value="1" checked>
                                     <label class="form-check-label" for="blog_active">
                                         Active
                                     </label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="status" id="blog_inactive"
-                                        value="option2">
+                                        value="0">
                                     <label class="form-check-label" for="blog_inactive">
                                         Inactive
                                     </label>
                                 </div>
                             </div>
                         </div>
+                        @endif
+
+                        @if ($category->status == 0)
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Status</label>
+                            <div class="col-md-9">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="status" id="blog_active"
+                                        value="1" >
+                                    <label class="form-check-label" for="blog_active">
+                                        Active
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="status" id="blog_inactive"
+                                        value="0" checked>
+                                    <label class="form-check-label" for="blog_inactive">
+                                        Inactive
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        @endif
+
                         <button type="submit" class="btn btn-sm btn-primary">Edit Category</button>
                     </form>
                 </div>

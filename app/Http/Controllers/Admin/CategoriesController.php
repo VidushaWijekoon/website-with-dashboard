@@ -36,4 +36,26 @@ class CategoriesController extends Controller
     {
         return view('pages.admin.category.edit', compact('category'));
     }
+
+    public function update(CategoryRequestForm $request, $category)
+    {
+        $validated = $request->validated();
+        $category = Category::findOrFail($category);
+
+        $category->category_name = $validated['category_name'];
+        $category->category_slug = $validated['category_slug'];
+        $category->status = $request->status == true ? '1' : 0;
+
+        $category->update();
+        return redirect(route('category.index'))->with('message', 'Category Update Successfully');
+    }
+
+    public function delete($category)
+    {
+        $category = Category::findOrFail($category);
+
+        $category->delete();
+        session()->flash('message', 'Category has been deleted');
+        return redirect()->back()->with('message', 'Category Been Deleted');
+    }
 }
