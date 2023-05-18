@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Admin\Category;
 use Illuminate\Http\Request;
 
 class PostsController extends Controller
@@ -14,7 +15,8 @@ class PostsController extends Controller
 
     public function create()
     {
-        return view('pages.admin.posts.create');
+        $categories = Category::all();
+        return view('pages.admin.posts.create', compact('categories'));
     }
 
     public function single_post()

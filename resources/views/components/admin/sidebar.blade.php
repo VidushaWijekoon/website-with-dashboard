@@ -12,7 +12,7 @@
                 </li>
 
                 <li>
-                    <a href="{{ route('department.index') }}">
+                    <a href="{{ route('department') }}">
                         <i class="fa fa-hospital-o"></i>
                         <span>Departments</span>
                     </a>
@@ -45,7 +45,7 @@
                 </li>
 
                 <li>
-                    <a href="{{ route('category.index') }}">
+                    <a href="{{ route('category') }}">
                         <i class="fa fa-flag-o"></i>
                         <span>Categories</span>
                     </a>

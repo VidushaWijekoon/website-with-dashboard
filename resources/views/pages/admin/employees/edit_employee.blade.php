@@ -103,7 +103,7 @@
                                     <label>Picture</label>
                                     <input type="file" class="form-control" name="image" style="min-height: 0">
                                     <img src="{{ asset('uploads/employee/' . $employee->image) }}" alt=""
-                                        style="width: 60%" class="mt-4" />
+                                        style="width: 10%" class="mt-4" />
                                     @error('image') <small class="text-danger">{{ $message }}</small>
                                     @enderror
                                 </div>

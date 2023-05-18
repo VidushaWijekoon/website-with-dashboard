@@ -9,6 +9,9 @@
     <title>@yield('title')</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="{{ asset('frontend/images/favicon.png') }}" rel="icon">
+    <link href="{{ asset('frontend/images/favicon.png') }}" rel="apple-touch-icon">
 
     @include('libraries.admin.styles')
     @livewireStyles

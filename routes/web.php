@@ -1,9 +1,7 @@
 <?php
 
-use App\Http\Controllers\Admin\CategoriesController;
 use App\Http\Controllers\Admin\ClientMessagesController;
 use App\Http\Controllers\Admin\DashboardController;
-use App\Http\Controllers\Admin\DepartmentController;
 use App\Http\Controllers\Admin\EmployeeController;
 use App\Http\Controllers\Admin\PostsController;
 use Illuminate\Support\Facades\Auth;
@@ -69,28 +67,6 @@ Route::prefix('admin')->middleware('auth', 'isAdmin')->group(function () {
         });
     });
 
-    Route::prefix('/department')->group(function () {
-        Route::controller(DepartmentController::class)->group(function () {
-            Route::get('/', 'index')->name('department.index');
-            Route::get('/create', 'create')->name('department.create');
-            Route::post('/', 'store')->name('department.store');
-            Route::get('/{department}/edit', 'department_edit')->name('department.edit');
-            Route::put('/{department}/', 'update')->name('category.update');
-            Route::get('/{department}/delete', 'delete')->name('department.delete');
-        });
-    });
-
-    Route::prefix('/category')->group(function () {
-        Route::controller(CategoriesController::class)->group(function () {
-            Route::get('/', 'index')->name('category.index');
-            Route::get('/create', 'create')->name('category.create');
-            Route::post('/', 'store')->name('category.store');
-            Route::get('/{category}/edit', 'edit')->name('category.edit');
-            Route::put('/{category}/', 'update')->name('category.update');
-            Route::get('/{category}/delete', 'delete')->name('category.delete');
-        });
-    });
-
     Route::prefix('/posts')->group(function () {
         Route::controller(PostsController::class)->group(function () {
             Route::get('/', 'index')->name('posts.index');
@@ -105,4 +81,8 @@ Route::prefix('admin')->middleware('auth', 'isAdmin')->group(function () {
             Route::get('/', 'index')->name('client-messages.index');
         });
     });
+
+    // Livewire
+    Route::get('category', App\Http\Livewire\Admin\Category\Index::class)->name('category');
+    Route::get('department', App\Http\Livewire\Admin\Department\Index::class)->name('department');
 });
