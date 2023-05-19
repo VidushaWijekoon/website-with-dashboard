@@ -217,7 +217,7 @@
                                         <textarea rows="4" class="form-control"></textarea>
                                     </div>
                                     <div class="comment-submit">
-                                        <input type="submit" value="Submit" class="btn">
+                                        <input type="submit" value="Submit" class="btn btn-sm">
                                     </div>
                                 </div>
                             </div>
@@ -226,76 +226,9 @@
                 </div>
             </div>
             <aside class="col-md-4">
-                <div class="widget search-widget">
-                    <h5>Blog Search</h5>
-                    <form class="search-form">
-                        <div class="input-group">
-                            <input type="text" placeholder="Search..." class="form-control">
-                            <div class="input-group-append">
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="widget post-widget">
-                    <h5>Latest Posts</h5>
-                    <ul class="latest-posts">
-                        <li>
-                            <div class="post-thumb">
-                                <a href="blog-details.html">
-                                    <img class="img-fluid" src="{{ asset('admin/img/blog/blog-thumb-01.jpg') }}" alt="">
-                                </a>
-                            </div>
-                            <div class="post-info">
-                                <h4>
-                                    <a href="blog-details.html">Lorem ipsum dolor sit amet consectetur</a>
-                                </h4>
-                                <p><i aria-hidden="true" class="fa fa-calendar"></i> December 6, 2017</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="post-thumb">
-                                <a href="blog-details.html">
-                                    <img class="img-fluid" src="{{ asset('admin/img/blog/blog-thumb-02.jpg') }}" alt="">
-                                </a>
-                            </div>
-                            <div class="post-info">
-                                <h4>
-                                    <a href="blog-details.html">Lorem ipsum dolor sit amet consectetur</a>
-                                </h4>
-                                <p><i aria-hidden="true" class="fa fa-calendar"></i> December 6, 2017</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="post-thumb">
-                                <a href="blog-details.html">
-                                    <img class="img-fluid" src="{{ asset('admin/img/blog/blog-thumb-03.jpg') }}" alt="">
-                                </a>
-                            </div>
-                            <div class="post-info">
-                                <h4>
-                                    <a href="blog-details.html">Lorem ipsum dolor sit amet consectetur</a>
-                                </h4>
-                                <p><i aria-hidden="true" class="fa fa-calendar"></i> December 6, 2017</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="post-thumb">
-                                <a href="blog-details.html">
-                                    <img class="img-fluid" src="{{ asset('admin/img/blog/blog-thumb-04.jpg') }}" alt="">
-                                </a>
-                            </div>
-                            <div class="post-info">
-                                <h4>
-                                    <a href="blog-details.html">Lorem ipsum dolor sit amet consectetur</a>
-                                </h4>
-                                <p><i aria-hidden="true" class="fa fa-calendar"></i> December 6, 2017</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+
                 <div class="widget category-widget">
-                    <h5>Blog Categories</h5>
+                    <h5>Post Categories</h5>
                     <ul class="categories">
                         <li><a href="#."><i class="fa fa-long-arrow-right"></i> Lorem ipsum dolor</a></li>
                         <li><a href="#."><i class="fa fa-long-arrow-right"></i> Lorem ipsum dolor</a></li>

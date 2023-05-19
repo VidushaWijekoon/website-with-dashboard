@@ -4732,8 +4732,8 @@ blockquote p {
     background-color: #009efb;
     border-color: #009efb;
     border-radius: 0;
-    font-size: 18px;
-    padding: 8px 26px;
+    /* font-size: 18px; */
+    padding: 5px 15px;
     color: #fff;
 }
 

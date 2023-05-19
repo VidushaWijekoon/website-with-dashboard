@@ -4,14 +4,7 @@
             <ul>
                 <li class="menu-title">Main</li>
                 <li>
-                    <a href="#"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
-                </li>
-
-                <li>
-                    <a href="{{ route('category') }}">
-                        <i class="fa fa-flag-o"></i>
-                        <span>Categories</span>
-                    </a>
+                    <a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
                 </li>
 
                 <li class="submenu">
@@ -19,17 +12,9 @@
                         <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
                         <li><a href="{{ route('posts.index') }}">Posts</a></li>
-                        <li><a href="{{ route('posts.single-post') }}">Posts View</a></li>
                         <li><a href="{{ route('posts.create') }}">Add Posts</a></li>
                         <li><a href="{{ route('posts.edit') }}">Edit Posts</a></li>
                     </ul>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <i class="fa-regular fa-envelope"></i>
-                        <span>Clients Messages</span>
-                    </a>
                 </li>
 
 

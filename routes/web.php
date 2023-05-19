@@ -63,5 +63,4 @@ Route::prefix('admin')->middleware('auth', 'isAdmin')->group(function () {
     });
 
     // Livewire
-    Route::get('category', App\Http\Livewire\Admin\Category\Index::class)->name('category');
 });

@@ -133,15 +133,9 @@
                         {{ Auth::user()->name }}
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li>
-                            <a class="dropdown-item" href="{{ route('dashboard.index') }}">
-                                <i class="fa-solid fa-table-cells-large"></i> Dashboard
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a></li>
 
                         <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="{{ route('posts.index') }}">
                                 <i class="fa-solid fa-envelope"></i> My Posts
                             </a>
                         </li>
