@@ -13,7 +13,7 @@ class Index extends Component
 
     public function render()
     {
-        $employee = Employee::orderBy('id', 'ASC')->paginate(15);
-        return view('livewire.admin.employee.index', ['employee' => $employee]);
+
+        return view('livewire.admin.employee.index');
     }
 }

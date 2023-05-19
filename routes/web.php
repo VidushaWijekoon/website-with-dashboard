@@ -53,20 +53,6 @@ Route::prefix('it/')->group(function () {
 Route::prefix('admin')->middleware('auth', 'isAdmin')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
 
-    Route::prefix('/employee')->group(function () {
-        Route::controller(EmployeeController::class)->group(function () {
-            Route::get('/', 'index')->name('employee.dashboard');
-            Route::get('/leave', 'leave')->name('employee.leave');
-            Route::get('/holidays', 'holidays')->name('employee.holidays');
-            Route::get('/attendance', 'attendance')->name('employee.attendance');
-            Route::get('/create-employee', 'create_employee')->name('employee.create-employee');
-            Route::post('/create-employee', 'store')->name('employee.store');
-            Route::get('/{employee}/edit', 'edit_employee')->name('employee.edit');
-            Route::put('/{employee}/', 'update')->name('employee.update');
-            Route::get('/{employee}/delete', 'delete')->name('employee.delete');
-        });
-    });
-
     Route::prefix('/posts')->group(function () {
         Route::controller(PostsController::class)->group(function () {
             Route::get('/', 'index')->name('posts.index');
@@ -76,13 +62,6 @@ Route::prefix('admin')->middleware('auth', 'isAdmin')->group(function () {
         });
     });
 
-    Route::prefix('/client-messages')->group(function () {
-        Route::controller(ClientMessagesController::class)->group(function () {
-            Route::get('/', 'index')->name('client-messages.index');
-        });
-    });
-
     // Livewire
     Route::get('category', App\Http\Livewire\Admin\Category\Index::class)->name('category');
-    Route::get('department', App\Http\Livewire\Admin\Department\Index::class)->name('department');
 });
