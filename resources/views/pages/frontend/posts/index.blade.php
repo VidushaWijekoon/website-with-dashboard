@@ -1,6 +1,7 @@
 @extends('layouts.rtech.app')
 @section('title', 'Rtech | Single Post')
 @section('content')
+
 <!-- ======= Blog Single Section ======= -->
 <section id="blog" class="blog">
     <div class="container" data-aos="fade-up">
@@ -338,6 +339,7 @@
     </div>
 </section>
 <!-- End Blog Single Section -->
+
 @endsection
 
 @push('style')

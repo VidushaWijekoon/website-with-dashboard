@@ -13,7 +13,6 @@
                     <ul style="display: none;">
                         <li><a href="{{ route('posts.index') }}">Posts</a></li>
                         <li><a href="{{ route('posts.create') }}">Add Posts</a></li>
-                        <li><a href="{{ route('posts.edit') }}">Edit Posts</a></li>
                     </ul>
                 </li>
 
@@ -22,13 +21,6 @@
 
                 <li>
                     <a href="{{ route('rtech.index') }}"><i class="fa fa-home"></i> <span>Homepage</span></a>
-                </li>
-
-                <li>
-                    <a href="{{ route('register') }}">
-                        <i class="fa-solid fa-arrows-to-circle"></i>
-                        <span>Register</span>
-                    </a>
                 </li>
 
                 <li>

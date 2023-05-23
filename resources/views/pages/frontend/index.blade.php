@@ -253,78 +253,43 @@
 
         <div class="row gy-4 mt-2">
 
-            <div class="col-lg-6">
 
-                <div class="row gy-4 mb-4">
-                    <div class="col-md-6">
-                        <div class="info-box">
-                            <i class="bi bi-geo-alt"></i>
-                            <h3>Head Office</h3>
-                            <p>Sharjah Research Technology and Innovation Park ,BLOCK B, Ofc No: B16,Sharjah, UAE,
-                                Po Box No :66636</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info-box">
-                            <i class="bi bi-telephone"></i>
-                            <h3>Branch Office</h3>
-                            <p>M26,Crystal Building, Al Karama, Dubai</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info-box">
-                            <i class="bi bi-envelope"></i>
-                            <h3>Email Us</h3>
-                            <p>info@rtechglobal.ae</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info-box">
-                            <i class="bi bi-clock"></i>
-                            <h3>Call us</h3>
-                            <p>
-                                +971 (04) 398 7949
-                                <br>
-                                +971 (052) 984 3844
-                            </p>
-                        </div>
+            <div class="row gy-4 mb-4">
+                <div class="col-md-3">
+                    <div class="info-box">
+                        <i class="bi bi-geo-alt"></i>
+                        <h3>Head Office</h3>
+                        <p>Sharjah Research Technology and Innovation Park ,BLOCK B, Ofc No: B16,Sharjah, UAE,
+                            Po Box No :66636</p>
                     </div>
                 </div>
-
-            </div>
-
-            <div class="col-lg-6">
-                <form action="#" method="POST" id="contact">
-                    @csrf
-                    <div class="row gy-4">
-
-                        <div class="col-md-6">
-                            <input type="text" name="contact_us_messanger_fullname" class="form-control"
-                                placeholder="Your Name" required>
-                        </div>
-
-                        <div class="col-md-6 ">
-                            <input type="email" class="form-control" name="contact_us_title" placeholder="Your Email"
-                                required>
-                        </div>
-
-                        <div class="col-md-12">
-                            <input type="text" class="form-control" name="contact_us_subject" placeholder="Subject"
-                                required>
-                        </div>
-
-                        <div class="col-md-12">
-                            <textarea class="form-control" name="contact_us_message" rows="6" placeholder="Message"
-                                required></textarea>
-                        </div>
-
-                        <div class="col-md-12 text-center">
-                            <button type="submit" class="btn btn-sm btn-success">Send Message</button>
-                        </div>
-
+                <div class="col-md-3">
+                    <div class="info-box">
+                        <i class="bi bi-telephone"></i>
+                        <h3>Branch Office</h3>
+                        <p>M26,Crystal Building, Al Karama, Dubai</p>
                     </div>
-                </form>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-box">
+                        <i class="bi bi-envelope"></i>
+                        <h3>Email Us</h3>
+                        <p>info@rtechglobal.ae</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-box">
+                        <i class="bi bi-clock"></i>
+                        <h3>Call us</h3>
+                        <p>
+                            +971 (04) 398 7949
+                            <br>
+                            +971 (052) 984 3844
+                        </p>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 

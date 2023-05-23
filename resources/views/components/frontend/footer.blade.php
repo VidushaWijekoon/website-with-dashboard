@@ -65,8 +65,7 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Term & Conditions</h4>
                     <ul>
-                        <li><a href="#">Terms of service</a></li>
-                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
                     </ul>
                 </div><!-- End footer links column-->
 

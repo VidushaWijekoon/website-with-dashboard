@@ -46,7 +46,7 @@
 </section>
 
 <!-- ======= Recent Blog Posts Section ======= -->
-<section id="recent-blog-posts" class="recent-blog-posts">
+<section id="recent-blog-posts" class="recent-blog-posts mb-5">
     <div class="container" data-aos="fade-up">
 
         <header class="section-header p-5 d-flex justify-content-center text-center">
@@ -58,42 +58,22 @@
         </header>
 
         <div class=" row">
-            <div class="col-lg-4">
+            @forelse ($posts as $item)
+            <div class="col-lg-4 mb-5">
                 <div class="post-box">
                     <div class="post-img"><img src="{{ asset('frontend/images/science_technology/sample/blog-1.jpg') }}"
                             class="img-fluid" alt=""></div>
                     <span class="post-date">Tue, September 15</span>
                     <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit
                     </h3>
-                    <a href="{{ route('science_technology.single_post') }}"
-                        class="readmore stretched-link mt-auto"><span>Read More</span><i
-                            class="bi bi-arrow-right"></i></a>
+                    <a href="{{ url('single-post/' . $item->id . '/view') }}"
+                        class="readmore stretched-link mt-auto"><span>Read
+                            More</span><i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
-
-            <div class="col-lg-4">
-                <div class="post-box">
-                    <div class="post-img"><img src="{{ asset('frontend/images/science_technology/sample/blog-2.jpg') }}"
-                            class="img-fluid" alt=""></div>
-                    <span class="post-date">Fri, August 28</span>
-                    <h3 class="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
-                    <a href="{{ route('science_technology.single_post') }}"
-                        class="readmore stretched-link mt-auto"><span>Read More</span><i
-                            class="bi bi-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="post-box">
-                    <div class="post-img"><img src="{{ asset('frontend/images/science_technology/sample/blog-3.jpg') }}"
-                            class="img-fluid" alt=""></div>
-                    <span class="post-date">Mon, July 11</span>
-                    <h3 class="post-title">Quia assumenda est et veritatis aut quae</h3>
-                    <a href="{{ route('science_technology.single_post') }}"
-                        class="readmore stretched-link mt-auto"><span>Read More</span><i
-                            class="bi bi-arrow-right"></i></a>
-                </div>
-            </div>
+            @empty
+            <span>No Data Found</span>
+            @endforelse
 
         </div>
 
@@ -102,243 +82,6 @@
 </section>
 <!-- End Recent Blog Posts Section -->
 
-<!-- ======= Testimonials Section ======= -->
-<section id="testimonials" class="testimonials">
-
-    <div class="container" data-aos="fade-up">
-        <header class="section-header p-5 d-flex justify-content-center text-center">
-            <div class="">
-                <h2 class="" style="color: #112D4E; font-weight: bold">Client Reviews </h2>
-                <span style="color:#112D4E">All client reviews form our clients in science and technology</span>
-            </div>
-        </header>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
-                        </div>
-                        <p style="color:#02a4d6">
-                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                            Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                        </p>
-                        <div class="profile mt-auto">
-                            <img src="{{ asset('frontend/images/science_technology/sample/testimonials-1.jpg') }}"
-                                class="testimonial-img" alt="">
-                            <h3>Saul Goodman</h3>
-                            <h4>Ceo &amp; Founder</h4>
-                        </div>
-                    </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
-                        </div>
-                        <p style="color:#02a4d6">
-                            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum
-                            eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim
-                            culpa.
-                        </p>
-                        <div class="profile mt-auto">
-                            <img src="{{ asset('frontend/images/science_technology/sample/testimonials-2.jpg') }}"
-                                class="testimonial-img" alt="">
-                            <h3>Sara Wilsson</h3>
-                            <h4>Designer</h4>
-                        </div>
-                    </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
-                        </div>
-                        <p style="color:#02a4d6">
-                            Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
-                            minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                        </p>
-                        <div class="profile mt-auto">
-                            <img src="{{ asset('frontend/images/science_technology/sample/testimonials-3.jpg') }}"
-                                class="testimonial-img" alt="">
-                            <h3>Jena Karlis</h3>
-                            <h4>Store Owner</h4>
-                        </div>
-                    </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
-                        </div>
-                        <p style="color:#02a4d6">
-                            Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos
-                            export minim fugiat minim
-                            velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
-                            veniam.
-                        </p>
-                        <div class="profile mt-auto">
-                            <img src="{{ asset('frontend/images/science_technology/sample/testimonials-4.jpg') }}"
-                                class="testimonial-img" alt="">
-                            <h3>Matt Brandon</h3>
-                            <h4>Freelancer</h4>
-                        </div>
-                    </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
-                        </div>
-                        <p style="color:#02a4d6">
-                            Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam
-                            enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore
-                            nisi cillum quid.
-                        </p>
-                        <div class="profile mt-auto">
-                            <img src="{{ asset('frontend/images/science_technology/sample/testimonials-5.jpg') }}"
-                                class="testimonial-img" alt="">
-                            <h3>John Larson</h3>
-                            <h4>Entrepreneur</h4>
-                        </div>
-                    </div>
-                </div><!-- End testimonial item -->
-
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-
-    </div>
-
-</section>
-<!-- End Testimonials Section -->
-
-<!-- ======= Frequently Asked Questions Section ======= -->
-<section id="faq" class="faq mb-5">
-    <div class="container" data-aos="fade-up">
-        <header class="section-header p-5">
-            <h2 class="d-flex justify-content-center" style="color: #112D4E; font-weight: bold">Frequently Asked
-                Questions</h2>
-        </header>
-
-        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-lg-10">
-
-                <div class="accordion accordion-flush" id="faqlist">
-
-                    <div class="accordion-item">
-                        <h3 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#faq-content-1">
-                                <i class="bi bi-question-circle question-icon"></i>
-                                Non consectetur a erat nam at lectus urna duis?
-                            </button>
-                        </h3>
-                        <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                            <div class="accordion-body">
-                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non
-                                curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus
-                                non.
-                            </div>
-                        </div>
-                    </div><!-- # Faq item-->
-
-                    <div class="accordion-item">
-                        <h3 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#faq-content-2">
-                                <i class="bi bi-question-circle question-icon"></i>
-                                Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
-                            </button>
-                        </h3>
-                        <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                            <div class="accordion-body">
-                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
-                                velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec
-                                pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus
-                                turpis massa tincidunt dui.
-                            </div>
-                        </div>
-                    </div><!-- # Faq item-->
-
-                    <div class="accordion-item">
-                        <h3 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#faq-content-3">
-                                <i class="bi bi-question-circle question-icon"></i>
-                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
-                            </button>
-                        </h3>
-                        <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                            <div class="accordion-body">
-                                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
-                                pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
-                                tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna
-                                molestie at elementum eu facilisis sed odio morbi quis
-                            </div>
-                        </div>
-                    </div><!-- # Faq item-->
-
-                    <div class="accordion-item">
-                        <h3 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#faq-content-4">
-                                <i class="bi bi-question-circle question-icon"></i>
-                                Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
-                            </button>
-                        </h3>
-                        <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                            <div class="accordion-body">
-                                <i class="bi bi-question-circle question-icon"></i>
-                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
-                                velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec
-                                pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus
-                                turpis massa tincidunt dui.
-                            </div>
-                        </div>
-                    </div><!-- # Faq item-->
-
-                    <div class="accordion-item">
-                        <h3 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#faq-content-5">
-                                <i class="bi bi-question-circle question-icon"></i>
-                                Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
-                            </button>
-                        </h3>
-                        <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                            <div class="accordion-body">
-                                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est
-                                ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit
-                                adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-                            </div>
-                        </div>
-                    </div><!-- # Faq item-->
-
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- End Frequently Asked Questions Section -->
 
 @endsection
 
@@ -596,45 +339,6 @@
     }
 
 
-    /*--------------------------------------------------------------
-        # F.A.Q
-        --------------------------------------------------------------*/
-    .faq .accordion-collapse {
-        border: 0;
-    }
-
-    .faq .accordion-button {
-        padding: 15px 15px 20px 0;
-        font-weight: 600;
-        border: 0;
-        font-size: 18px;
-        color: #444444;
-        text-align: left;
-        background: #F9F7F7 !important;
-    }
-
-    .faq .accordion-button:focus {
-        box-shadow: none;
-    }
-
-    .faq .accordion-button:not(.collapsed) {
-        background: none;
-        color: #4154f1;
-        border-bottom: 0;
-    }
-
-    .faq .accordion-body {
-        padding: 0 0 25px 0;
-        border: 0;
-    }
-
-    .accordion-header {
-        background: #F9F7F7 !important;
-    }
-
-    .accordion-item {
-        background: #F9F7F7 !important;
-    }
 
     /*--------------------------------------------------------------
         # Recent Blog Posts
@@ -698,99 +402,6 @@
 
     .recent-blog-posts .post-box:hover .post-img img {
         transform: rotate(6deg) scale(1.2);
-    }
-
-    /*--------------------------------------------------------------
-        # Testimonials
-        --------------------------------------------------------------*/
-    .testimonials .testimonial-item {
-        box-sizing: content-box;
-        padding: 30px;
-        margin: 40px 30px;
-        box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
-        background: #fff;
-        min-height: 320px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        transition: 0.3s;
-    }
-
-    .testimonials .testimonial-item .stars {
-        margin-bottom: 15px;
-    }
-
-    .testimonials .testimonial-item .stars i {
-        color: #ffc107;
-        margin: 0 1px;
-    }
-
-    .testimonials .testimonial-item .testimonial-img {
-        width: 90px;
-        border-radius: 50%;
-        border: 4px solid #fff;
-        margin: 0 auto;
-    }
-
-    .testimonials .testimonial-item h3 {
-        font-size: 18px;
-        font-weight: bold;
-        margin: 10px 0 5px 0;
-        color: #111;
-    }
-
-    .testimonials .testimonial-item h4 {
-        font-size: 14px;
-        color: #999;
-        margin: 0;
-    }
-
-    .testimonials .testimonial-item p {
-        font-style: italic;
-        margin: 0 auto 15px auto;
-    }
-
-    .testimonials .swiper-pagination {
-        margin-top: 20px;
-        position: relative;
-    }
-
-    .testimonials .swiper-pagination .swiper-pagination-bullet {
-        width: 12px;
-        height: 12px;
-        background-color: #fff;
-        opacity: 1;
-        border: 1px solid #4154f1;
-    }
-
-    .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-        background-color: #4154f1;
-    }
-
-    .testimonials .swiper-slide {
-        opacity: 0.3;
-        height: 10px;
-    }
-
-    .swiper-wrapper {
-        height: 50% !important;
-    }
-
-    @media (max-width: 1199px) {
-        .testimonials .swiper-slide-active {
-            opacity: 1;
-        }
-
-        .testimonials .swiper-pagination {
-            margin-top: 0;
-        }
-    }
-
-    @media (min-width: 1200px) {
-        .testimonials .swiper-slide-next {
-            opacity: 1;
-            transform: scale(1.12);
-        }
     }
 </style>
 @endpush
