@@ -76,6 +76,42 @@
                 </div>
 
                 <div class="form-group">
+                    <label>Post Summery</label>
+                    <span class="text-danger">*</span>
+                    <textarea cols="30" rows="3" class="form-control" name="post_summery"
+                        placeholder="Post Summery">{{ $post->post_summery }}</textarea>
+                    @error('post_summery') <small class="text-danger"></small> @enderror
+                </div>
+
+                <div class="form-group">
+                    <label>Title Image</label>
+                    <span class="text-danger">*</span>
+                    <div>
+                        <input class="form-control form-control-sm" type="file" style="min-height: 0px"
+                            name="title_image" accept="image/png, image/jpeg">
+                        <small class="form-text text-muted">Max. file size: 50 MB. Allowed images: jpg, gif, png.
+                            Maximum 1 images only.</small>
+                        <div class="">
+                            @if ($post->postTitleImage)
+                            <div class="row">
+                                @foreach ($post->postTitleImage as $x)
+                                <div class="col-md-3 col-sm-3 col-4 col-lg-3 col-xl-2">
+                                    <div class="product-thumbnail">
+                                        <img src="{{ asset($x->title_image) }}"
+                                            class="img-thumbnail img-fluid me-4 border">
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div>
+                            @else
+                            <h5>No Image Found</h5>
+                            @endif
+                        </div>
+                        @error('title_image') <small class="text-danger"></small> @enderror
+                    </div>
+                </div>
+
+                <div class="form-group">
                     <label>Post Images</label>
                     <span class="text-danger">*</span>
                     <div>

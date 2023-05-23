@@ -36,8 +36,6 @@ Route::prefix('/')->group(function () {
 
     Route::get('technical-services', [TechnicalServicesController::class, 'index'])->name('technical_services.index');
     Route::get('science-technology', [ScienceTechnologyController::class, 'index'])->name('science_technology.index');
-    Route::get('science-technology/single_post', [ScienceTechnologyController::class, 'single_post'])->name('science_technology.single_post');
-    Route::get('single-post/{post}/view', [ScienceTechnologyController::class, 'view'])->name('science_technology.view');
     Route::get('event-management', [EventManagementController::class, 'index'])->name('event_management.index');
     Route::get('term-conditions', [TermAndConditionsController::class, 'index'])->name('term_and_condtions.index');
 });

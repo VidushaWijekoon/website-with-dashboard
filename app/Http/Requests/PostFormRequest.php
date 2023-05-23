@@ -25,6 +25,8 @@ class PostFormRequest extends FormRequest
             'title' => ['required', 'string'],
             'slug' => ['required', 'string'],
             'category' => ['required', 'string'],
+            'post_summery' => ['required'],
+            'title_image' => ['nullable'],
             'post_description' => ['required', 'string'],
             'contact_number' => ['required', 'string'],
             'contact_email' => ['required', 'string'],

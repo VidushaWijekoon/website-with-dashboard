@@ -32,6 +32,7 @@ class PostsController extends Controller
             'title' => $validatedData['title'],
             'slug' => Str::slug($validatedData['slug']),
             'category' => $validatedData['category'],
+            'post_summery' => $validatedData['post_summery'],
             'post_description' => $validatedData['post_description'],
             'contact_number' => $validatedData['contact_number'],
             'contact_email' => $validatedData['contact_email'],
@@ -41,6 +42,21 @@ class PostsController extends Controller
             'username' => Auth::user()->id
         ]);
 
+        if ($request->hasFile('title_image')) {
+            $uploadPath = 'uploads/posts/title_image/';
+
+            $file = $request->file('title_image');
+            $ext = $file->getClientOriginalExtension();
+            $filename = time() . '.' . $ext;
+
+            $file->move($uploadPath, $filename);
+            $finalVideoPath = $uploadPath .  $filename;
+
+            $posts->postTitleImage()->create([
+                'posts_id' => $posts->id,
+                'title_image' => $finalVideoPath,
+            ]);
+        }
 
         if ($request->hasFile('image')) {
             $uploadPath = 'uploads/posts/images/';
@@ -126,6 +142,9 @@ class PostsController extends Controller
             'status' => $request->status == true ? '1' : '0',
             'pricing' => $validatedData['pricing'],
             'conditions' => $request->status == true ? '1' : '0',
+
+
+
         ]);
 
 

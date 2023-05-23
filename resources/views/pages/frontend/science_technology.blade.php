@@ -61,14 +61,17 @@
             @forelse ($posts as $item)
             <div class="col-lg-4 mb-5">
                 <div class="post-box">
-                    <div class="post-img"><img src="{{ asset('frontend/images/science_technology/sample/blog-1.jpg') }}"
-                            class="img-fluid" alt=""></div>
-                    <span class="post-date">Tue, September 15</span>
-                    <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit
-                    </h3>
-                    <a href="{{ url('single-post/' . $item->id . '/view') }}"
-                        class="readmore stretched-link mt-auto"><span>Read
-                            More</span><i class="bi bi-arrow-right"></i></a>
+
+                    @foreach ($item->postTitleImage as $x)
+                    <div class="post-img">
+                        <img src="{{ asset($x->title_image) }}" class="img-fluid" alt="">
+                    </div>
+                    @endforeach
+
+                    <span class="post-date">{{ date('d-M-Y',strtotime($item->created_at)) }}</span>
+                    <h3 class="post-title">{{ $item->title }}</h3>
+                    <p class="text-black">{{ $item->post_summery }}</p>
+
                 </div>
             </div>
             @empty

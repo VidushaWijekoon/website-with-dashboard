@@ -71,6 +71,27 @@
                 </div>
 
                 <div class="form-group">
+                    <label>Post Summery</label>
+                    <span class="text-danger">*</span>
+                    <textarea cols="30" rows="3" class="form-control" name="post_summery"
+                        placeholder="Post Summery"></textarea>
+                    <small class="form-text text-muted">Word Limit 50</small>
+                    @error('post_summery') <small class="text-danger"></small> @enderror
+                </div>
+
+                <div class="form-group">
+                    <label>Title Image</label>
+                    <span class="text-danger">*</span>
+                    <div>
+                        <input class="form-control form-control-sm" type="file" style="min-height: 0px" multiple
+                            name="title_image" accept="image/png, image/jpeg">
+                        <small class="form-text text-muted">Max. file size: 50 MB. Allowed images: jpg, gif, png.
+                            Maximum 1 images only.</small>
+                        @error('title_image') <small class="text-danger"></small> @enderror
+                    </div>
+                </div>
+
+                <div class="form-group">
                     <label>Post Images</label>
                     <span class="text-danger">*</span>
                     <div>
