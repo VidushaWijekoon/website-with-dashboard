@@ -5,6 +5,7 @@ namespace App\Http\Livewire\Admin\Posts;
 use App\Models\Posts;
 use Livewire\Component;
 use Livewire\WithPagination;
+use Illuminate\Support\Facades\Auth;
 
 class Index extends Component
 {
@@ -13,7 +14,8 @@ class Index extends Component
 
     public function render()
     {
-        $posts = Posts::orderBy('id', 'ASC')->paginate(10);
+        $user_id = Auth::user()->id;
+        $posts = Posts::where('created_by', $user_id)->orderBy('id', 'ASC')->get();
         return view('livewire.admin.posts.index', ['posts' => $posts]);
     }
 }

@@ -39,7 +39,7 @@ class PostsController extends Controller
             'status' => $validatedData['post_status'],
             'pricing' => $validatedData['pricing'],
             'conditions' => $request->status == true ? '0' : '1',
-            'username' => Auth::user()->id
+            'created_by' => Auth::user()->id
         ]);
 
         if ($request->hasFile('title_image')) {

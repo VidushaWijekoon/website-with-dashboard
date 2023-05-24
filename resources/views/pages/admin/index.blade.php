@@ -8,6 +8,7 @@
             {{ session('status') }}
         </div>
         @endif
+        {{ Auth::user()->id }}
     </div>
 </div>
 @endsection
