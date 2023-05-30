@@ -15,7 +15,7 @@ class Index extends Component
     public function render()
     {
         $user_id = Auth::user()->id;
-        $posts = Posts::where('created_by', $user_id)->orderBy('id', 'ASC')->get();
+        $posts = Posts::where('created_by', $user_id)->orderBy('id', 'ASC')->paginate(10);
         return view('livewire.admin.posts.index', ['posts' => $posts]);
     }
 }

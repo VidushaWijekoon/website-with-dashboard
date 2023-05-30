@@ -64,9 +64,9 @@
 
                                 </tbody>
                             </table>
-                            {{-- <div class="d-flex float-end">
+                            <div class="d-flex float-end">
                                 {{ $posts->links() }}
-                            </div> --}}
+                            </div>
                         </div>
                     </div>
                 </div>

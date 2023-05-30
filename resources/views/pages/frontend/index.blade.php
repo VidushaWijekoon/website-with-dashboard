@@ -4,6 +4,7 @@
 @if (session('message'))
 <h6 class="alert alert-success mb-2">{{ session('message') }}</h6>
 @endif
+
 <!-- ======= Hero Section ======= -->
 <section id="hero">
     <div class="hero-container">
@@ -79,6 +80,64 @@
     </div>
 </section>
 <!-- End Hero -->
+
+<!-- ======= About Us Section ======= -->
+<section id="about-us" class="about-us mb-5" style="padding: 0">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-xl-12 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
+                <div class="content d-flex flex-column">
+                    <div class="row text-center justify-content-center">
+                        <div class="col-md-3 col-sm-4 icon-box" data-aos="fade-up">
+                            <a href="">
+                                <i class="bx bx-cube-alt"></i>
+                                <h4>Science & Technology</h4>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-4 icon-box" data-aos="fade-up">
+                            <a href="{{ route('web_development.index') }}">
+                                <i class="fa-solid fa-code"></i>
+                                <h4>Web Development</h4>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-4 icon-box" data-aos="fade-up">
+                            <a href="{{ route('software_development.index') }}">
+                                <i class="fa-solid fa-database"></i>
+                                <h4>Software Development</h4>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-4 icon-box" data-aos="fade-up">
+                            <a href="{{ route('digital_marketing.index') }}">
+                                <i class="bx bx-images"></i>
+                                <h4>Search Engineen Optimization</h4>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-4 icon-box" data-aos="fade-up">
+                            <a href="{{ route('graphic_design.index') }}">
+                                <i class="fa-solid fa-palette"></i>
+                                <h4>Graphic Design</h4>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-4 icon-box" data-aos="fade-up">
+                            <a href="{{ route('technical_services.index') }}">
+                                <i class="fa-solid fa-person-digging"></i>
+                                <h4>Technical Services</h4>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-4 icon-box" data-aos="fade-up">
+                            <a href="{{ route('event_management.index') }}">
+                                <i class="fa-regular fa-object-group"></i>
+                                <h4>Event Management</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- End .content-->
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- End About Us Section -->
 
 <!-- ======= About Us Section ======= -->
 <section id="about-us" class="about-us mb-5" style="padding: 0">

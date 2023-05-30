@@ -558,3 +558,11 @@ h6 {
 .footer .footer-legal .credits a {
     color: var(--color-primary);
 }
+
+@media only screen and (max-width: 600px) {
+    #topbar {
+        visibility: hidden;
+        padding: 0;
+        margin: -13px;
+    }
+}
