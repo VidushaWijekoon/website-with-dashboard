@@ -499,7 +499,7 @@
     .hero-animated {
         width: 100%;
         min-height: 80vh;
-        background: url('../frontend/images/background_8.jpg');
+        background: url('https://cutewallpaper.org/21/cool-gif-background/Cool-Background-GIF.gif');
         background-size: cover;
         position: relative;
         padding: 70px 0 60px;

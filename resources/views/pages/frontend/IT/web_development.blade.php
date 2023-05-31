@@ -6,13 +6,13 @@
     <div class="container-fluid p-5" data-aos="zoom-out" data-aos-delay="100">
         <div class="row">
             <div class="col-md-7 col-sm-6">
-                <img src="{{ asset('frontend/images/information_technology/web-design-4.png') }}" alt="rtech_web_dev"
-                    class="web_dev_hero_img">
+
             </div>
             <div class="col-md-5 col-sm-6 d-flex justify-content-center align-items-center">
                 <div class="">
-                    <h1>Welcome to <span>Rtech Web Design & Web Development</span></h1>
-                    <span>Let the whole world know about your brand with a unique and performance-driven website.</span>
+                    <h1 style="color: #112D4E">Welcome to <span>Rtech Web Design & Web Development</span></h1>
+                    <span style="color: #112D4E">Let the whole world know about your brand with a unique and
+                        performance-driven website.</span>
                 </div>
             </div>
 
@@ -504,10 +504,12 @@
 
     .hero-animated {
         width: 100%;
-        min-height: 50vh;
-        background: url('../frontend/images/information_technology/background_2.jpg');
-        background-size: cover;
-        position: relative;
+        min-height: 100vh;
+        background: url('https://www.vocso.com/blog/wp-content/uploads/2022/04/Top-Web-Development-Tools.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover position: relative;
         padding: 70px 0 60px;
     }
 

@@ -10,57 +10,161 @@
     <div class="hero-container">
         <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
             <div class="carousel-inner" role="listbox">
 
                 <!-- Slide 1 -->
                 <div class="carousel-item active"
-                    style="background-image: url({{ asset('frontend/images/2-digital-marketing.jpg') }});">
+                    style="background-image: url(https://images.pexels.com/photos/442579/pexels-photo-442579.jpeg?cs=srgb&dl=pexels-jeshootscom-442579.jpg&fm=jpg);">
                     <div class="carousel-container">
                         <div class="carousel-content">
-                            <h2 class="animate__animated animate__fadeInDown">Welcome to <span>R Tech
-                                    International</span>
-                            </h2>
+                            <h2 class="animate__animated animate__fadeInDown"><span>Welcome </span>to Rtech
+                                International</h2>
                             <p class="animate__animated animate__fadeInUp">
                                 We provide marketing services to startups and small businesses looking for a partner for
                                 their digital media. We work
                                 with you, not for you. We are on a mission to build, grow and maintain loyal
                                 communities. Join forces with innovative
                                 minds to foster your business growth!
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="carousel-item" style="background-image: url({{ asset('frontend/images/software.jpg') }});">
-                    <div class="carousel-container">
-                        <div class="carousel-content">
-                            <h2 class="animate__animated animate__fadeInDown">Digital Strategies and Consulting</h2>
-                            <p class="animate__animated animate__fadeInUp">
                                 Our expertise in technology, integrated with coherent cross channel marketing and strong
                                 media presence is a unique
                                 niche. All your digital requirements are under one umbrella.
                             </p>
-
                         </div>
                     </div>
                 </div>
 
                 <!-- Slide 3 -->
-                <div class="carousel-item" style="background-image: url({{ asset('frontend/images/slide-44.jpg') }});">
+                <div class="carousel-item"
+                    style="background-image: url(https://scitechdaily.com/images/AI-Technology-Creation-Concept.gif);">
                     <div class="carousel-container">
                         <div class="carousel-content">
-                            <h2 class="animate__animated animate__fadeInDown">Your Exponential Digital Growth Starts
-                                Here.</h2>
-                            <p class="animate__animated animate__adeInUp">
-                                Are you ready to unlock the secrets of online
-                                success? From optimizing search engine rankings to creating compelling
-                                social media campaigns, our team of experts will equip you with the tools and strategies
-                                to thrive in the digital world..
-                            </p>
+                            <h2 class="animate__animated animate__fadeInDown">Science & Technology</h2>
+                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui
+                                aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
+                                mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
+                                vel. Minus et tempore modi architecto.</p>
+                            <div>
+                                <a href="{{ route('science_technology.index') }}"
+                                    class="btn-menu animate__animated animate__fadeInUp scrollto">More About
+                                    Rtech Science & Technology</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item "
+                    style="background-image: url(https://miro.medium.com/v2/resize:fit:2000/1*-ntL3Dsvc-dJ5cLGRtSuEw.gif);">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2 class="animate__animated animate__fadeInDown">Web Development</h2>
+                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui
+                                aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
+                                mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
+                                vel. Minus et tempore modi architecto.</p>
+                            <div>
+                                <a href="{{ route('web_development.index') }}"
+                                    class="btn-menu animate__animated animate__fadeInUp scrollto">More About
+                                    Rtech Web Development</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-item"
+                    style="background-image: url(https://i.pinimg.com/originals/b2/83/11/b2831136a1912c98b1cad1b4eb9ab112.gif);">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2 class="animate__animated animate__fadeInDown">Software Development</h2>
+                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui
+                                aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
+                                mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
+                                vel. Minus et tempore modi architecto.</p>
+                            <div>
+                                <a href="{{ route('software_development.index') }}"
+                                    class="btn-menu animate__animated animate__fadeInUp scrollto">More About
+                                    Rtech software development</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="carousel-item "
+                    style="background-image: url(https://assets-global.website-files.com/59e16042ec229e00016d3a66/5dfbd74fe0b6d7150b256a28_digital-marketing-hero.gif);">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2 class="animate__animated animate__fadeInDown">Digital Markerting</h2>
+                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui
+                                aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
+                                mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
+                                vel. Minus et tempore modi architecto.</p>
+                            <div>
+                                <a href="{{ route('digital_marketing.index') }}"
+                                    class="btn-menu animate__animated animate__fadeInUp scrollto">More About
+                                    Rtech digital markerting</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="carousel-item "
+                    style="background-image: url(https://cdn.mos.cms.futurecdn.net/aSmHfhGPbuYvRJZUxmsniW.jpg);">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2 class="animate__animated animate__fadeInDown">Graphic Design</h2>
+                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui
+                                aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
+                                mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
+                                vel. Minus et tempore modi architecto.</p>
+                            <div>
+                                <a href="{{ route('graphic_design.index') }}"
+                                    class="btn-menu animate__animated animate__fadeInUp scrollto">More About
+                                    Rtech graphic design</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 7 -->
+                <div class="carousel-item "
+                    style="background-image: url(https://thumbs.gfycat.com/AdorableImportantCaecilian-max-1mb.gif);">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2 class="animate__animated animate__fadeInDown">Technical Services</h2>
+                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui
+                                aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
+                                mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
+                                vel. Minus et tempore modi architecto.</p>
+                            <div>
+                                <a href="{{ route('technical_services.index') }}"
+                                    class="btn-menu animate__animated animate__fadeInUp scrollto">More About
+                                    Rtech technical services</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 8 -->
+                <div class="carousel-item "
+                    style="background-image: url(https://www.mabbevents.com/assets/images/background-2.jpg);">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2 class="animate__animated animate__fadeInDown">Event Management</h2>
+                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui
+                                aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
+                                mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
+                                vel. Minus et tempore modi architecto.</p>
+                            <div>
+                                <a href="{{ route('event_management.index') }}"
+                                    class="btn-menu animate__animated animate__fadeInUp scrollto">More About
+                                    Rtech Event Management</a>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -68,76 +172,67 @@
             </div>
 
             <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-                <i class="fa-solid fa-angles-left carousel-control-prev-icon" aria-hidden="true"></i>
-                {{-- <span class=" ri-arrow-left-line"></span> --}}
+                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
             </a>
 
             <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-                <i class="fa-solid fa-angles-right carousel-control-prev-icon" aria-hidden="true"></i>
+                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
             </a>
 
         </div>
     </div>
-</section>
-<!-- End Hero -->
+</section><!-- End Hero -->
 
-<!-- ======= About Us Section ======= -->
-<section id="about-us" class="about-us mb-5" style="padding: 0">
-    <div class="container">
-        <div class="row no-gutters">
-            <div class="col-xl-12 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
-                <div class="content d-flex flex-column">
-                    <div class="row text-center justify-content-center">
-                        <div class="col-md-3 col-sm-4 icon-box" data-aos="fade-up">
-                            <a href="">
-                                <i class="bx bx-cube-alt"></i>
-                                <h4>Science & Technology</h4>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-4 icon-box" data-aos="fade-up">
-                            <a href="{{ route('web_development.index') }}">
-                                <i class="fa-solid fa-code"></i>
-                                <h4>Web Development</h4>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-4 icon-box" data-aos="fade-up">
-                            <a href="{{ route('software_development.index') }}">
-                                <i class="fa-solid fa-database"></i>
-                                <h4>Software Development</h4>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-4 icon-box" data-aos="fade-up">
-                            <a href="{{ route('digital_marketing.index') }}">
-                                <i class="bx bx-images"></i>
-                                <h4>Search Engineen Optimization</h4>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-4 icon-box" data-aos="fade-up">
-                            <a href="{{ route('graphic_design.index') }}">
-                                <i class="fa-solid fa-palette"></i>
-                                <h4>Graphic Design</h4>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-4 icon-box" data-aos="fade-up">
-                            <a href="{{ route('technical_services.index') }}">
-                                <i class="fa-solid fa-person-digging"></i>
-                                <h4>Technical Services</h4>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-4 icon-box" data-aos="fade-up">
-                            <a href="{{ route('event_management.index') }}">
-                                <i class="fa-regular fa-object-group"></i>
-                                <h4>Event Management</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div><!-- End .content-->
-            </div>
+<!-- ======= Tabs Section ======= -->
+<section id="tabs" class="tabs mt-5">
+    <div class="container" data-aos="fade-up">
 
-        </div>
+        <ul class="nav nav-tabs row d-flex justify-content-center">
+            <li class="nav-item col-3 mb-4">
+                <a class="nav-link active show" href="{{ route('science_technology.index') }}">
+                    <i class="fa-solid fa-microchip"></i>
+                    <h4 class="d-none d-lg-block">Science & Technology</h4>
+                </a>
+            </li>
+            <li class="nav-item col-3 mb-4">
+                <a class="nav-link" href="{{ route('web_development.index') }}">
+                    <i class="fa-solid fa-code"></i>
+                    <h4 class="d-none d-lg-block">Web Development</h4>
+                </a>
+            </li>
+            <li class="nav-item col-3 mb-4">
+                <a class="nav-link" href="{{ route('software_development.index') }}">
+                    <i class="fa-solid fa-database"></i>
+                    <h4 class="d-none d-lg-block">Software Development</h4>
+                </a>
+            </li>
+            <li class="nav-item col-3 mb-4">
+                <a class="nav-link" href="{{ route('digital_marketing.index') }}">
+                    <i class="fa-solid fa-arrows-to-eye"></i>
+                    <h4 class="d-none d-lg-block">Digital Marketing</h4>
+                </a>
+            </li>
+            <li class="nav-item col-3 mb-4">
+                <a class="nav-link" href="{{ route('graphic_design.index') }}">
+                    <i class="fa-solid fa-palette"></i>
+                    <h4 class="d-none d-lg-block">Graphic Design</h4>
+                </a>
+            </li>
+            <li class="nav-item col-3 mb-4">
+                <a class="nav-link" href="{{ route('technical_services.index') }}">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h4 class="d-none d-lg-block">Technical Services</h4>
+                </a>
+            </li>
+            <li class="nav-item col-3 mb-4">
+                <a class="nav-link" href="{{ route('event_management.index') }}">
+                    <i class="fa-regular fa-object-group"></i>
+                    <h4 class="d-none d-lg-block">Event Management</h4>
+                </a>
+            </li>
+        </ul>
     </div>
-</section>
-<!-- End About Us Section -->
+</section><!-- End Tabs Section -->
 
 <!-- ======= About Us Section ======= -->
 <section id="about-us" class="about-us mb-5" style="padding: 0">
@@ -359,27 +454,28 @@
 
 @push('style')
 <style>
+    /*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
     #hero {
         width: 100%;
-        height: 70vh;
-        background-color: #112D4E;
+        height: 100vh;
+        background-color: rgba(39, 37, 34, 0.8);
         overflow: hidden;
-        position: relative;
         padding: 0;
     }
 
     #hero .carousel-item {
         width: 100%;
-        height: 70vh;
+        height: 100vh;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        position: relative;
     }
 
     #hero .carousel-item::before {
         content: "";
-        background-color: #112d4e13;
+        background-color: rgba(12, 11, 10, 0.5);
         position: absolute;
         top: 0;
         right: 0;
@@ -409,6 +505,10 @@
         font-weight: 700;
     }
 
+    #hero h2 span {
+        color: #02a4d6;
+    }
+
     #hero p {
         width: 80%;
         animation-delay: 0.4s;
@@ -419,6 +519,10 @@
     #hero .carousel-inner .carousel-item {
         transition-property: opacity;
         background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: center;
     }
 
     #hero .carousel-inner .carousel-item,
@@ -442,64 +546,58 @@
         transform: translate3d(0, 0, 0);
     }
 
-    #hero .carousel-control-prev,
-    #hero .carousel-control-next {
-        width: 10%;
-    }
-
     #hero .carousel-control-next-icon,
     #hero .carousel-control-prev-icon {
         background: none;
         font-size: 30px;
-        line-height: 1;
-        opacity: 0.5;
+        line-height: 0;
+        width: auto;
+        height: auto;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50px;
+        transition: 0.3s;
+        color: rgba(255, 255, 255, 0.5);
+        width: 54px;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #hero .carousel-control-next-icon:hover,
+    #hero .carousel-control-prev-icon:hover {
+        background: rgba(255, 255, 255, 0.3);
+        color: rgba(255, 255, 255, 0.8);
     }
 
     #hero .carousel-indicators li {
         cursor: pointer;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        margin: 0 4px;
-        transition: ease-in;
-        opacity: 0.7;
-        display: none;
     }
 
-    #hero .carousel-indicators li.active {
-        opacity: 1;
-        background-color: #01b1d7;
-    }
-
-    #hero .btn-get-started {
-        font-family: "Raleway", sans-serif;
-        font-weight: 500;
-        font-size: 14px;
+    #hero .btn-menu,
+    #hero .btn-book {
+        font-weight: 600;
+        font-size: 13px;
         letter-spacing: 1px;
+        text-transform: uppercase;
         display: inline-block;
-        padding: 14px 32px;
-        border-radius: 5px;
+        padding: 12px 30px;
+        border-radius: 50px;
         transition: 0.5s;
         line-height: 1;
-        margin: 10px;
-        color: #fff;
-        background: #02a4d6;
+        margin: 0 10px;
         animation-delay: 0.8s;
+        color: #fff;
+        border: 2px solid #02a4d6;
     }
 
-    #hero .btn-get-started:hover {
+    #hero .btn-menu:hover,
+    #hero .btn-book:hover {
         background: #02a4d6;
+        color: #fff;
     }
 
     @media (max-width: 768px) {
-        #hero {
-            height: 90vh;
-        }
-
-        #hero .carousel-item {
-            height: 90vh;
-        }
-
         #hero h2 {
             font-size: 28px;
         }
@@ -507,7 +605,7 @@
 
     @media (min-width: 1024px) {
         #hero p {
-            width: 60%;
+            width: 50%;
         }
 
         #hero .carousel-control-prev,
@@ -516,19 +614,9 @@
         }
     }
 
-    @media (max-height: 500px) {
-        #hero {
-            height: 150vh;
-        }
-
-        #hero .carousel-item {
-            height: 150vh;
-        }
-    }
-
     /*--------------------------------------------------------------
-        # About Us
-        --------------------------------------------------------------*/
+     # About Us
+    --------------------------------------------------------------*/
 
 
     .about-us .content h3 {
@@ -781,6 +869,92 @@
         100% {
             transform: rotate(360deg);
         }
+    }
+
+    /*--------------------------------------------------------------
+    # Tabs
+    --------------------------------------------------------------*/
+    .tabs .nav-tabs {
+        border: 0;
+    }
+
+    .tabs .nav-link {
+        border: 1px solid #b9b9b9;
+        padding: 15px;
+        transition: 0.3s;
+        color: #111111;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .tabs .nav-link i {
+        padding-right: 15px;
+        font-size: 48px;
+    }
+
+    .tabs .nav-link h4 {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .tabs .nav-link:hover {
+        color: #5969f3;
+    }
+
+    .tabs .nav-link.active {
+        background: #5969f3;
+        color: #fff;
+        border-color: #5969f3;
+    }
+
+    @media (max-width: 768px) {
+        .tabs .nav-link i {
+            padding: 0;
+            line-height: 1;
+            font-size: 36px;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .tabs .nav-link {
+            padding: 15px;
+        }
+
+        .tabs .nav-link i {
+            font-size: 24px;
+        }
+    }
+
+    .tabs .tab-content {
+        margin-top: 30px;
+    }
+
+    .tabs .tab-pane h3 {
+        font-weight: 600;
+        font-size: 26px;
+    }
+
+    .tabs .tab-pane ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .tabs .tab-pane ul li {
+        padding-bottom: 10px;
+    }
+
+    .tabs .tab-pane ul i {
+        font-size: 20px;
+        padding-right: 4px;
+        color: #5969f3;
+    }
+
+    .tabs .tab-pane p:last-child {
+        margin-bottom: 0;
     }
 </style>
 @endpush
