@@ -27,8 +27,7 @@
 
         <div class="row g-0">
             <div class="col-lg-4 position-relative d-flex align-items-center ">
-                <img src="{{ asset('frontend/images/information_technology/web-design-company-10.png') }}" alt=""
-                    width="100%">
+                <img src="https://media.subsea.org/2021/02/Mechanical-Engineering-Jobs.jpg" alt="" width="100%">
             </div>
             <div class="col-lg-8">
                 <div class="content d-flex flex-column justify-content-center h-100">
@@ -94,7 +93,7 @@
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
 
             <div class="col-md-5">
-                <img src="{{ asset('frontend/images/information_technology/digital_marketing/web-design-company-1-2.png') }}"
+                <img src="https://www.ivytech.edu/media/0c1ntx10/mechanical-engineering-technology-1.jpg?width=1200&height=801.7021276595744"
                     class="img-fluid" alt="digital marketing">
             </div>
             <div class="col-md-7">
@@ -111,7 +110,7 @@
 
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div class="col-md-5 order-1 order-md-2">
-                <img src="{{ asset('frontend/images/information_technology/digital_marketing/web-design-company-2-2.png') }}"
+                <img src="https://www.servicemaxheating.com/img/corporate/images/AC-Maintenance-Professional-12695.jpg?t=1585705845"
                     class="img-fluid" alt="digital marketing">
             </div>
             <div class="col-md-7 order-2 order-md-1">
@@ -152,7 +151,7 @@
 
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div class="col-md-5">
-                <img src="{{ asset('frontend/images/information_technology/digital_marketing/web-design-company-3-2.png') }}"
+                <img src="https://library.homeserve.com/m/77ee2d141b4c672b/Blog-GettyImages-1150199946.jpg"
                     class="img-fluid" alt="digital marketing">
             </div>
             <div class="col-md-7 order-2 order-md-1">
@@ -178,7 +177,7 @@
 
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div class="col-md-5 order-1 order-md-2">
-                <img src="{{ asset('frontend/images/information_technology/digital_marketing/web-design-company-4-2.png') }}"
+                <img src="https://www.mfmgroup.co.uk/wp-content/webpc-passthru.php?src=https://www.mfmgroup.co.uk/wp-content/uploads/electrical-installation-company.jpg&nocache=1"
                     class="img-fluid" alt="digital marketing">
             </div>
             <div class="col-md-7 order-2 order-md-1">
@@ -216,7 +215,7 @@
 
         <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div class="col-md-5">
-                <img src="{{ asset('frontend/images/information_technology/digital_marketing/web-design-company-5-2.png') }}"
+                <img src="https://rapidfacilities.co.nz/wp-content/uploads/2022/04/Building-maintenance-services-1.jpg"
                     class="img-fluid" alt="digital marketing">
             </div>
             <div class="col-md-7 order-2 order-md-1">
@@ -231,6 +230,61 @@
             </div>
         </div>
         <!-- Features Item -->
+
+        <!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+            <div class="col-md-5 order-1 order-md-2">
+                <img src="https://www.computercareers.org/wp-content/uploads/Network-Engineer-Laptops.jpg"
+                    class="img-fluid" alt="digital marketing">
+            </div>
+            <div class="col-md-7 order-2 order-md-1">
+                <h3>Laptop Repairing & Networking</h3>
+                <div class="text-black">
+                    <div class="d-flex">
+                        <i class="fa-solid fa-minus mx-2 p-1"></i>
+                        <P>
+                            Laptop repair refers to the process of fixing or resolving issues with a laptop computer. It
+                            involves diagnosing
+                            hardware or software problems, troubleshooting and resolving issues, and performing
+                            necessary repairs or replacements to
+                            ensure the laptop functions properly. Laptop repair can include various tasks such as
+                            replacing faulty components like
+                            the screen, keyboard, battery, or hard drive, repairing or upgrading internal hardware,
+                            resolving software conflicts or
+                            errors, and addressing connectivity issues.
+
+                        </P>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-minus mx-2 p-1"></i>
+                        <p>
+                            Diagnosing hardware problems: This includes identifying and fixing issues with components
+                            such as the screen, keyboard,
+                            touchpad, battery, power adapter, motherboard, RAM, hard drive, or other internal
+                            components.
+                        </p>
+                    </div>
+
+                    <div class="d-flex">
+                        <i class="fa-solid fa-minus mx-2 p-1"></i>
+                        <p>
+                            Screen repair or replacement: If the laptop screen is cracked, malfunctioning, or displaying
+                            abnormal images, it may
+                            need to be repaired or replaced.
+                        </p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-minus mx-2 p-1"></i>
+                        <p>
+                            Keyboard replacement: If the keyboard is not working properly due to stuck keys,
+                            non-responsive keys, or liquid damage,
+                            it may need to be replaced.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 </section>

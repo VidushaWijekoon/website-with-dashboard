@@ -88,13 +88,14 @@ h6 {
     color: var(--purple);
 }
 
-@media screen and (max-width: 600px) {
+
+/* @media screen and (max-width: 600px) {
     #topbar {
-        visibility: hidden;
+        display: none;
         padding: 0;
-        margin: -7px;
+        margin: -20px 0 !important;
     }
-}
+} */
 
 
 /*--------------------------------------------------------------
@@ -559,10 +560,10 @@ h6 {
     color: var(--color-primary);
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width:600px) {
     #topbar {
-        visibility: hidden;
+        display: 0;
         padding: 0;
-        margin: -13px;
+        margin: -20px 0 !important;
     }
 }

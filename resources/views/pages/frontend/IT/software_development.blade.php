@@ -1,6 +1,7 @@
 @extends('layouts.frontend.app')
 @section('title', 'Rtech | Software Development')
 @section('content')
+
 <!-- ======= Hero Section ======= -->
 <section id="hero hero-animated" class=" hero-animated d-flex align-items-center">
     <div class="container-fluid p-5" data-aos="zoom-out" data-aos-delay="100">
@@ -335,9 +336,10 @@
     </div>
 </section>
 
-<!-- ======= Features Section ======= -->
-<section id="features" class="features">
-    <div class="container" data-aos="fade-up">
+<!-- ======= Clients Section ======= -->
+<section id="clients" class="clients mb-5">
+    <div class="container">
+
         <header class="section-header p-5">
             <h2 class="d-flex justify-content-center" style="color: #112D4E; font-weight: bold">FUELED BY
                 POWERFUL TECHNOLOGY!</h2>
@@ -345,90 +347,47 @@
                 to help serve you better!</p>
         </header>
 
-        <div class="row align-self-center gy-4">
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/html_css.png') }}" alt="html_css"
-                        class="w-100">
-                </div>
+        <div class="clients-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/html_css.png') }}" class="img-fluid"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/bootstrap.png') }}"
+                        class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/javascript.png') }}"
+                        class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/jquery.png') }}" class="img-fluid"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/tailwind.png') }}" class="img-fluid"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/reactjs.png') }}" class="img-fluid"
+                        alt=""></div>
+                <div class="swiper-slide"><img src="{{ asset('frontend/images/information_technology/logos/php.png') }}"
+                        class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/laravel.png') }}" class="img-fluid"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/nodejs.png') }}" class="img-fluid"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/mysql.png') }}" class="img-fluid"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/mongo_db.png') }}" class="img-fluid"
+                        alt=""></div>
             </div>
-
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/bootstrap.png') }}"
-                        alt="site-loading-icon" class="w-100">
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="400">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/javascript.png') }}"
-                        alt="javascript" class="w-100">
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/jquery.png') }}" alt="jquery"
-                        class="w-100">
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/tailwind.png') }}" alt="tailwind"
-                        class="w-100">
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="400">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/reactjs.png') }}" alt="reactjs"
-                        class="w-100">
-                </div>
-            </div>
+            <div class="swiper-pagination"></div>
         </div>
-
-        <div class="row align-self-center gy-4 d-flex justify-content-center">
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/php.png') }}" alt="php"
-                        class="w-100">
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/laravel.png') }}" alt="laravel"
-                        class="w-100">
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="400">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/nodejs.png') }}" alt="nodejs"
-                        class="w-100">
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/mysql.png') }}" alt="mysql"
-                        class="w-100">
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/mongo_db.png') }}" alt="mongo_db"
-                        class="w-100">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- / row -->
 
     </div>
 </section>
-<!-- End Features Section -->
+<!-- End Clients Section -->
 
 @endsection
 

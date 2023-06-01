@@ -1,6 +1,7 @@
 @extends('layouts.frontend.app')
 @section('title', 'Rtech | Web Development')
 @section('content')
+
 <!-- ======= Hero Section ======= -->
 <section id="hero hero-animated" class=" hero-animated d-flex align-items-center">
     <div class="container-fluid p-5" data-aos="zoom-out" data-aos-delay="100">
@@ -202,7 +203,7 @@
 
                         <div class="portfolio-links">
                             <a href="../frontend/images/information_technology/webpages/1.webp"
-                                data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i
+                                data-gallery="portfolioGallery" class="portfolio-lightbox"><i
                                     class="fa-solid fa-circle-plus"></i></a>
                         </div>
                     </div>
@@ -216,7 +217,7 @@
 
                         <div class="portfolio-links">
                             <a href="../frontend/images/information_technology/webpages/2.webp"
-                                data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i
+                                data-gallery="portfolioGallery" class="portfolio-lightbox"><i
                                     class="fa-solid fa-circle-plus"></i></a>
                         </div>
                     </div>
@@ -230,7 +231,7 @@
 
                         <div class="portfolio-links">
                             <a href="../frontend/images/information_technology/webpages/3.webp"
-                                data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i
+                                data-gallery="portfolioGallery" class="portfolio-lightbox"><i
                                     class="fa-solid fa-circle-plus"></i></a>
                         </div>
                     </div>
@@ -244,7 +245,7 @@
 
                         <div class="portfolio-links">
                             <a href="../frontend/images/information_technology/webpages/4.webp"
-                                data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i
+                                data-gallery="portfolioGallery" class="portfolio-lightbox"><i
                                     class="fa-solid fa-circle-plus"></i></a>
                         </div>
                     </div>
@@ -258,7 +259,7 @@
 
                         <div class="portfolio-links">
                             <a href="../frontend/images/information_technology/webpages/5.webp"
-                                data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i
+                                data-gallery="portfolioGallery" class="portfolio-lightbox"><i
                                     class="fa-solid fa-circle-plus"></i></a>
                         </div>
                     </div>
@@ -272,7 +273,7 @@
 
                         <div class="portfolio-links">
                             <a href="../frontend/images/information_technology/webpages/6.webp"
-                                data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i
+                                data-gallery="portfolioGallery" class="portfolio-lightbox"><i
                                     class="fa-solid fa-circle-plus"></i></a>
                         </div>
                     </div>
@@ -283,9 +284,10 @@
 </section>
 <!-- End Portfolio Section -->
 
-<!-- ======= Features Section ======= -->
-<section id="features" class="features">
-    <div class="container" data-aos="fade-up">
+<!-- ======= Clients Section ======= -->
+<section id="clients" class="clients mb-5">
+    <div class="container">
+
         <header class="section-header p-5">
             <h2 class="d-flex justify-content-center" style="color: #112D4E; font-weight: bold">FUELED BY
                 POWERFUL TECHNOLOGY!</h2>
@@ -293,90 +295,47 @@
                 to help serve you better!</p>
         </header>
 
-        <div class="row align-self-center gy-4">
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/html_css.png') }}" alt="html_css"
-                        class="w-100">
-                </div>
+        <div class="clients-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/html_css.png') }}" class="img-fluid"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/bootstrap.png') }}"
+                        class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/javascript.png') }}"
+                        class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/jquery.png') }}" class="img-fluid"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/tailwind.png') }}" class="img-fluid"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/reactjs.png') }}" class="img-fluid"
+                        alt=""></div>
+                <div class="swiper-slide"><img src="{{ asset('frontend/images/information_technology/logos/php.png') }}"
+                        class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/laravel.png') }}" class="img-fluid"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/nodejs.png') }}" class="img-fluid"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/mysql.png') }}" class="img-fluid"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="{{ asset('frontend/images/information_technology/logos/mongo_db.png') }}" class="img-fluid"
+                        alt=""></div>
             </div>
-
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/bootstrap.png') }}"
-                        alt="site-loading-icon" class="w-100">
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="400">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/javascript.png') }}"
-                        alt="javascript" class="w-100">
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/jquery.png') }}" alt="jquery"
-                        class="w-100">
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/tailwind.png') }}" alt="tailwind"
-                        class="w-100">
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="400">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/reactjs.png') }}" alt="reactjs"
-                        class="w-100">
-                </div>
-            </div>
+            <div class="swiper-pagination"></div>
         </div>
-
-        <div class="row align-self-center gy-4 d-flex justify-content-center">
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/php.png') }}" alt="php"
-                        class="w-100">
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/laravel.png') }}" alt="laravel"
-                        class="w-100">
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="400">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/nodejs.png') }}" alt="nodejs"
-                        class="w-100">
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/mysql.png') }}" alt="mysql"
-                        class="w-100">
-                </div>
-            </div>
-
-            <div class="col-md-2 col-sm-4" data-aos="zoom-out" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center mb-5">
-                    <img src="{{ asset('frontend/images/information_technology/logos/mongo_db.png') }}" alt="mongo_db"
-                        class="w-100">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- / row -->
 
     </div>
 </section>
-<!-- End Features Section -->
+<!-- End Clients Section -->
 
 <!-- ======= On Focus Section ======= -->
 <section id="dev" class="dev mt-4">
@@ -395,6 +354,7 @@
         </div>
     </div>
 </section>
+
 
 <!-- ======= Features Section ======= -->
 <section id="features" class="features">
@@ -1048,6 +1008,92 @@
         .features .feture-tabs h3 {
             font-size: 28px;
         }
+    }
+
+    /*--------------------------------------------------------------
+    # Tabs
+    --------------------------------------------------------------*/
+    .tabs .nav-tabs {
+        border: 0;
+    }
+
+    .tabs .nav-link {
+        border: 1px solid #b9b9b9;
+        padding: 15px;
+        transition: 0.3s;
+        color: #111111;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .tabs .nav-link i {
+        padding-right: 15px;
+        font-size: 48px;
+    }
+
+    .tabs .nav-link h4 {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .tabs .nav-link:hover {
+        color: #5969f3;
+    }
+
+    .tabs .nav-link.active {
+        background: #5969f3;
+        color: #fff;
+        border-color: #5969f3;
+    }
+
+    @media (max-width: 768px) {
+        .tabs .nav-link i {
+            padding: 0;
+            line-height: 1;
+            font-size: 36px;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .tabs .nav-link {
+            padding: 15px;
+        }
+
+        .tabs .nav-link i {
+            font-size: 24px;
+        }
+    }
+
+    .tabs .tab-content {
+        margin-top: 30px;
+    }
+
+    .tabs .tab-pane h3 {
+        font-weight: 600;
+        font-size: 26px;
+    }
+
+    .tabs .tab-pane ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .tabs .tab-pane ul li {
+        padding-bottom: 10px;
+    }
+
+    .tabs .tab-pane ul i {
+        font-size: 20px;
+        padding-right: 4px;
+        color: #5969f3;
+    }
+
+    .tabs .tab-pane p:last-child {
+        margin-bottom: 0;
     }
 </style>
 @endpush

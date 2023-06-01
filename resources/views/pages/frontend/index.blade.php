@@ -39,10 +39,14 @@
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2 class="animate__animated animate__fadeInDown">Science & Technology</h2>
-                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui
-                                aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
-                                mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
-                                vel. Minus et tempore modi architecto.</p>
+                            <p class="animate__animated animate__fadeInUp">
+                                Science and technology are closely intertwined fields that play a crucial role in the
+                                advancement and understanding of
+                                the world around us. Science is a systematic approach to acquiring knowledge through
+                                observation, experimentation, and
+                                analysis, while technology refers to the application of scientific knowledge for
+                                practical purposes.
+                            </p>
                             <div>
                                 <a href="{{ route('science_technology.index') }}"
                                     class="btn-menu animate__animated animate__fadeInUp scrollto">More About
@@ -58,10 +62,13 @@
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2 class="animate__animated animate__fadeInDown">Web Development</h2>
-                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui
-                                aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
-                                mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
-                                vel. Minus et tempore modi architecto.</p>
+                            <p class="animate__animated animate__fadeInUp">
+                                Web development refers to the process of
+                                creating websites and web applications. It involves various aspects, including
+                                web design, coding, server configuration, and database management. Web developers use
+                                programming languages, frameworks,
+                                and tools to build websites that are functional, visually appealing, and user-friendly.
+                            </p>
                             <div>
                                 <a href="{{ route('web_development.index') }}"
                                     class="btn-menu animate__animated animate__fadeInUp scrollto">More About
@@ -77,10 +84,12 @@
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2 class="animate__animated animate__fadeInDown">Software Development</h2>
-                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui
-                                aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
-                                mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
-                                vel. Minus et tempore modi architecto.</p>
+                            <p class="animate__animated animate__fadeInUp">
+                                Software development is the process of designing, coding, testing, and maintaining
+                                computer programs and applications.
+                                It involves a systematic approach to building software solutions that meet specific
+                                requirements and address user needs.
+                                Software development encompasses a wide range of activities,.</p>
                             <div>
                                 <a href="{{ route('software_development.index') }}"
                                     class="btn-menu animate__animated animate__fadeInUp scrollto">More About
@@ -96,10 +105,15 @@
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2 class="animate__animated animate__fadeInDown">Digital Markerting</h2>
-                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui
-                                aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
-                                mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
-                                vel. Minus et tempore modi architecto.</p>
+                            <p class="animate__animated animate__fadeInUp">
+                                Digital marketing refers to the use of digital channels and technologies to promote
+                                products, services, and brands to
+                                reach and engage with a target audience. It encompasses a wide range of activities aimed
+                                at driving online visibility,
+                                increasing website traffic, generating leads, and ultimately, achieving business goals.
+                                Digital marketing strategies can
+                                include various components,
+                            </p>
                             <div>
                                 <a href="{{ route('digital_marketing.index') }}"
                                     class="btn-menu animate__animated animate__fadeInUp scrollto">More About
@@ -116,10 +130,13 @@
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2 class="animate__animated animate__fadeInDown">Graphic Design</h2>
-                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui
-                                aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
-                                mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
-                                vel. Minus et tempore modi architecto.</p>
+                            <p class="animate__animated animate__fadeInUp">
+                                Graphic design is the process of visual communication through the use of typography,
+                                images, color, and layout. It
+                                involves creating and combining visual elements to convey a specific message or evoke a
+                                particular emotional response.
+                                Graphic designers utilize their creativity and technical skills to design various types
+                                of visual materials.</p>
                             <div>
                                 <a href="{{ route('graphic_design.index') }}"
                                     class="btn-menu animate__animated animate__fadeInUp scrollto">More About
@@ -136,10 +153,13 @@
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2 class="animate__animated animate__fadeInDown">Technical Services</h2>
-                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui
-                                aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
-                                mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
-                                vel. Minus et tempore modi architecto.</p>
+                            <p class="animate__animated animate__fadeInUp">
+                                Technical services refer to a range of professional services that provide technical
+                                expertise and support in various
+                                industries. These services typically involve specialized knowledge, skills, and tools to
+                                address technical challenges,
+                                implement solutions, and ensure the efficient operation of systems and processes.
+                            </p>
                             <div>
                                 <a href="{{ route('technical_services.index') }}"
                                     class="btn-menu animate__animated animate__fadeInUp scrollto">More About
@@ -155,10 +175,13 @@
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2 class="animate__animated animate__fadeInDown">Event Management</h2>
-                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui
-                                aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
-                                mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti
-                                vel. Minus et tempore modi architecto.</p>
+                            <p class="animate__animated animate__fadeInUp">
+                                Event management refers to the process of planning, organizing, and executing events,
+                                such as conferences, trade shows,
+                                corporate meetings, weddings, and concerts. Event management involves various tasks and
+                                responsibilities to ensure that
+                                an event runs smoothly and successfully.
+                            </p>
                             <div>
                                 <a href="{{ route('event_management.index') }}"
                                     class="btn-menu animate__animated animate__fadeInUp scrollto">More About
