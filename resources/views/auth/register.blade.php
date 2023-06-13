@@ -32,8 +32,9 @@
                         </span>
                         @enderror
                     </div>
+
                     <div class="form-group">
-                        <label for="username">{{ __('Username') }}</label>
+                        <label for="email">{{ __('Username') }}</label>
                         <input id="username" type="text" class="form-control @error('username') is-invalid @enderror"
                             name="username" value="{{ old('username') }}" required autocomplete="username">
                         @error('username')
@@ -42,6 +43,7 @@
                         </span>
                         @enderror
                     </div>
+                     
                     <div class="form-group">
                         <label for="password">{{ __('Password') }}</label>
                         <input id="password" type="password"
