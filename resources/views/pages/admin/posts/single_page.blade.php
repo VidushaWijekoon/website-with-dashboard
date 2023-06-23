@@ -32,7 +32,7 @@
                         </div>
                         <div class="blog-content">
 
-                            {{ chunk_split($posts->post_description, 100, "\n");}}
+                            {{ chunk_split($posts->post_description, 100, "\n")}}
                         </div>
                     </article>
 
