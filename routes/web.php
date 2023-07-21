@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Frontend\HomepageController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Auth::routes();
+
+Route::controller(HomepageController::class)->group(function () {
+    Route::get('/', 'index')->name('frontend.home.index');
+});
+
+Route::controller(DashboardController::class)->group(function () {
+    Route::get('/admin/dashboard', 'index')->name('admin.dashboard.index');
 });
