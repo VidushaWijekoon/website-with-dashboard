@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\Admin\DashboardHomepageController;
+use App\Http\Controllers\Frontend\HomepageController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +17,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::prefix('admin/')->group(function () {
+    Route::controller(DashboardHomepageController::class)->group(function () {
+        Route::get('dashboard/', 'index')->name('admin.dashboard.index');
+    });
+});
+
+Route::prefix('/')->group(function () {
+    Route::controller(HomepageController::class)->group(function () {
+        Route::get('/', 'index')->name('frontend.index');
+    });
+});

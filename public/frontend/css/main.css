@@ -1,0 +1,387 @@
+/* Colors */
+:root {
+    --dark-blue: #03001c;
+    --dark-purple: #23103a;
+    --medium-blue: #1a2f4b;
+    --color-gold: #feb900;
+    --light-blue: #03506f;
+    --text-color: #dbedf3;
+}
+
+/* Smooth scroll behavior */
+:root {
+    scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family: "Roboto Slab", serif;
+    color: var(--text-color);
+    overflow-x: hidden;
+    background: linear-gradient(45deg, #03001c, #23103a, #03001c, #23103a);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto Slab", serif;
+}
+
+/*--------------------------------------------------------------
+# Sections & Section Header
+--------------------------------------------------------------*/
+section {
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.section-header {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.section-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    color: var(--text-color);
+}
+
+.section-header h2:before,
+.section-header h2:after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    display: inline-block;
+}
+
+.section-header h2:before {
+    margin: 0 15px 10px 0;
+}
+
+.section-header h2:after {
+    margin: 0 0 10px 15px;
+}
+
+.section-header p {
+    margin: 0 auto 0 auto;
+}
+
+@media (min-width: 1199px) {
+    .section-header p {
+        max-width: 60%;
+    }
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    [data-aos-delay] {
+        transition-delay: 0 !important;
+    }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header {
+    z-index: 997;
+    position: absolute;
+    padding: 30px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header .logo img {
+    max-height: 40px;
+    margin-right: 6px;
+}
+
+.header .logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 0;
+    font-family: "Roboto Slab", serif;
+}
+
+.header .logo h1 span {
+    color: var(--text-color);
+}
+
+/*--------------------------------------------------------------
+# Desktop Navigation
+--------------------------------------------------------------*/
+@media (min-width: 1280px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+
+    .navbar li {
+        position: relative;
+    }
+
+    .navbar > ul > li {
+        white-space: nowrap;
+        padding: 10px 0 10px 28px;
+    }
+
+    .navbar a,
+    .navbar a:focus {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 3px;
+        font-family: "Roboto Slab", serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text-color);
+        text-transform: uppercase;
+        white-space: nowrap;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    .navbar a i,
+    .navbar a:focus i {
+        font-size: 12px;
+        line-height: 0;
+        margin-left: 5px;
+    }
+
+    .navbar > ul > li > a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -6px;
+        left: 0;
+        visibility: hidden;
+        width: 0px;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .navbar a:hover:before,
+    .navbar li:hover > a:before,
+    .navbar .active:before {
+        visibility: visible;
+        width: 100%;
+    }
+
+    .navbar a:hover,
+    .navbar .active,
+    .navbar .active:focus,
+    .navbar li:hover > a {
+        color: var(--color-gold);
+    }
+
+    .navbar .dropdown ul {
+        display: block;
+        position: absolute;
+        left: 28px;
+        top: calc(100% + 30px);
+        margin: 0;
+        padding: 10px 0;
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+        transition: 0.3s;
+    }
+
+    .navbar .dropdown ul li {
+        min-width: 200px;
+    }
+
+    .navbar .dropdown ul a {
+        padding: 10px 20px;
+        font-size: 15px;
+        text-transform: none;
+        color: var(--text-color);
+        font-weight: 400;
+    }
+
+    .navbar .dropdown ul a i {
+        font-size: 12px;
+    }
+
+    .navbar .dropdown ul a:hover,
+    .navbar .dropdown ul .active:hover,
+    .navbar .dropdown ul li:hover > a {
+        color: var(--dark-purple);
+    }
+
+    .navbar .dropdown:hover > ul {
+        opacity: 1;
+        top: 100%;
+        visibility: visible;
+    }
+
+    .navbar .dropdown .dropdown ul {
+        top: 0;
+        left: calc(100% - 30px);
+        visibility: hidden;
+    }
+
+    .navbar .dropdown .dropdown:hover > ul {
+        opacity: 1;
+        top: 0;
+        left: 100%;
+        visibility: visible;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1366px) {
+    .navbar .dropdown .dropdown ul {
+        left: -90%;
+    }
+
+    .navbar .dropdown .dropdown:hover > ul {
+        left: -100%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .mobile-nav-show,
+    .mobile-nav-hide {
+        display: none;
+    }
+}
+
+/*--------------------------------------------------------------
+# Mobile Navigation
+--------------------------------------------------------------*/
+@media (max-width: 1279px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        max-width: 400px;
+        bottom: 0;
+        transition: 0.3s;
+        z-index: 9997;
+    }
+
+    .navbar ul {
+        position: absolute;
+        inset: 0;
+        padding: 50px 0 10px 0;
+        margin: 0;
+        background: var(--dark-blue);
+        overflow-y: auto;
+        transition: 0.3s;
+        z-index: 9998;
+    }
+
+    .navbar a,
+    .navbar a:focus {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        font-family: var(--font-primary);
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--text-color);
+        white-space: nowrap;
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
+
+    .navbar a i,
+    .navbar a:focus i {
+        font-size: 12px;
+        line-height: 0;
+        margin-left: 5px;
+    }
+
+    .navbar a:hover,
+    .navbar .active,
+    .navbar .active:focus,
+    .navbar li:hover > a {
+        color: var(--text-color);
+    }
+
+    .navbar .dropdown ul,
+    .navbar .dropdown .dropdown ul {
+        position: static;
+        display: none;
+        padding: 10px 0;
+        margin: 10px 20px;
+        transition: all 0.5s ease-in-out;
+        border: 1px solid var(--dark-purple);
+    }
+
+    .navbar .dropdown > .dropdown-active,
+    .navbar .dropdown .dropdown > .dropdown-active {
+        display: block;
+    }
+
+    .mobile-nav-show {
+        position: relative;
+        color: var(--text-color);
+        font-size: 28px;
+        cursor: pointer;
+        line-height: 0;
+        transition: 0.5s;
+        z-index: 9999;
+        padding-right: 10px;
+    }
+
+    .mobile-nav-hide {
+        color: var(--text-color);
+        font-size: 32px;
+        cursor: pointer;
+        line-height: 0;
+        transition: 0.5s;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        z-index: 9999;
+    }
+
+    .mobile-nav-active {
+        overflow: hidden;
+    }
+
+    .mobile-nav-active .navbar {
+        right: 0;
+    }
+
+    .mobile-nav-active .navbar:before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: var(--dark-blue);
+        z-index: 9996;
+    }
+}
