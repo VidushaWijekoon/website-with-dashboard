@@ -1,11 +1,13 @@
 import React from "react";
-import Hero from "../../../components/frontend/hero/Hero";
+import Services from "./Services/Services";
+import Hero from "./Hero/Hero";
 
 const Home = () => {
   return (
-    <div className="wrapper">
+    <>
       <Hero />
-    </div>
+      <Services />
+    </>
   );
 };
 

@@ -7,6 +7,8 @@ import WebDevelopment from "../pages/frontend/Web_Development/WebDevelopment";
 import SoftwareDevelopment from "../pages/frontend/Software_Development/SoftwareDevelopment";
 import SocialMediaMarketing from "../pages/frontend/Social_Media_Marketing/SocialMediaMarketing";
 import PageNotFound from "../pages/__404/__404PageNotFound";
+import Blog from "../pages/frontend/Blog/Blog";
+import Technical from "../pages/frontend/Technical/Technical";
 
 const router = createBrowserRouter([
   {
@@ -18,10 +20,6 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "graphic-desgin",
-        element: <GraphicDesign />,
-      },
-      {
         path: "web-development",
         element: <WebDevelopment />,
       },
@@ -30,8 +28,20 @@ const router = createBrowserRouter([
         element: <SoftwareDevelopment />,
       },
       {
+        path: "graphic-desgin",
+        element: <GraphicDesign />,
+      },
+      {
         path: "social-media-markerting",
         element: <SocialMediaMarketing />,
+      },
+      {
+        path: "technical-services",
+        element: <Technical />,
+      },
+      {
+        path: "blog",
+        element: <Blog />,
       },
     ],
   },
