@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../../assets/images/rtlogolight.png";
+import "./navbar.css";
 
 const navigation = [
-  { name: "Web Development", href: "web-development" },
-  { name: "Software Development", href: "software-development" },
-  { name: "Graphic Design", href: "graphic-desgin" },
-  { name: "Social Media", href: "social-media-markerting" },
-  { name: "Technical Services", href: "technical-services" },
-  { name: "Blog", href: "blog" },
+  { name: "Web Development", to: "web-development" },
+  { name: "Software Development", to: "software-development" },
+  { name: "Graphic Design", to: "graphic-desgin" },
+  { name: "Social Media", to: "social-media-markerting" },
+  { name: "Technical Services", to: "technical-services" },
+  { name: "Blog", to: "blog" },
 ];
 
 const Navbar = () => {
@@ -22,15 +23,13 @@ const Navbar = () => {
           <i className="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
           <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
           <nav id="navbar" className="navbar">
-            <ul className="d-flex">
+            <div className="d-flex">
               {navigation.map((item) => (
-                <li>
-                  <Link key={item.name} to={item.href}>
-                    {item.name}
-                  </Link>
-                </li>
+                <Link key={item.name} to={item.to} className="mx-3">
+                  {item.name}
+                </Link>
               ))}
-            </ul>
+            </div>
           </nav>
         </div>
       </header>

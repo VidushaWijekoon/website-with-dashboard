@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./hero.css";
 
 const social_media = [
   { name: "Facebook", to: "https://www.facebook.com/rtechuae" },
@@ -29,10 +30,10 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div class="left-based-text">
-          <div class="base-inner">
-            <div class="hours">
-              <ul class="clearfix">
+        <div className="left-based-text">
+          <div className="base-inner">
+            <div className="hours">
+              <ul className="clearfix">
                 <li>
                   <span>MON - SAT</span>
                 </li>
@@ -41,20 +42,14 @@ const Hero = () => {
                 </li>
               </ul>
             </div>
-            <div class="social-links">
-              <ul class="clearfix">
+            <div className="social-links">
+              <div className="clearfix">
                 {social_media.map((item) => (
-                  <li>
-                    <Link
-                      to={item.to}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {item.name}
-                    </Link>
-                  </li>
+                  <Link key={item.name} to={item.to} className="mx-3">
+                    {item.name}
+                  </Link>
                 ))}
-              </ul>
+              </div>
             </div>
           </div>
         </div>
