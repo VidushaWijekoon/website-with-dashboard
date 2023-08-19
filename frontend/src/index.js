@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import HomePageAppRoute from "./routers/HomePageAppRoute";
+import AppRouter from "./routers/routers";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <HomePageAppRoute />
+    <AppRouter />
   </React.StrictMode>
 );
