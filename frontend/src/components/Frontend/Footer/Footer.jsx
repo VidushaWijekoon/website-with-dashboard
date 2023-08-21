@@ -88,7 +88,7 @@ const footerLinks = [
       },
       {
         name: "Pricing",
-        link: "#",
+        link: "pricing",
       },
       {
         name: "Careers",

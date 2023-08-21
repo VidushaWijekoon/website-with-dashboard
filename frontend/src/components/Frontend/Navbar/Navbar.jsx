@@ -99,7 +99,7 @@ const Navbar = () => {
               ))}
               <li>
                 <Link
-                  className="font-fontSolway uppercase font-normal cursor-pointer text-[16px] hover:bg-secondary hover:text-emerald-700 text-dimWhite ml-8 border-2 px-4 py-1 hover:"
+                  className="font-fontSolway uppercase font-normal cursor-pointer text-[16px] hover:bg-secondary hover:text-black text-dimWhite ml-8 border-2 px-4 py-1 hover:"
                   to="/login"
                 >
                   Join

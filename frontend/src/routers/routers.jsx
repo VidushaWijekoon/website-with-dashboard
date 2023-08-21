@@ -13,6 +13,7 @@ import Pricing from "../pages/frontend/Pricing/Pricing";
 import Web_Developement from "../pages/frontend/Web_Development/Web_Developement";
 import Login from "../pages/Auth/Login";
 import Register from "../pages/Auth/Register";
+import NotFound from "../pages/404/NotFound";
 
 const router = createBrowserRouter([
   {
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
   {
     path: "register",
     element: <Register />,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 
