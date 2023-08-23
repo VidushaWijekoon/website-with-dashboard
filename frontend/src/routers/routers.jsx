@@ -3,17 +3,23 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 
 import Index from "../pages/frontend/Home/Index";
-import SoftwareDevelopment from "../pages/frontend/Software_Developement/Software_Development";
-import GraphicDesign from "../pages/frontend/Graphic_Desgin/Graphic_Design";
-import Social_Media_Marketing from "../pages/frontend/Social_Media_Marketing/Social_Media_Marketing";
-import Interior_Design from "../pages/frontend/Interior_Design/Interior_Design";
-import Technical_Services from "../pages/frontend/Technical_Services/Technical_Services";
-import Event_Management from "../pages/frontend/Event_Management/Event_Management";
+import SoftwareDevelopment from "../pages/frontend/SoftwareDevelopement/SoftwareDevelopment";
+import GraphicDesign from "../pages/frontend/GraphicDesgin/GraphicDesign";
+import SocialMediaMarketing from "../pages/frontend/SocialMediaMarketing/SocialMediaMarketing";
+import InteriorDesign from "../pages/frontend/InteriorDesign/InteriorDesign";
+import TechnicalServices from "../pages/frontend/TechnicalServices/TechnicalServices";
+import EventManagement from "../pages/frontend/EventManagement/EventManagement";
 import Pricing from "../pages/frontend/Pricing/Pricing";
-import Web_Developement from "../pages/frontend/Web_Development/Web_Developement";
+import WebDevelopement from "../pages/frontend/WebDevelopment/WebDevelopement";
 import Login from "../pages/Auth/Login";
 import Register from "../pages/Auth/Register";
 import NotFound from "../pages/404/NotFound";
+import Blog from "../pages/frontend/Blog/Blog";
+import Careers from "../pages/frontend/Careers/Careers";
+import PayOnline from "../pages/frontend/PayOnline/PayOnline";
+import HelpCenter from "../pages/frontend/HelpCenter/HelpCenter";
+import TermsAndConditions from "../pages/frontend/TermsAndConditions/TermsAndConditions";
+import ReturnPolicy from "../pages/frontend/ReturnPolicy/ReturnPolicy";
 
 const router = createBrowserRouter([
   {
@@ -26,7 +32,7 @@ const router = createBrowserRouter([
       },
       {
         path: "web-development",
-        element: <Web_Developement />,
+        element: <WebDevelopement />,
       },
       {
         path: "software-development",
@@ -38,23 +44,47 @@ const router = createBrowserRouter([
       },
       {
         path: "social-media-marketing",
-        element: <Social_Media_Marketing />,
+        element: <SocialMediaMarketing />,
       },
       {
         path: "interior-design",
-        element: <Interior_Design />,
+        element: <InteriorDesign />,
       },
       {
         path: "technical-services",
-        element: <Technical_Services />,
+        element: <TechnicalServices />,
       },
       {
         path: "event-management",
-        element: <Event_Management />,
+        element: <EventManagement />,
       },
       {
         path: "pricing",
         element: <Pricing />,
+      },
+      {
+        path: "blog",
+        element: <Blog />,
+      },
+      {
+        path: "careers",
+        element: <Careers />,
+      },
+      {
+        path: "pay-online",
+        element: <PayOnline />,
+      },
+      {
+        path: "help-center",
+        element: <HelpCenter />,
+      },
+      {
+        path: "terms-conditions",
+        element: <TermsAndConditions />,
+      },
+      {
+        path: "return-policy",
+        element: <ReturnPolicy />,
       },
     ],
   },
