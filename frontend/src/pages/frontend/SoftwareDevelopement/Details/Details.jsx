@@ -2,7 +2,7 @@ import React from "react";
 import IMG1 from "../../../../assets/images/software_dev/web_development.png";
 import "./details.css";
 
-const About = () => {
+const Details = () => {
   return (
     <section id="details" className="details mb-5">
       <div className="container">
@@ -47,4 +47,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Details;
