@@ -60,11 +60,6 @@ p {
 /* --------------------------------
 Sections Header
 --------------------------------*/
-.section-header {
-  margin-bottom: 60px;
-  position: relative;
-  padding-bottom: 20px;
-}
 
 .section-header::before {
   content: "";
@@ -83,6 +78,7 @@ Sections Header
   text-align: center;
   font-weight: 700;
   margin-bottom: 10px;
+  color: var(--light-blue) !important;
 }
 
 .section-header p {

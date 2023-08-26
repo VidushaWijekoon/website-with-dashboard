@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../../assets/rtlogolight.png";
+import Logo from "../../../assets/images/rtlogolight.png";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
@@ -41,7 +41,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <Link to="technical-services">Technical Services</Link>
+              <a href="technical-services">Technical Services</a>
             </li>
             <li>
               <Link to="event-management">Event Management</Link>
