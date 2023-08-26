@@ -1,5 +1,4 @@
 import React from "react";
-import IMG1 from "../../../../assets/images/software_dev/web_development.png";
 import "./details.css";
 
 const Details = () => {
@@ -7,8 +6,15 @@ const Details = () => {
     <section id="details" className="details mb-5">
       <div className="container">
         <div className="row content">
-          <div className="col-md-4" data-aos="fade-right">
-            <img src={IMG1} className="img-fluid" alt="Img1" />
+          <div
+            className="col-md-4 d-flex align-items-center"
+            data-aos="fade-right"
+          >
+            <img
+              src="https://www.weblankan.com/wp-content/uploads/2022/09/web-design-company-10.png"
+              className="img-fluid"
+              alt="Img1"
+            />
           </div>
           <div className="col-md-8 p-4" data-aos="fade-up">
             <h3>
