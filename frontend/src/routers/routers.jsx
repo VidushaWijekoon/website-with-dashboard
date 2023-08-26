@@ -20,6 +20,8 @@ import PayOnline from "../pages/frontend/PayOnline/PayOnline";
 import HelpCenter from "../pages/frontend/HelpCenter/HelpCenter";
 import TermsAndConditions from "../pages/frontend/TermsAndConditions/TermsAndConditions";
 import ReturnPolicy from "../pages/frontend/ReturnPolicy/ReturnPolicy";
+import AdminLayout from "../layouts/AdminLayout";
+import Dashboard from "../pages/admin/Dashboard/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -99,6 +101,16 @@ const router = createBrowserRouter([
   {
     path: "*",
     element: <NotFound />,
+  },
+  {
+    path: "/admin",
+    element: <AdminLayout />,
+    children: [
+      {
+        path: "dashboard",
+        element: <Dashboard />,
+      },
+    ],
   },
 ]);
 

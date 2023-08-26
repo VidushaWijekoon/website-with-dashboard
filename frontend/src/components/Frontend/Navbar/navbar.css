@@ -130,3 +130,7 @@
     left: -100%;
   }
 }
+
+.pricing {
+  border: 1px solid red;
+}

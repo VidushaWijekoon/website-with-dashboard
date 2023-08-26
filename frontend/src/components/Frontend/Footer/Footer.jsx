@@ -71,7 +71,7 @@ const Footer = () => {
 
 export default Footer;
 
-export const footerLinks = [
+const footerLinks = [
   {
     title: "Useful Links",
     links: [
@@ -90,6 +90,10 @@ export const footerLinks = [
       {
         name: "Careers",
         link: "careers",
+      },
+      {
+        name: "Login",
+        link: "login",
       },
     ],
   },
@@ -154,7 +158,7 @@ export const footerLinks = [
   },
 ];
 
-export const socialMedia = [
+const socialMedia = [
   {
     id: "social-media-1",
     icon: <InstagramIcon />,
