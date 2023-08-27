@@ -65,6 +65,29 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div class="footer-legal text-center position-relative">
+        <div class="container">
+          <div className="d-flex justify-content-between align-items-center">
+            <div class="copyright">
+              &copy; Copyright
+              <strong>
+                <span className="mx-2">RTech International (2023)</span>
+              </strong>
+              . All Rights Reserved
+            </div>
+            <div class="credits">
+              Powered By
+              <Link
+                to="https://www.linkedin.com/in/vidusha-wijekoon-959254190/"
+                target="_blank"
+                className="mx-2"
+              >
+                Vidusha Wijekoon RTech International
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 };

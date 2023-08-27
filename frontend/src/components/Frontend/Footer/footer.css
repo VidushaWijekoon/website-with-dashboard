@@ -4,7 +4,7 @@
 .footer {
   color: var(--text-white);
   font-size: 14px;
-  padding: 80px 0 60px 0;
+  padding: 80px 0 20px 0;
   position: relative;
 }
 
@@ -95,11 +95,6 @@
   color: var(--light-blue);
 }
 
-.footer .footer-legal .copyright {
-  padding-top: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-}
-
 .footer .footer-legal .credits {
   padding-top: 4px;
   font-size: 13px;
@@ -108,4 +103,9 @@
 
 .footer .footer-legal .credits a {
   color: var(--color-primary);
+}
+
+.footer .footer-legal {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 20px;
 }
