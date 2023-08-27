@@ -1,9 +1,8 @@
 import React from "react";
-import "./hero.css";
 
 const Hero = () => {
   return (
-    <section id="hero" className="d-flex align-items-center mb-5">
+    <section id="social_hero" className="d-flex align-items-center mb-5">
       <div className="container">
         <div className="row">
           <div

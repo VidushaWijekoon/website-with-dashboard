@@ -1,5 +1,5 @@
 .counts .count-box {
-  box-shadow: -10px -5px 40px 0 rgb(115 104 104 / 10%);
+  box-shadow: var(--boxShadow) !important;
   padding: 30px;
   width: 100%;
 }

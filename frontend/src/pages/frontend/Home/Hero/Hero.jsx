@@ -4,7 +4,7 @@ import "./hero.css";
 
 const Hero = () => {
   return (
-    <div className="hero mb-5" id="hero">
+    <div className="home_hero mb-5" id="hero">
       <div
         className="hero-container container-fluid"
         data-aos="zoom-in"

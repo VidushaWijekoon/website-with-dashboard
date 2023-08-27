@@ -1,0 +1,118 @@
+.contact .info-item {
+  box-shadow: -10px -5px 40px 0 rgb(115 104 104 / 10%);
+  padding: 30px;
+}
+
+.contact .info-item h3 {
+  color: var(--light-blue);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+
+.contact .info-item p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .php-email-form {
+  padding: 30px;
+  height: 100%;
+  box-shadow: -10px -5px 40px 0 rgb(115 104 104 / 10%);
+  padding: 30px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  background: var(--dark-blue);
+  color: var(--light-blue);
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  background: var(--dark-blue);
+  color: var(--light-blue);
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: var(--dark-blue);
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid var(--dark-blue);
+  border-top-color: var(--dark-blue);
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
+.contact .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--light-blue);
+  background-color: rgba(var(--light-blue), 0.5);
+  border-color: rgba(var(----light-blue), 0.2);
+}
+
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--color-primary);
+}
+
+.contact .php-email-form input[type="text"]::-moz-placeholder,
+.contact .php-email-form input[type="email"]::-moz-placeholder,
+.contact .php-email-form textarea::-moz-placeholder {
+  color: rgba(var(--color-default-rgb), 0.3);
+}
+
+.contact .php-email-form input[type="text"]::placeholder,
+.contact .php-email-form input[type="email"]::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: rgba(var(--color-default-rgb), 0.3);
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: var(--medium-blue);
+  color: var(--text-white);
+  border: 0;
+  padding: 5px 15px;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: rgba(var(--color-primary-rgb), 0.8);
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

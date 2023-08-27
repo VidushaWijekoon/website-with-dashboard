@@ -16,7 +16,7 @@ const Dev = () => {
             <div class="container p-5">
               <div class="row">
                 {details.map((event) => (
-                  <div class="col-md-3 mb-3 text-center mx-auto">
+                  <div class="col-md-3 mb-3 text-center mx-auto box">
                     <img
                       src={event.imgUrl}
                       alt="START-UP BUSINESSES"

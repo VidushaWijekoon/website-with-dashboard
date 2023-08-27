@@ -9,7 +9,7 @@ import SignpostIcon from "@mui/icons-material/Signpost";
 
 const Services = () => {
   return (
-    <section id="featured-services" className="featured-services">
+    <section id="featured-services" className="featured-services mb-5">
       <div className="container">
         <div className="row gy-4">
           {services.map((service, index) => (

@@ -1,10 +1,9 @@
 import React from "react";
-import "./hero.css";
 import Software_Hero from "../../../../assets/images/software_dev/hero-img.png";
 
 const Hero = () => {
   return (
-    <section id="hero" className="d-flex align-items-center mb-5">
+    <section id="web_hero" className="d-flex align-items-center mb-5">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 d-lg-flex  " data-aos="fade-up">
