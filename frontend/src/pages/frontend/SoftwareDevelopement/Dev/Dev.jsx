@@ -22,34 +22,34 @@ const Dev = () => {
             HELPS DEVELOP TOP-NOTCH SOFTWARE TO MEET YOUR COMPANY’S EVERY NEED!
           </h5>
         </header>
-        <div class="row g-0">
-          <div class="col-lg-12">
-            <div class="container p-5">
-              <div class="row">
-                <div class="col-md-4 text-center">
-                  <img src={img1} alt="START-UP BUSINESSES" class="mb-4" />
-                  <h5 class="text-white">Talk to our Experts</h5>
-                  <p class="text-white">
+        <div className="row g-0">
+          <div className="col-lg-12">
+            <div className="container p-5">
+              <div className="row">
+                <div className="col-md-4 text-center">
+                  <img src={img1} alt="START-UP BUSINESSES" className="mb-4" />
+                  <h5 className="text-white">Talk to our Experts</h5>
+                  <p className="text-white">
                     Need an innovative solution? Our team will help you from the
                     start to the finish!
                   </p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div className="col-md-4 text-center">
                   <img
                     src={img2}
                     alt="SMALL AND MEDIUM BUSINESSES"
-                    class="mb-4"
+                    className="mb-4"
                   />
-                  <h5 class="text-white">Get a Quote</h5>
-                  <p class="text-white">
+                  <h5 className="text-white">Get a Quote</h5>
+                  <p className="text-white">
                     Need an innovative solution? Our team will help you from the
                     start to the finish!
                   </p>
                 </div>
-                <div class="col-md-4 text-center">
-                  <img src={img3} alt="ENTERPRISES" class="mb-4" />
-                  <h6 class="text-white">Minimum Viable Product</h6>
-                  <p class="text-white">
+                <div className="col-md-4 text-center">
+                  <img src={img3} alt="ENTERPRISES" className="mb-4" />
+                  <h6 className="text-white">Minimum Viable Product</h6>
+                  <p className="text-white">
                     Contact us for your minimum viable product solutions!
                   </p>
                 </div>

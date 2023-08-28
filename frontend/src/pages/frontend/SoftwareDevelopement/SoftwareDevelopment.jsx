@@ -5,6 +5,7 @@ import Content from "./Content/Content";
 import Count from "./Count/Count";
 import Solutions from "./Solutions/Solutions";
 import Dev from "./Dev/Dev";
+import Technologies from "./Technology/Technologies";
 
 const SoftwareDevelopment = () => {
   return (
@@ -15,6 +16,7 @@ const SoftwareDevelopment = () => {
       <Solutions />
       <Content />
       <Dev />
+      <Technologies />
     </>
   );
 };
