@@ -3,7 +3,7 @@ import RemoveIcon from "@mui/icons-material/Remove";
 
 const Features = () => {
   return (
-    <section id="features" class="features mb-5">
+    <section id="features" className="features mb-5">
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-6 mt-3">

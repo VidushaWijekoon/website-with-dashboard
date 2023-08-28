@@ -1,5 +1,4 @@
 import React from "react";
-import IMG1 from "../../../../assets/images/software_dev/web_development.png";
 import "./details.css";
 
 const Details = () => {

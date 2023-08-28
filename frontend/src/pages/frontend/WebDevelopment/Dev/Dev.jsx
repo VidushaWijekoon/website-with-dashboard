@@ -1,9 +1,5 @@
 import React from "react";
 
-import img1 from "../../../../assets/images/software_dev/web-design-company-rtech-14.png";
-import img2 from "../../../../assets/images/software_dev/web-design-company-rtech-15.png";
-import img3 from "../../../../assets/images/software_dev/web-design-company-rtech-16.png";
-
 const Dev = () => {
   return (
     <section id="dev" className="dev mt-4">

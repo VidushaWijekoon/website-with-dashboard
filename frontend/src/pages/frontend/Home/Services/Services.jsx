@@ -7,32 +7,6 @@ import SettingsSuggestIcon from "@mui/icons-material/SettingsSuggest";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import SignpostIcon from "@mui/icons-material/Signpost";
 
-const Services = () => {
-  return (
-    <section id="featured-services" className="featured-services mb-5">
-      <div className="container">
-        <div className="row gy-4">
-          {services.map((service, index) => (
-            <div className="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
-              <div className="service-item position-relative">
-                <div className="icon">{service.icon}</div>
-                <h4>
-                  <Link to={service.link} className="stretched-link">
-                    {service.title}
-                  </Link>
-                </h4>
-                <p>{service.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default Services;
-
 const services = [
   {
     id: "IT",
@@ -67,3 +41,38 @@ const services = [
     icon: <SignpostIcon sx={{ fontSize: "66px" }} />,
   },
 ];
+
+const Services = () => {
+  return (
+    <section id="featured-services" className="featured-services mb-5">
+      <div className="container">
+        <div className="row gy-4">
+          {services.map(({ icon, title, description }, index) => (
+            <ServicesUnit
+              key={index}
+              icon={icon}
+              title={title}
+              description={description}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Services;
+
+const ServicesUnit = ({ title, description, link, icon }) => (
+  <div className="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
+    <div className="service-item position-relative">
+      <div className="icon">{icon}</div>
+      <h4>
+        <Link to={link} className="stretched-link">
+          {title}
+        </Link>
+      </h4>
+      <p>{description}</p>
+    </div>
+  </div>
+);

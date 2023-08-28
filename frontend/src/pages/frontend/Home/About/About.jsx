@@ -3,36 +3,6 @@ import "./about.css";
 
 import { Link } from "react-router-dom";
 
-import LanguageIcon from "@mui/icons-material/Language";
-
-const About = () => {
-  return (
-    <>
-      <section id="services" className="services mb-5">
-        <div className="container-fluid">
-          <div className="row justify-content-center">
-            {serve.map((e) => (
-              <div className="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
-                <div className="icon-box">
-                  <div className="icon">
-                    <img src={e.icon} alt="" />
-                  </div>
-                  <h4>
-                    <Link to={e.url}>{e.title}</Link>
-                  </h4>
-                  <p>{e.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-    </>
-  );
-};
-
-export default About;
-
 const serve = [
   {
     id: "1",
@@ -97,3 +67,41 @@ const serve = [
     url: "event-management",
   },
 ];
+
+const About = () => {
+  return (
+    <>
+      <section id="services" className="services mb-5">
+        <div className="container-fluid">
+          <div className="row justify-content-center">
+            {serve.map(({ img, url, title, description }, index) => (
+              <AboutUnit
+                key={index}
+                img={img}
+                url={url}
+                title={title}
+                description={description}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default About;
+
+const AboutUnit = ({ img, url, description, title }) => (
+  <div className="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+    <div className="icon-box">
+      <div className="icon">
+        <img src={img} alt="" />
+      </div>
+      <h4>
+        <Link to={url}>{title}</Link>
+      </h4>
+      <p>{description}</p>
+    </div>
+  </div>
+);

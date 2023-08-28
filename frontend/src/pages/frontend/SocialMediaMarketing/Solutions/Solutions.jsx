@@ -1,10 +1,5 @@
 import React from "react";
 
-import StartUp from "../../../../assets/images/software_dev/solutions/stat_up_business_icon.png";
-import Agancies from "../../../../assets/images/software_dev/solutions/agencies.png";
-import Enterprises from "../../../../assets/images/software_dev/solutions/enterprises.png";
-import SmallMedium from "../../../../assets/images/software_dev/solutions/small_medium.png";
-
 const Solutions = () => {
   return (
     <>

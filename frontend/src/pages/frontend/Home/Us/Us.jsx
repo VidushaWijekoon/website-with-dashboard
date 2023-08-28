@@ -1,11 +1,6 @@
 import React from "react";
 import "./us.css";
 
-import QA from "../../../../assets/images/software_dev/count/rtech_qa.png";
-import Soft from "../../../../assets/images/software_dev/count/digital-marketing-companies.png";
-import App from "../../../../assets/images/software_dev/count/application_management.png";
-import Support from "../../../../assets/images/software_dev/count/rtech247.png";
-
 const Us = () => {
   return (
     <>

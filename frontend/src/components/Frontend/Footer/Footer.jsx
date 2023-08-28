@@ -9,91 +9,6 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-const Footer = () => {
-  return (
-    <footer id="footer" className="footer">
-      <div className="footer-content position-relative">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-4 col-md-6">
-              <div className="footer-info">
-                <div className="logo">
-                  <Link>
-                    <img src={Logo} alt="RTech" width={100} className="mb-3" />
-                  </Link>
-                </div>
-                <p>
-                  A108 Adam Street <br />
-                  NY 535022, USA
-                  <br />
-                  <br />
-                  <strong>Phone:</strong> +1 5589 55488 55
-                  <br />
-                  <strong>Email:</strong> info@example.com
-                  <br />
-                </p>
-                <div className="social-links d-flex mt-3">
-                  {socialMedia.map((social, index) => (
-                    <Link
-                      target="_blank"
-                      to={social.link}
-                      className="d-flex align-items-center justify-content-center"
-                    >
-                      {social.icon}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {footerLinks.map((footerlink) => (
-              <div className="col-lg-2 col-md-3 footer-links">
-                <div key={footerlink.title}>
-                  <h4>{footerlink.title}</h4>
-                  {footerlink.links.map((link, index) => (
-                    <ul>
-                      <li key={link.name}>
-                        <Link to={link.link} className="footer-nav-links">
-                          {link.name}
-                        </Link>
-                      </li>
-                    </ul>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-      <div class="footer-legal text-center position-relative">
-        <div class="container">
-          <div className="d-flex justify-content-between align-items-center">
-            <div class="copyright">
-              &copy; Copyright
-              <strong>
-                <span className="mx-2">RTech International (2023)</span>
-              </strong>
-              . All Rights Reserved
-            </div>
-            <div class="credits">
-              Powered By
-              <Link
-                to="https://www.linkedin.com/in/vidusha-wijekoon-959254190/"
-                target="_blank"
-                className="mx-2"
-              >
-                Vidusha Wijekoon RTech International
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-};
-
-export default Footer;
-
 const footerLinks = [
   {
     title: "Useful Links",
@@ -208,3 +123,92 @@ const socialMedia = [
     link: "https://www.pinterest.com/rtechuae/",
   },
 ];
+
+const Footer = () => {
+  return (
+    <footer id="footer" className="footer">
+      <div className="footer-content position-relative">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 col-md-6">
+              <div className="footer-info">
+                <div className="logo">
+                  <Link>
+                    <img src={Logo} alt="RTech" width={100} className="mb-3" />
+                  </Link>
+                </div>
+                <p>
+                  A108 Adam Street <br />
+                  NY 535022, USA
+                  <br />
+                  <br />
+                  <strong>Phone:</strong> +1 5589 55488 55
+                  <br />
+                  <strong>Email:</strong> info@example.com
+                  <br />
+                </p>
+                <div className="social-links d-flex mt-3">
+                  {socialMedia.map(({ icon, link }, index) => (
+                    <MediaItems key={index} icon={icon} link={link} />
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {footerLinks.map((footerlink) => (
+              <div className="col-lg-2 col-md-3 footer-links">
+                <div key={footerlink.title}>
+                  <h4>{footerlink.title}</h4>
+                  {footerlink.links.map((link, index) => (
+                    <ul>
+                      <li key={link.name}>
+                        <Link to={link.link} className="footer-nav-links">
+                          {link.name}
+                        </Link>
+                      </li>
+                    </ul>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="footer-legal text-center position-relative">
+        <div className="container">
+          <div className="d-flex justify-content-between align-items-center">
+            <div className="copyright">
+              &copy; Copyright
+              <strong>
+                <span className="mx-2">RTech International (2023)</span>
+              </strong>
+              . All Rights Reserved
+            </div>
+            <div className="credits">
+              Powered By
+              <Link
+                to="https://www.linkedin.com/in/vidusha-wijekoon-959254190/"
+                target="_blank"
+                className="mx-2"
+              >
+                Vidusha Wijekoon RTech International
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
+
+const MediaItems = ({ icon, link }) => (
+  <Link
+    target="_blank"
+    to={link}
+    className="d-flex align-items-center justify-content-center"
+  >
+    {icon}
+  </Link>
+);
