@@ -138,13 +138,9 @@ const Footer = () => {
                   </Link>
                 </div>
                 <p>
-                  A108 Adam Street <br />
-                  NY 535022, USA
+                  <strong>Head Office:</strong> Sharjah Research Technology and
+                  Innovation Park ,BLOCK B, Ofc No: B16, Sharjah, UAE
                   <br />
-                  <br />
-                  <strong>Phone:</strong> +1 5589 55488 55
-                  <br />
-                  <strong>Email:</strong> info@example.com
                   <br />
                 </p>
                 <div className="social-links d-flex mt-3">
@@ -186,13 +182,7 @@ const Footer = () => {
             </div>
             <div className="credits">
               Powered By
-              <Link
-                to="https://www.linkedin.com/in/vidusha-wijekoon-959254190/"
-                target="_blank"
-                className="mx-2"
-              >
-                Vidusha Wijekoon RTech International
-              </Link>
+              <Link className="mx-2">RTech International</Link>
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import HomeIcon from "@mui/icons-material/Home";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -27,9 +28,13 @@ const Contact = () => {
                       fontSize: "50px",
                     }}
                   />
-                  <h3>Address</h3>
-                  <p>A108 Adam Street</p>
-                  <p>New York, NY 535022</p>
+                  <h3>Main Branch</h3>
+                  <Link
+                    to="http://maps.google.com/?q=1200 121 Sheikh Khalifa Bin Zayed St - Al Karama - Dubai"
+                    target="_blank"
+                  >
+                    <p>M26,Crystal Building, Al Karama, Dubai</p>
+                  </Link>
                 </div>
               </div>
 
@@ -41,8 +46,12 @@ const Contact = () => {
                     }}
                   />
                   <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
-                  <p>+1 6678 254445 41</p>
+                  <Link to="tel:971-43-398-7949">
+                    <p>+971 (04) 398 7949</p>
+                  </Link>
+                  <Link to="tel:971-43-398-7949">
+                    <p>+971 (052) 984 3844</p>
+                  </Link>
                 </div>
               </div>
 
@@ -54,8 +63,12 @@ const Contact = () => {
                     }}
                   />
                   <h3>Email Us</h3>
-                  <p>info@example.com</p>
-                  <p>contact@example.com</p>
+                  <Link to="mailto:info@rtechglobal.ae">
+                    <p>info@rtechglobal.ae</p>
+                  </Link>
+                  <Link to="mailto:sales@rtechglobal.ae">
+                    <p>sales@rtechglobal.ae</p>
+                  </Link>
                 </div>
               </div>
 
@@ -66,9 +79,9 @@ const Contact = () => {
                       fontSize: "50px",
                     }}
                   />
-                  <h3>Open Hours</h3>
-                  <p>Monday - Friday</p>
-                  <p>9:00AM - 05:00PM</p>
+                  <h3>Working Hours</h3>
+                  <p>Monday - Saturday</p>
+                  <p>9:00AM - 06:00PM</p>
                 </div>
               </div>
             </div>
