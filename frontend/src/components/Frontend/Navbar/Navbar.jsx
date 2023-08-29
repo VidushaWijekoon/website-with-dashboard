@@ -47,7 +47,7 @@ const Navbar = () => {
               <Link to="event-management">Event Management</Link>
             </li>
             <li>
-              <Link to="blog">Blog</Link>
+              <Link to="science-technology">Science & Technology</Link>
             </li>
             <li>
               <Link to="pricing">Pricing</Link>

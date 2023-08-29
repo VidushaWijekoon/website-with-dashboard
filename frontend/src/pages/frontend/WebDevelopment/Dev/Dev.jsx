@@ -1,38 +1,5 @@
 import React from "react";
 
-const Dev = () => {
-  return (
-    <section id="dev" className="dev mt-4">
-      <div
-        className="container-fluid p-0 aos-init aos-animate"
-        data-aos="fade-up"
-      >
-        <div class="row g-0">
-          <div class="col-lg-12">
-            <div class="container p-5">
-              <div class="row">
-                {details.map((event) => (
-                  <div class="col-md-3 mb-3 text-center mx-auto box">
-                    <img
-                      src={event.imgUrl}
-                      alt="START-UP BUSINESSES"
-                      class="mb-4"
-                    />
-                    <h5 class="text-white">{event.title}</h5>
-                    <p class="text-white">{event.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default Dev;
-
 const details = [
   {
     id: "1",
@@ -87,3 +54,41 @@ const details = [
       "Engaging graphics, videos and most importantly written content that inspires action",
   },
 ];
+
+const Dev = () => {
+  return (
+    <section id="dev" className="dev mt-4">
+      <div
+        className="container-fluid p-0 aos-init aos-animate"
+        data-aos="fade-up"
+      >
+        <div div="row g-0">
+          <div div="col-lg-12">
+            <div div="container p-5">
+              <div div="row">
+                {details.map(({ imgUrl, title, description }, index) => (
+                  <Items
+                    key={index}
+                    imgUrl={imgUrl}
+                    title={title}
+                    description={description}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Dev;
+
+const Items = ({ imgUrl, title, description }) => {
+  <div div="col-md-3 mb-3 text-center mx-auto box">
+    <img src={imgUrl} alt="START-UP BUSINESSES" div="mb-4" />
+    <h5 div="text-white">{title}</h5>
+    <p div="text-white">{description}</p>
+  </div>;
+};

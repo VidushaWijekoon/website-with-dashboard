@@ -1,39 +1,5 @@
 import React from "react";
 
-const Features = () => {
-  return (
-    <section id="features" class="features">
-      <div class="container aos-init aos-animate" data-aos="fade-up">
-        <header class="section-header p-5">
-          <h2
-            class="d-flex justify-content-center"
-            style={{ color: "#112D4E", fontWeight: "bold" }}
-          >
-            RELATED SERVICES
-          </h2>
-        </header>
-
-        <div class="row align-self-center gy-4">
-          {feature.map((event) => (
-            <div
-              class="col-md-4 aos-init aos-animate"
-              data-aos="zoom-out"
-              data-aos-delay="200"
-            >
-              <div class="feature-box d-flex align-items-center mb-5">
-                <img src={event.imgUrl} alt={event.title} />
-                <h5 class="mx-3">{event.title}</h5>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default Features;
-
 const feature = [
   {
     id: "1",
@@ -89,3 +55,41 @@ const feature = [
       "https://www.weblankan.com/wp-content/uploads/2022/08/multi-lang-icon.png",
   },
 ];
+
+const Features = () => {
+  return (
+    <section id="features" className="features">
+      <div className="container aos-init aos-animate" data-aos="fade-up">
+        <header className="section-header p-5">
+          <h2
+            className="d-flex justify-content-center"
+            style={{ color: "#112D4E", fontWeight: "bold" }}
+          >
+            RELATED SERVICES
+          </h2>
+        </header>
+
+        <div className="row align-self-center gy-4">
+          {feature.map(({ imgUrl, title }, index) => (
+            <Items key={index} imgUrl={imgUrl} title={title} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Features;
+
+const Items = ({ imgUrl, title }) => (
+  <div
+    className="col-md-4 aos-init aos-animate"
+    data-aos="zoom-out"
+    data-aos-delay="200"
+  >
+    <div className="feature-box d-flex align-items-center mb-5">
+      <img src={imgUrl} alt={title} />
+      <h5 className="mx-3">{title}</h5>
+    </div>
+  </div>
+);

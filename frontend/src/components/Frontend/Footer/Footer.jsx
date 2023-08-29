@@ -182,7 +182,9 @@ const Footer = () => {
             </div>
             <div className="credits">
               Powered By
-              <Link className="mx-2">RTech International</Link>
+              <Link className="mx-2">
+                RTech International <span className="mx-2">1.1v</span>
+              </Link>
             </div>
           </div>
         </div>

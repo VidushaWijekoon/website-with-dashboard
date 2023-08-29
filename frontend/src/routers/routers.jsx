@@ -14,12 +14,14 @@ import WebDevelopement from "../pages/frontend/WebDevelopment/WebDevelopement";
 import Login from "../pages/Auth/Login";
 import Register from "../pages/Auth/Register";
 import NotFound from "../pages/404/NotFound";
-import Blog from "../pages/frontend/Blog/Blog";
 import Careers from "../pages/frontend/Careers/Careers";
 import PayOnline from "../pages/frontend/PayOnline/PayOnline";
 import HelpCenter from "../pages/frontend/HelpCenter/HelpCenter";
 import TermsAndConditions from "../pages/frontend/TermsAndConditions/TermsAndConditions";
 import ReturnPolicy from "../pages/frontend/ReturnPolicy/ReturnPolicy";
+import ScienceAndTechnology from "../pages/frontend/ScienceAndTechnology/ScienceAndTechnology";
+import Dashboard from "../pages/admin/Dashboard/Dashboard";
+import AdminLayout from "../layouts/AdminLayout";
 
 const router = createBrowserRouter([
   {
@@ -63,8 +65,8 @@ const router = createBrowserRouter([
         element: <Pricing />,
       },
       {
-        path: "blog",
-        element: <Blog />,
+        path: "science-technology",
+        element: <ScienceAndTechnology />,
       },
       {
         path: "careers",
@@ -99,6 +101,16 @@ const router = createBrowserRouter([
   {
     path: "*",
     element: <NotFound />,
+  },
+  {
+    path: "admin/",
+    element: <AdminLayout />,
+    children: [
+      {
+        path: "dashboard",
+        element: <Dashboard />,
+      },
+    ],
   },
 ]);
 

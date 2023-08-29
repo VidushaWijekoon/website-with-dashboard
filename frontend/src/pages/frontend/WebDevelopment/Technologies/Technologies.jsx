@@ -1,38 +1,5 @@
 import React from "react";
 
-const Technologies = () => {
-  return (
-    <section id="features" class="features mb-5">
-      <div class="container aos-init aos-animate" data-aos="fade-up">
-        <header class="section-header p-5">
-          <h2
-            class="d-flex justify-content-center"
-            style={{ color: "#112D4E", fontWeight: "bold" }}
-          >
-            THE CUTTING EDGE TECHNOLOGIES
-          </h2>
-          <span
-            className="d-flex justify-content-center"
-            style={{ color: "#eceaea" }}
-          >
-            Empowering you with the best technology
-          </span>
-        </header>
-
-        <div class="row align-self-center gy-4">
-          {pics.map((event) => (
-            <div className="col-md-2 justify-content-center mx-auto">
-              <img src={event.imgUrl} alt={event.title} />
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default Technologies;
-
 const pics = [
   {
     id: "1",
@@ -107,3 +74,40 @@ const pics = [
       "https://www.weblankan.com/wp-content/uploads/2022/09/web-design-company-sri-lanka-82.png",
   },
 ];
+
+const Technologies = () => {
+  return (
+    <section id="features" className="features mb-5">
+      <div className="container aos-init aos-animate" data-aos="fade-up">
+        <header className="section-header p-5">
+          <h2
+            className="d-flex justify-content-center"
+            style={{ color: "#112D4E", fontWeight: "bold" }}
+          >
+            THE CUTTING EDGE TECHNOLOGIES
+          </h2>
+          <span
+            className="d-flex justify-content-center"
+            style={{ color: "#eceaea" }}
+          >
+            Empowering you with the best technology
+          </span>
+        </header>
+
+        <div className="row align-self-center gy-4">
+          {pics.map(({ imgUrl, title }, index) => (
+            <Items key={index} imgUrl={imgUrl} title={title} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Technologies;
+
+const Items = ({ title, imgUrl }) => (
+  <div className="col-md-2 justify-content-center mx-auto">
+    <img src={imgUrl} alt={title} />
+  </div>
+);
