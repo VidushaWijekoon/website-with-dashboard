@@ -59,9 +59,6 @@
                     <a href="{{ url('pricing') }}"
                         class="{{ 'pricing' == request()->path() ? 'active' : '' }}">Pricing</a>
                 </li>
-                <li>
-                    <a href="{{ url('blog') }}" class="{{ 'blog' == request()->path() ? 'active' : '' }}">Blog</a>
-                </li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->

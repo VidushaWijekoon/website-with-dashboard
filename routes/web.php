@@ -57,10 +57,6 @@ Route::get('pricing', function () {
     return view('pages.frontend.pricing.index');
 });
 
-Route::get('blog', function () {
-    return view('pages.frontend.blog.index');
-});
-
 Route::get('pay-online', function () {
     return view('pages.frontend.pay_online.index');
 });
@@ -70,4 +66,30 @@ Route::get('careers', function () {
 });
 
 
-Route::get('admin/dashboard', [AdminHomepageController::class, 'index'])->name('admin.homepage');
+Route::prefix('/admin')->middleware('auth', 'isAdmin')->group(function () {
+    Route::get('/dashboard', [AdminHomepageController::class, 'index'])->name('admin.dashboard');
+
+    Route::get('/hrm', function () {
+        return view('pages.admin.hrm.index');
+    });
+
+    Route::get('/sales', function () {
+        return view('pages.admin.sales.index');
+    });
+
+    Route::get('/accounts', function () {
+        return view('pages.admin.accounts.index');
+    });
+
+    Route::get('/projects', function () {
+        return view('pages.admin.projects.index');
+    });
+
+    Route::get('/science-and-technology', function () {
+        return view('pages.admin.science_and_technology.index');
+    });
+
+    Route::get('/users', function () {
+        return view('pages.admin.users.index');
+    });
+});

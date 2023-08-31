@@ -14,3 +14,4 @@
 
 <!-- Template Main JS File -->
 <script src="{{ asset('frontend/js/app.js') }}"></script>
+@stack('script')

@@ -61,7 +61,6 @@
                         <li><a href="{{ url('technical-services') }}">Technical Serives</a></li>
                         <li><a href="{{ url('event-management') }}">Event Management</a></li>
                         <li><a href="{{ url('science-technology') }}">Science & Technology</a></li>
-                        <li><a href="{{ url('blog') }}">Blog</a></li>
                     </ul>
                 </div><!-- End footer links column-->
 
@@ -101,9 +100,9 @@
                 </div>
                 <div className="credits">
                     Powered By
-                    <Link className="mx-2">
-                    RTech International <span className="mx-2">1.1v</span>
-                    </Link>
+                    <a className="mx-2">
+                        RTech International <span className="mx-2">1.1v</span>
+                    </a>
                 </div>
             </div>
         </div>
