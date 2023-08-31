@@ -51,6 +51,7 @@
                         <li><a href="{{ url('pricing') }}">Pricing</a></li>
                         <li><a href="{{ url('pay-online') }}">Pay Online</a></li>
                         <li><a href="{{ url('careers') }}">Careers</a></li>
+                        <li><a href="{{ url('login') }}">Login</a></li>
                     </ul>
                 </div><!-- End footer links column-->
 

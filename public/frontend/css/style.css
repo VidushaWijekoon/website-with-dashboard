@@ -25,6 +25,13 @@
     );
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-solway);
     background: var(--black-gradient);
@@ -289,6 +296,122 @@ h6 {
 
 .navbar-mobile .dropdown > .dropdown-active {
     display: block;
+}
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+
+#hero {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    right: -100%;
+    top: 20%;
+    width: 250%;
+    height: 200%;
+    z-index: -1;
+    background-color: var(--medium-blue);
+    transform: skewY(135deg);
+}
+
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 56px;
+    color: var(--text-white);
+    font-family: var(--font-solway);
+}
+
+#hero h2 {
+    color: var(--medium-blue);
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+@media (max-width: 991px) {
+    #hero {
+        text-align: center;
+    }
+
+    #hero .hero-img {
+        text-align: center;
+    }
+
+    #hero .hero-img img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+
+    #hero .hero-img img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 575px) {
+    #hero .hero-img img {
+        width: 80%;
+    }
+}
+
+/*--------------------------------------------------------------
+# Featured Services
+--------------------------------------------------------------*/
+.featured-services .service-item {
+    padding: 30px;
+    transition: all ease-in-out 0.4s;
+    background: var(--dark-blue);
+    height: 100%;
+    border-radius: 15px;
+}
+
+.featured-services .service-item .icon {
+    margin-bottom: 10px;
+}
+
+.featured-services .service-item h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.featured-services .service-item h4 a {
+    color: var(--light-blue);
+    transition: ease-in-out 0.3s;
+}
+
+.featured-services .service-item p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.featured-services .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0 60px 0 rgba(var(--light-blue), 0.1);
+}
+
+.featured-services .service-item:hover h4 a {
+    color: var(--light-blue);
 }
 
 /*--------------------------------------------------------------
