@@ -1,5 +1,5 @@
 <!-- ======= Footer ======= -->
-<footer id="footer" class="footer">
+<footer id="footer" class="footer mt-5">
 
     <div class="footer-content position-relative">
         <div class="container">
@@ -88,25 +88,21 @@
         </div>
     </div>
 
-    <div className="footer-legal text-center position-relative">
-        <div className="container">
-            <div className="d-flex justify-content-between align-items-center">
-                <div className="copyright">
-                    &copy; Copyright
-                    <strong>
-                        <span className="mx-2">RTech International (2023)</span>
-                    </strong>
-                    . All Rights Reserved
+    <div class="footer-legal text-center position-relative">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="copyright">
+                    &copy; Copyright 2022 <strong>
+                        <span>RTech International</span>
+                    </strong>. All Rights Reserved
                 </div>
-                <div className="credits">
-                    Powered By
-                    <a className="mx-2">
-                        RTech International <span className="mx-2">1.1v</span>
-                    </a>
+                <div class="credits">
+                    Powered by <a href="https://bootstrapmade.com/">RTech International </a>
                 </div>
             </div>
         </div>
     </div>
+
 
 </footer>
 <!-- End Footer -->

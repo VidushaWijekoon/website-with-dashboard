@@ -135,7 +135,7 @@
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="tables-bootstrap.html">
+                <a class="sidebar-link" href="{{ url('admin/science-and-technology') }}">
                     <i class="align-middle" data-feather="filter"></i>
                     <span class="align-middle">Science & Technology</span>
                 </a>
