@@ -149,7 +149,6 @@
                     <span class="align-middle">Users</span>
                 </a>
                 <ul id="users" class="sidebar-dropdown list-unstyled collapse" data-parent="#sidebar">
-
                     <li class="sidebar-item">
                         <a class="sidebar-link" href="#">Create New User</a>
                     </li>

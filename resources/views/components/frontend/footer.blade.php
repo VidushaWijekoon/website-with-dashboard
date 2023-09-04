@@ -67,9 +67,8 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Term & Conditions</h4>
                     <ul>
-                        <li><a href="{{ url('') }}">Help Center</a></li>
-                        <li><a href="{{ url('') }}">Terms & Conditions</a></li>
-                        <li><a href="{{ url('') }}">Return Policy</a></li>
+                        <li><a href="{{ url('term-and-conditions') }}">Terms & Conditions</a></li>
+                        <li><a href="{{ url('return-policy') }}">Return Policy</a></li>
                     </ul>
                 </div><!-- End footer links column-->
 
@@ -82,7 +81,8 @@
                         <li><a href="{{ url('social-media-marketing') }}">Social Media Marketing</a></li>
                         <li><a href="{{ url('interior-design') }}">Interior Design</a></li>
                     </ul>
-                </div><!-- End footer links column-->
+                </div>
+                <!-- End footer links column-->
 
             </div>
         </div>
@@ -97,7 +97,7 @@
                     </strong>. All Rights Reserved
                 </div>
                 <div class="credits">
-                    Powered by <a href="https://bootstrapmade.com/">RTech International </a>
+                    Powered by <a href="#">RTech International </a>
                 </div>
             </div>
         </div>

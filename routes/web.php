@@ -65,6 +65,14 @@ Route::get('careers', function () {
     return view('pages.frontend.careers.index');
 });
 
+Route::get('return-policy', function () {
+    return view('pages.frontend.return_policy.index');
+});
+
+Route::get('term-and-conditions', function () {
+    return view('pages.frontend.term_and_conditions.index');
+});
+
 
 Route::prefix('/admin')->middleware('auth', 'isAdmin')->group(function () {
     Route::get('/dashboard', [AdminHomepageController::class, 'index'])->name('admin.dashboard');

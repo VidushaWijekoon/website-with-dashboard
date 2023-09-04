@@ -1,4 +1,11 @@
+@section('title', 'RTech | Careers')
 @extends('layouts.frontend.app')
 @section('content')
-    Careers
+
 @endsection
+
+@push('css')
+    <style>
+
+    </style>
+@endpush

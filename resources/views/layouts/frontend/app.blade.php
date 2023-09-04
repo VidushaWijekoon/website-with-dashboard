@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>RTech International</title>
+    <title>@yield('title', 'RTech International')</title>
     <meta content="RTech International" name="description">
     <meta content="RTech International" name="keywords">
 

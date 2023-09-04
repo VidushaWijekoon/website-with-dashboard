@@ -1,4 +1,11 @@
+@section('title', 'RTech | Interior Design')
 @extends('layouts.frontend.app')
 @section('content')
-    Interior Design
+
 @endsection
+
+@push('css')
+    <style>
+
+    </style>
+@endpush

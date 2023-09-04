@@ -1,4 +1,4 @@
-@section('title', 'RTech | Social Media Marketing')
+@section('title', 'RTech | Return Policy')
 @extends('layouts.frontend.app')
 @section('content')
 

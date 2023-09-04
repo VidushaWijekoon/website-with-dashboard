@@ -1,4 +1,11 @@
+@section('title', 'RTech | Event Management')
 @extends('layouts.frontend.app')
 @section('content')
-    Event Management
+
 @endsection
+
+@push('css')
+    <style>
+
+    </style>
+@endpush

@@ -1,4 +1,11 @@
+@section('title', 'RTech | Software Development')
 @extends('layouts.frontend.app')
 @section('content')
-    Software Development
+
 @endsection
+
+@push('css')
+    <style>
+
+    </style>
+@endpush

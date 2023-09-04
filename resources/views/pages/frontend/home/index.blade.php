@@ -400,7 +400,7 @@
         </div>
         <!-- End Section Title -->
 
-        <div class="container-fluid mt-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="container mt-5" data-aos="fade-up" data-aos-delay="100">
 
             <div class="row gy-4">
 
@@ -582,16 +582,6 @@
         /* About */
         /* ------------------------------------- */
 
-        #about::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            z-index: 9;
-        }
-
         #about .container {
             position: relative;
             z-index: 10;
@@ -669,7 +659,7 @@
         }
 
         /* ------------------------------------- */
-        /* Services */
+        /* Count */
         /* ------------------------------------- */
         .counts {
             padding: 70px 0 60px;
